@@ -31,9 +31,9 @@
 	<key>NSCameraUsageDescription</key>
 	<string>We need access to your camera to take photos for profile pictures.</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Need to use your address book permissions to recommend friends to you.</string>
+	<string>We need access to your address book to suggest potential friends.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>We need access to your microphone to record dubbing audio.</string>
+	<string>We need access to your microphone to record audio.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>We need access to save images to your photo library.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
