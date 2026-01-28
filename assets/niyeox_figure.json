@@ -1,0 +1,89 @@
+[
+  {
+    "NickName": "PixelArt",
+    "UserIcon": "assets/data_work/Niyeox_figure_01.png",
+    "ShowPhotoArray": [
+      "assets/data_work/Figure_work_1_01.png",
+      "assets/data_work/Figure_work_1_02.png",
+      "assets/data_work/Figure_work_1_03.png"
+    ],
+    "ShowMotto": "A creative visionary passionate about transforming abstract ideas into stunning visual art through AI image generation. Always exploring new ways to express creativity digitally.",
+    "ShowFollowNum": 7,
+    "ShowLike": 12,
+    "ShowSayhi": "Hey there! I'm excited to meet fellow art enthusiasts. What kind of images do you love creating? Let's share creative inspiration together!"
+  },
+  {
+    "NickName": "Dreamer",
+    "UserIcon": "assets/data_work/Niyeox_figure_02.png",
+    "ShowPhotoArray": [
+      "assets/data_work/Figure_work_2_01.png",
+      "assets/data_work/Figure_work_2_02.png"
+    ],
+    "ShowMotto": "An enthusiastic explorer of digital art and AI creativity. Loves experimenting with styles and bringing wild ideas to life. Every prompt is a gateway to new artistic universes.",
+    "ShowFollowNum": 9,
+    "ShowLike": 14,
+    "ShowSayhi": "Hello! Welcome to my creative space! I'm obsessed with text-to-image generation and love seeing amazing art others create. What's your favorite style? Let's create!"
+  },
+  {
+    "NickName": "TechArt",
+    "UserIcon": "assets/data_work/Niyeox_figure_03.png",
+    "ShowPhotoArray": [
+      "assets/data_work/Figure_work_3_01.png",
+      "assets/data_work/Figure_work_3_02.png"
+    ],
+    "ShowMotto": "A hands-on creator fascinated by the technical side of AI art generation. Enjoys how prompts shape visual outcomes. Prefers clean, precise expressions and sharing practical tips.",
+    "ShowFollowNum": 5,
+    "ShowLike": 8,
+    "ShowSayhi": "Hi! I'm all about creating precise AI-generated art. If you're into technical details and want to improve prompt engineering skills, let's connect and share knowledge!"
+  },
+  {
+    "NickName": "Colorful",
+    "UserIcon": "assets/data_work/Niyeox_figure_04.png",
+    "ShowPhotoArray": [
+      "assets/data_work/Figure_work_4_01.png",
+      "assets/data_work/Figure_work_4_02.png",
+      "assets/data_work/Figure_work_4_03.png"
+    ],
+    "ShowMotto": "A warm-hearted artist creating beautiful, harmonious images that bring joy. Enjoys collaborative projects and helping fellow creators. Passionate about art that connects people.",
+    "ShowFollowNum": 10,
+    "ShowLike": 15,
+    "ShowSayhi": "Hey friend! I'm happy you're here! I love creating vibrant, uplifting art and connecting with amazing creators. What brings you joy in your creative journey? Let's inspire!"
+  },
+  {
+    "NickName": "Mystic",
+    "UserIcon": "assets/data_work/Niyeox_figure_05.png",
+    "ShowPhotoArray": [
+      "assets/data_work/Figure_work_5_01.png",
+      "assets/data_work/Figure_work_5_02.png"
+    ],
+    "ShowMotto": "A thoughtful artist drawn to meaningful visual storytelling. Believes art should evoke emotions and tell stories. Enjoys exploring deep themes through AI-generated imagery.",
+    "ShowFollowNum": 6,
+    "ShowLike": 11,
+    "ShowSayhi": "Hello! I'm fascinated by stories we can tell through AI art. If you're passionate about creating meaningful, expressive images, I'd love to see your work and share ideas!"
+  },
+  {
+    "NickName": "Vibrant",
+    "UserIcon": "assets/data_work/Niyeox_figure_06.png",
+    "ShowPhotoArray": [
+      "assets/data_work/Figure_work_6_01.png",
+      "assets/data_work/Figure_work_6_02.png"
+    ],
+    "ShowMotto": "An energetic creator thriving on action and dynamic visual expressions. Loves experimenting with bold styles and pushing creative boundaries. Always ready to try new techniques.",
+    "ShowFollowNum": 4,
+    "ShowLike": 9,
+    "ShowSayhi": "Hey! I'm all about bold, dynamic AI art! If you love experimenting with different styles and pushing creative limits, you're in the right place. Let's create together!"
+  },
+  {
+    "NickName": "Vision",
+    "UserIcon": "assets/data_work/Niyeox_figure_07.png",
+    "ShowPhotoArray": [
+      "assets/data_work/Figure_work_7_01.png",
+      "assets/data_work/Figure_work_7_02.png",
+      "assets/data_work/Figure_work_7_03.png"
+    ],
+    "ShowMotto": "A deep-thinking artist passionate about creating transformative visual experiences. Believes in art's power to inspire change and connect people. Enjoys exploring profound themes.",
+    "ShowFollowNum": 8,
+    "ShowLike": 13,
+    "ShowSayhi": "Greetings! I'm passionate about creating art that inspires and transforms. If you want to explore deeper creative themes or discuss meaningful visual storytelling, let's connect!"
+  }
+]

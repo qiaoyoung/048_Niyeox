@@ -1,0 +1,92 @@
+[
+  {
+    "image": "assets/data_work/Figure_work_1_01.png",
+    "title": "PixelArt's Figurine Collection #1",
+    "tags": ["PixelArt", "Figurine", "Collectible", "1/7 Scale"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_1_02.png",
+    "title": "PixelArt's Figurine Collection #2",
+    "tags": ["PixelArt", "Figurine", "Collectible", "Anime Style"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_1_03.png",
+    "title": "PixelArt's Figurine Collection #3",
+    "tags": ["PixelArt", "Figurine", "Collectible", "Premium"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_2_01.png",
+    "title": "Dreamer's Creative Works #1",
+    "tags": ["Dreamer", "Figurine", "Artistic", "Dynamic Pose"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_2_02.png",
+    "title": "Dreamer's Creative Works #2",
+    "tags": ["Dreamer", "Figurine", "Artistic", "Character Design"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_2_03.png",
+    "title": "Dreamer's Creative Works #3",
+    "tags": ["Dreamer", "Figurine", "Artistic", "Limited Edition"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_3_01.png",
+    "title": "TechArt's Precision Model #1",
+    "tags": ["TechArt", "Figurine", "Technical", "Realistic Style"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_3_02.png",
+    "title": "TechArt's Precision Model #2",
+    "tags": ["TechArt", "Figurine", "Technical", "Detailed"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_4_01.png",
+    "title": "Colorful's Vibrant Collection #1",
+    "tags": ["Colorful", "Figurine", "Vibrant", "Colorful Design"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_4_02.png",
+    "title": "Colorful's Vibrant Collection #2",
+    "tags": ["Colorful", "Figurine", "Vibrant", "Joyful"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_4_03.png",
+    "title": "Colorful's Vibrant Collection #3",
+    "tags": ["Colorful", "Figurine", "Vibrant", "Harmonious"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_5_01.png",
+    "title": "Mystic's Storytelling Art #1",
+    "tags": ["Mystic", "Figurine", "Storytelling", "Emotional"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_5_02.png",
+    "title": "Mystic's Storytelling Art #2",
+    "tags": ["Mystic", "Figurine", "Storytelling", "Meaningful"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_6_01.png",
+    "title": "Vibrant's Dynamic Creation #1",
+    "tags": ["Vibrant", "Figurine", "Dynamic", "Bold Style"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_6_02.png",
+    "title": "Vibrant's Dynamic Creation #2",
+    "tags": ["Vibrant", "Figurine", "Dynamic", "Energetic"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_7_01.png",
+    "title": "Vision's Transformative Art #1",
+    "tags": ["Vision", "Figurine", "Transformative", "Inspiring"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_7_02.png",
+    "title": "Vision's Transformative Art #2",
+    "tags": ["Vision", "Figurine", "Transformative", "Profound"]
+  },
+  {
+    "image": "assets/data_work/Figure_work_7_03.png",
+    "title": "Vision's Transformative Art #3",
+    "tags": ["Vision", "Figurine", "Transformative", "Deep Thinking"]
+  }
+]
