@@ -368,11 +368,10 @@
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSDK.framework/NIMSDK",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSocketRocket.framework/NIMSocketRocket",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMQuic.framework/NIMQuic",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMNOS.framework/NIMNOS",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/YXArtemis_XCFramework/YXArtemis.framework/YXArtemis",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMQuic.framework/NIMQuic",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMSocketRocket.framework/NIMSocketRocket",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMSDK.framework/NIMSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMNOS.framework/NIMNOS",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -404,11 +403,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSocketRocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMQuic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMNOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YXArtemis.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -423,10 +421,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-resources.sh",
 				"${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/CautiousSpoof.bundle",
+				"${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/NIMSDK.xcframework/ios-arm64/NIMSDK.framework/NEZQFPSupport.bundle",
+				"${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/NIMSDK.xcframework/ios-arm64_x86_64-simulator/NIMSDK.framework/NEZQFPSupport.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CautiousSpoof.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NEZQFPSupport.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

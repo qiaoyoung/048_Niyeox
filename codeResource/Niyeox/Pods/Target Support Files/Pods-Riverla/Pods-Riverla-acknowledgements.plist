@@ -2362,16 +2362,6 @@ THE SOFTWARE.</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2025 Netease </string>
-			<key>License</key>
-			<string>Copyright</string>
-			<key>Title</key>
-			<string>NIMSDK_LITE</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
 			<string>
                                  Apache License
                            Version 2.0, January 2004
@@ -2811,16 +2801,6 @@ SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>Then</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright 2024 Netease </string>
-			<key>License</key>
-			<string>Copyright</string>
-			<key>Title</key>
-			<string>YXArtemis_XCFramework</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

@@ -204,11 +204,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/pop/pop.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSocketRocket.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMQuic.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMNOS.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YXArtemis_XCFramework/YXArtemis.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMQuic.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMSocketRocket.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMNOS.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework"
@@ -239,11 +238,10 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/pop/pop.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSocketRocket.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMQuic.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMNOS.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YXArtemis_XCFramework/YXArtemis.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMQuic.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMSocketRocket.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CautiousSpoof/NIMNOS.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -17,8 +17,14 @@ Pod::Spec.new do |s|
     'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_TARGET_SRCROOT}" "${PODS_TARGET_SRCROOT}/CautiousSpoof/Classes"'
   }
   
+  s.vendored_frameworks = [
+    'CautiousSpoof/Resources/NIMQuic.xcframework',
+    'CautiousSpoof/Resources/NIMSocketRocket.xcframework',
+    'CautiousSpoof/Resources/NIMSDK.xcframework',
+    'CautiousSpoof/Resources/NIMNOS.xcframework',
+  ]
+  
   # 依赖库
-  s.dependency 'NIMSDK_LITE', '9.20.14'
   s.dependency 'SSZipArchive'
   s.dependency 'TZImagePickerController'
   s.dependency 'SDWebImage'

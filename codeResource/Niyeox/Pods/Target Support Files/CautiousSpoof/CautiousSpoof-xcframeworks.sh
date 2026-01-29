@@ -17,10 +17,10 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "NIMSDK.xcframework/ios-arm64")
+  "NIMQuic.xcframework/ios-arm64")
     echo ""
     ;;
-  "NIMSDK.xcframework/ios-arm64_x86_64-simulator")
+  "NIMQuic.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   "NIMSocketRocket.xcframework/ios-arm64")
@@ -29,10 +29,10 @@ variant_for_slice()
   "NIMSocketRocket.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "NIMQuic.xcframework/ios-arm64")
+  "NIMSDK.xcframework/ios-arm64")
     echo ""
     ;;
-  "NIMQuic.xcframework/ios-arm64_x86_64-simulator")
+  "NIMSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   "NIMNOS.xcframework/ios-arm64")
@@ -47,10 +47,10 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "NIMSDK.xcframework/ios-arm64")
+  "NIMQuic.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "NIMSDK.xcframework/ios-arm64_x86_64-simulator")
+  "NIMQuic.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   "NIMSocketRocket.xcframework/ios-arm64")
@@ -59,10 +59,10 @@ archs_for_slice()
   "NIMSocketRocket.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "NIMQuic.xcframework/ios-arm64")
+  "NIMSDK.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "NIMQuic.xcframework/ios-arm64_x86_64-simulator")
+  "NIMSDK.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   "NIMNOS.xcframework/ios-arm64")
@@ -153,8 +153,8 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMSDK.xcframework" "NIMSDK_LITE/NOS" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMSocketRocket.xcframework" "NIMSDK_LITE/NOS" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMQuic.xcframework" "NIMSDK_LITE/NOS" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMNOS.xcframework" "NIMSDK_LITE/NOS" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/NIMQuic.xcframework" "CautiousSpoof" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/NIMSocketRocket.xcframework" "CautiousSpoof" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/NIMSDK.xcframework" "CautiousSpoof" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/NIMNOS.xcframework" "CautiousSpoof" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

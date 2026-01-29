@@ -21,10 +21,13 @@
   "pod_target_xcconfig": {
     "HEADER_SEARCH_PATHS": "$(inherited) \"${PODS_TARGET_SRCROOT}\" \"${PODS_TARGET_SRCROOT}/CautiousSpoof/Classes\""
   },
+  "vendored_frameworks": [
+    "CautiousSpoof/Resources/NIMQuic.xcframework",
+    "CautiousSpoof/Resources/NIMSocketRocket.xcframework",
+    "CautiousSpoof/Resources/NIMSDK.xcframework",
+    "CautiousSpoof/Resources/NIMNOS.xcframework"
+  ],
   "dependencies": {
-    "NIMSDK_LITE": [
-      "9.20.14"
-    ],
     "SSZipArchive": [],
     "TZImagePickerController": [],
     "SDWebImage": [],
