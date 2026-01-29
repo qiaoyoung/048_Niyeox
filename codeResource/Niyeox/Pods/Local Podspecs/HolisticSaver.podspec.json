@@ -1,0 +1,49 @@
+{
+  "name": "HolisticSaver",
+  "version": "1.0.0",
+  "summary": "iOS HolisticSaver Module.",
+  "authors": {
+    "HolisticSaver": "HolisticSaver.me"
+  },
+  "homepage": "HolisticSaver",
+  "source": {
+    "git": "http://HolisticSaver.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "requires_arc": true,
+  "source_files": "HolisticSaver/Classes/**/*",
+  "resources": "HolisticSaver/**/*.bundle",
+  "prefix_header_file": "HolisticSaver/Classes/HolisticSaver.pch",
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(inherited) \"${PODS_TARGET_SRCROOT}\" \"${PODS_TARGET_SRCROOT}/HolisticSaver/Classes\""
+  },
+  "dependencies": {
+    "NIMSDK_LITE": [
+      "9.20.14"
+    ],
+    "SSZipArchive": [],
+    "TZImagePickerController": [],
+    "SDWebImage": [],
+    "SDWebImageFLPlugin": [],
+    "YYImage": [],
+    "YYImage/WebP": [],
+    "YYText": [],
+    "YYModel": [],
+    "Masonry": [],
+    "FMDB": [],
+    "Reachability": [],
+    "LEEAlert": [],
+    "Firebase/Core": [],
+    "Firebase/RemoteConfig": [],
+    "MJRefresh": [],
+    "SwiftyJSON": [],
+    "Then": [],
+    "Kingfisher": [],
+    "SnapKit": [],
+    "pop": []
+  }
+}
