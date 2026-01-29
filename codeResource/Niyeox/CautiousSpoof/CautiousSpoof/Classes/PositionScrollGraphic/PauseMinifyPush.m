@@ -1092,17 +1092,17 @@ FaintSecondaryCascadeDelegate> {
              ([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.enforce.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.enforce);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(burstMasking)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.albumStrip;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self shot:friendId];
         }
@@ -1328,9 +1328,9 @@ FaintSecondaryCascadeDelegate> {
         //: id<UnusualHumaneMaterialNeat> contactItem = (id<UnusualHumaneMaterialNeat>)[_contacts memberOfIndex:indexPath];
         id<UnusualHumaneMaterialNeat> contactItem = (id<UnusualHumaneMaterialNeat>)[_original flex:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(burstMasking)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.albumStrip;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];

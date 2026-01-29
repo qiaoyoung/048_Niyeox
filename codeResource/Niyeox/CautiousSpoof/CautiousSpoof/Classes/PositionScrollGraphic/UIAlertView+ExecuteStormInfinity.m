@@ -19,8 +19,7 @@ static char appForbidPath;
 
 //: @implementation UIAlertView (ExecuteStormInfinity)
 @implementation UIAlertView (ExecuteStormInfinity)
-//: - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-- (void)rayKey:(UIAlertView *)alertView recent:(NSInteger)buttonIndex
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     //: AlertBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
     AlertBlock block = objc_getAssociatedObject(self, &appForbidPath);

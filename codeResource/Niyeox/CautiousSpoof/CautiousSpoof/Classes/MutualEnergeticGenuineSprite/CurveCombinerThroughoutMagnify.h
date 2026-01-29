@@ -190,13 +190,13 @@
  *  @return 返回thread 父消息
  */
 //: - (NIMMessage *)threadMessage;
-- (NIMMessage *)follow;
+- (NIMMessage *)lessMoved;
 
 /**
  *  设置 thread消息
  */
 //: - (void)setThreadMessage:(NIMMessage *)message;
-- (void)setFollow:(NIMMessage *)message;
+- (void)setLessMoved:(NIMMessage *)message;
 /**
  *  清空 thread消息
  */

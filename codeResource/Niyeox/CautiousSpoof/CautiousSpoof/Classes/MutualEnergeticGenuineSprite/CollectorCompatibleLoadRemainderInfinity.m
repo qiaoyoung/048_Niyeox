@@ -2063,7 +2063,7 @@
 }
 
 //: - (void)onTapMenuItemCopy:(SubmitRidgeNeutralDrive *)item
-- (void)absoluted:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemCopy:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self historyFeedback];

@@ -323,7 +323,7 @@
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.quit.duringGray) {
+    if (self.quit.cart) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.resistance];
@@ -575,7 +575,7 @@
     if ([self.quit respondsToSelector:@selector(uponBolding)])
     {
         //: _selectecContacts = [[self.config alreadySelectedMemberId] mutableCopy];
-        _estimated = [[self.quit outline] mutableCopy];
+        _estimated = [[self.quit uponBolding] mutableCopy];
     }
 
     //: _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];

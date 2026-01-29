@@ -196,7 +196,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<CenterGulfPaletteCallbackCompactified> member1, id<CenterGulfPaletteCallbackCompactified> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<CenterGulfPaletteCallbackCompactified> member1, id<CenterGulfPaletteCallbackCompactified> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _novelState([member1 must], [member2 must]);
+            return _novelState([member1 reverseImproved], [member2 reverseImproved]);
         //: }];
         }];
     //: }];
@@ -235,12 +235,12 @@
     //: for (id<CenterGulfPaletteCallbackCompactified>member in members) {
     for (id<CenterGulfPaletteCallbackCompactified>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member showDelay] isEqualToString:me]) {
+        if ([[member displayOwner] isEqualToString:me]) {
             //: continue;
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member smartTerrain];
+        NSString *groupTitle = [member menu];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -300,7 +300,7 @@
         //: for (id<CenterGulfPaletteCallbackCompactified> member in members) {
         for (id<CenterGulfPaletteCallbackCompactified> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member showDelay] isEqualToString:uid]) {
+            if ([[member displayOwner] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }
@@ -313,7 +313,7 @@
 //: - (void)removeGroupMember:(id<CenterGulfPaletteCallbackCompactified>)member{
 - (void)counter:(id<CenterGulfPaletteCallbackCompactified>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member smartTerrain];
+    NSString *groupTitle = [member menu];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_tense indexOfObject:groupTitle];
     //: BesideMaskOutputToleranceSilver *pair = [_groups objectAtIndex:groupIndex];
@@ -346,7 +346,7 @@
 - (void)structure:(id<CenterGulfPaletteCallbackCompactified>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member smartTerrain];
+    NSString *groupTitle = [member menu];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_tense indexOfObject:groupTitle];
     //: BesideMaskOutputToleranceSilver *pair = [_groups objectAtIndex:groupIndex];

@@ -27,7 +27,7 @@
 }
 
 //: @property (nonatomic, strong) CoordinatePositionTechnique *progressView;
-@property (nonatomic, strong) CoordinatePositionTechnique *strip;
+@property (nonatomic, strong) CoordinatePositionTechnique *progressView;
 //: @property (nonatomic, assign)CGFloat maxProgress;
 @property (nonatomic, assign)CGFloat framework;
 

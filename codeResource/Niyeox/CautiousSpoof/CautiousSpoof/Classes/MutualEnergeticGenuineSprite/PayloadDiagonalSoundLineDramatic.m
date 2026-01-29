@@ -84,7 +84,7 @@
 @implementation PayloadDiagonalSoundLineDramatic
 
 //: - (NSString *)memberId{
-- (NSString *)me{
+- (NSString *)displayOwner{
     //: return self.info.infoId;
     return self.glad.mediaGeneralConstraint;
 }
@@ -113,7 +113,7 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)color{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.glad.mediaGeneralConstraint;
 }
@@ -137,7 +137,7 @@
 }
 
 //: - (id)sortKey {
-- (id)treat {
+- (id)reverseImproved {
     //: return [[UntilShuffleAccurate sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[UntilShuffleAccurate inspector] observer:self.glad.underCoordinator].gifted;
 }
@@ -145,19 +145,19 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)aboveAbleComplete{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
 
 //: - (NSString *)showName{
-- (NSString *)pressed{
+- (NSString *)laneDrawer{
     //: return self.info.showName;
     return self.glad.underCoordinator;
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)space {
+- (NSString *)menu {
     //: NSString *title = [[UntilShuffleAccurate sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[UntilShuffleAccurate inspector] indicatorTo:self.glad.underCoordinator].capitalizedString;
     //: unichar character = [title characterAtIndex:0];

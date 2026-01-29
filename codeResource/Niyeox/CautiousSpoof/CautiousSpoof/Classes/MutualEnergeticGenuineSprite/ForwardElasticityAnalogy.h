@@ -50,7 +50,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
  *  默认已经勾选的人或群组
  */
 //: - (NSArray *)alreadySelectedMemberId;
-- (NSArray *)outline;
+- (NSArray *)uponBolding;
 
 /**
  *  需要过滤的人或群组id
@@ -86,7 +86,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 
 /// 是否显示头部的群头像 群名字headerview
 //: - (BOOL)showSelectHeaderview;
-- (BOOL)duringGray;
+- (BOOL)cart;
 
 //: @end
 @end
@@ -146,7 +146,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) OfDependencyProjectorConvolutionEqual arrowParent;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL delicate;
+@property (nonatomic,assign) BOOL cart;
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
 @property (nonatomic,copy) NSArray *uponBolding;
@@ -177,7 +177,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,copy) NSArray *uponBolding;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL terrain;
+@property (nonatomic,assign) BOOL cart;
 
 //: @property (nonatomic,assign) BOOL showSelectDetail;
 @property (nonatomic,assign) BOOL modeTitle;

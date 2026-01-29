@@ -41,7 +41,7 @@ Byte networkCleanPreference[] = {20, 12, 18, 6, 57, 122, 247, 173, 176, 247, 182
 }
 
 //: - (id<CurveCombinerThroughoutMagnify>)sessionConfig
-- (id<CurveCombinerThroughoutMagnify>)tree
+- (id<CurveCombinerThroughoutMagnify>)thumb
 {
     //: if (_sessionConfig == nil) {
     if (_tree == nil) {

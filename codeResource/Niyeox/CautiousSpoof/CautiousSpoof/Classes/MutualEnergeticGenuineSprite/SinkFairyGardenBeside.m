@@ -154,7 +154,7 @@
         //: OutputUntilDereferenceDownload *model = (OutputUntilDereferenceDownload *)data;
         OutputUntilDereferenceDownload *model = (OutputUntilDereferenceDownload *)data;
         //: [_timeLabel setText:[ExoticVistaConvertBehaviorFlags showTime:model.messageTime showDetail:YES]];
-        [_passTrendDocument setText:[ExoticVistaConvertBehaviorFlags ember:model.theFlash sinceSoftSpectrum:YES]];
+        [_passTrendDocument setText:[ExoticVistaConvertBehaviorFlags ember:model.spokeCollection sinceSoftSpectrum:YES]];
     }
 }
 

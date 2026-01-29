@@ -1306,7 +1306,7 @@
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)bridge:(UIApplication *)app rich:(NSData *)deviceToken {
     //: dispatch_after(dispatch_time((0ull), (int64_t)(3 * 1000000000ull)), dispatch_get_main_queue(), ^{
-    dispatch_after(dispatch_time((0ull), (int64_t)(3 * 1000000000ull)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
         id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
         //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];

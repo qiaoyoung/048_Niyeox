@@ -27,7 +27,7 @@
 @property (nonatomic, assign) CGFloat heaven;
 
 //: @property (nonatomic, assign) NSTimeInterval messageTime;
-@property (nonatomic, assign) NSTimeInterval theFlash;
+@property (nonatomic, assign) NSTimeInterval spokeCollection;
 
 //: @end
 @end

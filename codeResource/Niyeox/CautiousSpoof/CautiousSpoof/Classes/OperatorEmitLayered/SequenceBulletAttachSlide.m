@@ -47,7 +47,7 @@ Byte layoutTechniqueResult[] = {7, 25, 98, 7, 94, 6, 60, 244, 216, 26, 203, 206,
 //        _progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress*100)];
 //        [_activity startAnimating];
         //: self.progressView.progress = progress;
-        self.strip.engineCamera = progress;
+        self.progressView.engineCamera = progress;
     }
 
     //: [self setNeedsLayout];
@@ -80,23 +80,23 @@ Byte layoutTechniqueResult[] = {7, 25, 98, 7, 94, 6, 60, 244, 216, 26, 203, 206,
 //        [self addSubview:_activity];
 
         //: self.progressView = [[CoordinatePositionTechnique alloc] initWithFrame:self.bounds];
-        self.strip = [[CoordinatePositionTechnique alloc] initWithFrame:self.bounds];
+        self.progressView = [[CoordinatePositionTechnique alloc] initWithFrame:self.bounds];
         //: self.progressView.backgroundColor = [UIColor clearColor];
-        self.strip.backgroundColor = [UIColor clearColor];
+        self.progressView.backgroundColor = [UIColor clearColor];
         //: self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
-        self.strip.translatesAutoresizingMaskIntoConstraints = NO;
+        self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
         //: self.progressView.showsText = YES;
-        self.strip.teamMirror = YES;
+        self.progressView.teamMirror = YES;
         //: self.progressView.tintColor = [UIColor colorWithHexString:@"#A148FF"];
-        self.strip.tintColor = [UIColor take:StringFromFlushKindData(themeDenseNativeSortResource)];
+        self.progressView.tintColor = [UIColor take:StringFromFlushKindData(themeDenseNativeSortResource)];
 //        self.progressView.tintColor = RGB_COLOR_String(kCommonBGColor_All);
 //        self.progressView.tintColor = [UIColor colorWithPatternImage:[SkilledOptimalGesture getLinearGradientImage:RGB_COLOR_String(kCommonBGColor_begin) and:RGB_COLOR_String(kCommonBGColor_end) directionType:SkilledOptimalGestureDirectionLevel]];
 
         //: [self addSubview:self.progressView];
-        [self addSubview:self.strip];
+        [self addSubview:self.progressView];
 
         //: NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
-        NSDictionary *views = NSDictionaryOfVariableBindings(_strip);
+        NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:StringFromFlushKindData(layoutTechniqueResult) options:0 metrics:nil views:views]];
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];

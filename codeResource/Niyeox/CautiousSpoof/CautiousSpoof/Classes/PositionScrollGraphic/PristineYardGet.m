@@ -108,7 +108,7 @@
 }
 
 //: @property (nonatomic,weak) id<SplitterPeaceful> delegate;
-@property (nonatomic,weak) id<SplitterPeaceful> forceRationalses;
+@property (nonatomic,weak) id<SplitterPeaceful> liberal;
 
 //: @property (nonatomic,strong) UIRefreshControl *refreshControl;
 @property (nonatomic,strong) UIRefreshControl *midInvite;
@@ -480,10 +480,10 @@
 - (void)sweetResponse:(id)sender
 {
     //: if ([self.delegate respondsToSelector:@selector(onRefresh)])
-    if ([self.forceRationalses respondsToSelector:@selector(agentFade)])
+    if ([self.liberal respondsToSelector:@selector(agentFade)])
     {
         //: [self.delegate onRefresh];
-        [self.forceRationalses agentFade];
+        [self.liberal agentFade];
     }
 }
 

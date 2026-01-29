@@ -16,11 +16,11 @@
 @protocol CenterGulfPaletteCallbackCompactified <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)smartTerrain;
+- (NSString *)menu;
 //: - (NSString *)memberId;
-- (NSString *)showDelay;
+- (NSString *)displayOwner;
 //: - (id)sortKey;
-- (id)must;
+- (id)reverseImproved;
 
 //: @end
 @end

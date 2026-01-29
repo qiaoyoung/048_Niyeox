@@ -543,7 +543,7 @@ PresenterEnforceMapperNextDelegate>
 
 
 //: - (void)onTapMenuItemMutiSelect:(SubmitRidgeNeutralDrive *)item
-- (void)jumpFor:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemMutiSelect:(SubmitRidgeNeutralDrive *)item
 {
     //: [self switchUIWithSessionState:SuperSingletonArcSelect];
     [self overData:SuperSingletonArcSelect];
@@ -798,7 +798,7 @@ PresenterEnforceMapperNextDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(SubmitRidgeNeutralDrive *)item
-- (void)activity:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemReply:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self historyFeedback];
@@ -806,7 +806,7 @@ PresenterEnforceMapperNextDelegate>
     if ([self.tree respondsToSelector:@selector(setLessMoved:)])
     {
         //: [self.sessionConfig setThreadMessage:menuMessage];
-        [self.tree setFollow:menuMessage];
+        [self.tree setLessMoved:menuMessage];
     }
 
     //: [self.sessionInputView refreshStatus:ListenerPieceProjectionOrganicText];
@@ -915,7 +915,7 @@ PresenterEnforceMapperNextDelegate>
 }
 
 //: - (void)onTapMenuItemAudio2Text:(SubmitRidgeNeutralDrive *)item
-- (void)location:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemAudio2Text:(SubmitRidgeNeutralDrive *)item
 {
 
 }
@@ -1692,7 +1692,7 @@ PresenterEnforceMapperNextDelegate>
 
 
 //: - (void)onTapMenuItemForword:(SubmitRidgeNeutralDrive *)item
-- (void)parent:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemForword:(SubmitRidgeNeutralDrive *)item
 {
     //: SpringIslandPiece *vc = [[SpringIslandPiece alloc]init];
     SpringIslandPiece *vc = [[SpringIslandPiece alloc]init];
@@ -1910,7 +1910,7 @@ PresenterEnforceMapperNextDelegate>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)push:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -2038,7 +2038,7 @@ PresenterEnforceMapperNextDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(SubmitRidgeNeutralDrive *)item
-- (void)hide:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemDelete:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self historyFeedback];
@@ -2178,7 +2178,7 @@ PresenterEnforceMapperNextDelegate>
 
 
 //: - (void)onTapMenuItemRevoke:(SubmitRidgeNeutralDrive *)item
-- (void)map:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemRevoke:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self historyFeedback];
@@ -2300,7 +2300,7 @@ PresenterEnforceMapperNextDelegate>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)movie:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -2860,7 +2860,7 @@ PresenterEnforceMapperNextDelegate>
 }
 
 //: - (id<CurveCombinerThroughoutMagnify>)sessionConfig
-- (id<CurveCombinerThroughoutMagnify>)tree
+- (id<CurveCombinerThroughoutMagnify>)thumb
 {
     //: if (_sessionConfig == nil) {
     if (_tree == nil) {
@@ -2902,7 +2902,7 @@ PresenterEnforceMapperNextDelegate>
 
 
 //: - (void)onTapMenuItemUnpin:(SubmitRidgeNeutralDrive *)item
-- (void)fast:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemUnpin:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self historyFeedback];
@@ -2935,7 +2935,7 @@ PresenterEnforceMapperNextDelegate>
 }
 
  //: - (void)onTapMenuItemPin:(SubmitRidgeNeutralDrive *)item
-- (void)old:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemPin:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self historyFeedback];
@@ -2997,7 +2997,7 @@ PresenterEnforceMapperNextDelegate>
 }
 
 //: - (void)onTapMenuItemMark:(SubmitRidgeNeutralDrive *)item
-- (void)presentation:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemMark:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self historyFeedback];
@@ -3138,7 +3138,7 @@ PresenterEnforceMapperNextDelegate>
 
 
 //: - (void)onTapMenuItemReport:(SubmitRidgeNeutralDrive *)item
-- (void)language:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemReport:(SubmitRidgeNeutralDrive *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.cur];
@@ -3149,7 +3149,7 @@ PresenterEnforceMapperNextDelegate>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)first:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -3394,7 +3394,7 @@ PresenterEnforceMapperNextDelegate>
     [self.navigationController.navigationBar addSubview:self.engine];
 }
 //: - (void)onTapMenuItemTranslation:(SubmitRidgeNeutralDrive *)item
-- (void)automaticallyAgree:(SubmitRidgeNeutralDrive *)item
+- (void)onTapMenuItemTranslation:(SubmitRidgeNeutralDrive *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self historyFeedback];

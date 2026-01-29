@@ -168,7 +168,7 @@ dispatch_queue_t meSpeaker()
 @property (nonatomic,strong) LocalizeSolutionDialogs *a;
 
 //: @property (nonatomic,strong) NIMMessage *referenceMessage;
-@property (nonatomic,strong) NIMMessage *sizeJust;
+@property (nonatomic,strong) NIMMessage *phoneLess;
 
 //: @property (nonatomic,strong) NSMutableArray *pendingChatroomModels;
 @property (nonatomic,strong) NSMutableArray *temp;
@@ -346,10 +346,10 @@ dispatch_queue_t meSpeaker()
         }];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.enable respondsToSelector:@selector(lessMoved)] && [self.enable follow])
+    else if ([self.enable respondsToSelector:@selector(lessMoved)] && [self.enable lessMoved])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.enable follow];
+        NIMMessage *threadMessage = [self.enable lessMoved];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage
@@ -475,7 +475,7 @@ dispatch_queue_t meSpeaker()
                                                   completion:^(NSError * _Nullable error)
     {
         //: weakSelf.referenceMessage = nil;
-        weakSelf.sizeJust = nil;
+        weakSelf.phoneLess = nil;
         //: [weakSelf refreshQuickComments:message completion:nil];
         [weakSelf mode:message disk:nil];
         //: if (completion)
@@ -562,7 +562,7 @@ dispatch_queue_t meSpeaker()
              urban:(void(^)(NSError *error))completion
 {
     //: NIMMessage *message = self.referenceMessage;
-    NIMMessage *message = self.sizeJust;
+    NIMMessage *message = self.phoneLess;
     //: if (message)
     if (message)
     {
@@ -582,7 +582,7 @@ dispatch_queue_t meSpeaker()
         //: }];
         }];
         //: self.referenceMessage = nil;
-        self.sizeJust = nil;
+        self.phoneLess = nil;
     }
 }
 
@@ -1253,10 +1253,10 @@ dispatch_queue_t meSpeaker()
                                                 error:nil];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.enable respondsToSelector:@selector(lessMoved)] && [self.enable follow])
+    else if ([self.enable respondsToSelector:@selector(lessMoved)] && [self.enable lessMoved])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.enable follow];
+        NIMMessage *threadMessage = [self.enable lessMoved];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage

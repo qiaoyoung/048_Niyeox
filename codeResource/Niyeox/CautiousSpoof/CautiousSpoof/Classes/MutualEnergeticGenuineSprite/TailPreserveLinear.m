@@ -385,7 +385,7 @@
             //: OutputUntilDereferenceDownload *timeModel = [[OutputUntilDereferenceDownload alloc] init];
             OutputUntilDereferenceDownload *timeModel = [[OutputUntilDereferenceDownload alloc] init];
             //: timeModel.messageTime = model.messageTime;
-            timeModel.theFlash = model.spokeCollection;
+            timeModel.spokeCollection = model.spokeCollection;
             //: [self.items insertObject:timeModel atIndex:index];
             [self.total insertObject:timeModel atIndex:index];
             //: [inserts addObject:@(index)];
@@ -630,7 +630,7 @@
         //: OutputUntilDereferenceDownload *timeModel = [[OutputUntilDereferenceDownload alloc] init];
         OutputUntilDereferenceDownload *timeModel = [[OutputUntilDereferenceDownload alloc] init];
         //: timeModel.messageTime = model.messageTime;
-        timeModel.theFlash = model.spokeCollection;
+        timeModel.spokeCollection = model.spokeCollection;
         //: [self.items insertObject:timeModel atIndex:0];
         [self.total insertObject:timeModel atIndex:0];
     }

@@ -363,7 +363,7 @@
     //: if (self.link == nil) {
     if (self.highlightRelated == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[RemoveQuaternionSingletonSpecifier weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.highlightRelated = [CADisplayLink displayLinkWithTarget:[RemoveQuaternionSingletonSpecifier drawer:self] selector:@selector(updateUI)];
+        self.highlightRelated = [CADisplayLink displayLinkWithTarget:[RemoveQuaternionSingletonSpecifier drawer:self] selector:@selector(elm)];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.highlightRelated addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }
