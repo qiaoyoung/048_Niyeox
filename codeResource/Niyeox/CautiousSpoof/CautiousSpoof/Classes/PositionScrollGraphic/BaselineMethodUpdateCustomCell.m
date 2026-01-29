@@ -113,9 +113,7 @@ typedef struct {
 /** 重写setMenuModel---对控件进行赋值 */
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setRatio:(id)menuModel {
-    //: _menuModel = menuModel;
-    _menuModel = menuModel;
-
+ 
     //: BaselineMethodUpdateModel *realMenuModel = (BaselineMethodUpdateModel *)menuModel;
     BaselineMethodUpdateModel *realMenuModel = (BaselineMethodUpdateModel *)menuModel;
     //: self.customTitleLabel.text = realMenuModel.menuItemTitle;

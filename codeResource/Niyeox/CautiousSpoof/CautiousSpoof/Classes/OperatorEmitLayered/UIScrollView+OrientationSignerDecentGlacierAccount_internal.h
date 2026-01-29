@@ -32,8 +32,8 @@
 
 
 
-
-
+@property (nonatomic, assign) BOOL strongSlide;
+@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior silverTurn;
 
 //: @end
 @end

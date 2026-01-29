@@ -13,7 +13,7 @@
 #import <UIKit/UIKit.h>
 
 //: Class object_getClass(id object);
-Class cliffProcessing(id object);
+Class object_getClass(id object);
 
 //: @protocol MistSubscribeQuillPinViewDelegate;
 @protocol MistSubscribeQuillPinViewDelegate;

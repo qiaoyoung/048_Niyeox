@@ -863,11 +863,11 @@ static NSString *layoutTransmitHeadString = @"reuseIdentifier";
     //: NIMSystemNotificationFilter *filter = [[NIMSystemNotificationFilter alloc] init];
     NIMSystemNotificationFilter *filter = [[NIMSystemNotificationFilter alloc] init];
     //: if ([self.filterType isEqualToString:@"1"]) {
-    if ([self.read isEqualToString:@"1"]) {
+    if ([self.filterType isEqualToString:@"1"]) {
         //: filter.notificationTypes = @[@(5)];
         filter.notificationTypes = @[@(5)];
     //: }else if ([self.filterType isEqualToString:@"2"]){
-    }else if ([self.read isEqualToString:@"2"]){
+    }else if ([self.filterType isEqualToString:@"2"]){
         //: filter.notificationTypes = @[@(0),@(1),@(2),@(3),@(15),@(16),@(17),@(18)];
         filter.notificationTypes = @[@(0),@(1),@(2),@(3),@(15),@(16),@(17),@(18)];
     //: }else{

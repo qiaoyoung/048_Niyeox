@@ -605,7 +605,7 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 //: @property (nonatomic, weak) AFURLSessionManager *manager;
 @property (nonatomic, weak) AFURLSessionManager *reductionSigner;
 //: @property (nonatomic, strong) NSProgress *uploadProgress;
-@property (nonatomic, strong) NSProgress *letterGender;
+@property (nonatomic, strong) NSProgress *letterGender
 API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 
 //: @property (nonatomic, copy) AFURLSessionDownloadTaskDidFinishDownloadingBlock downloadTaskDidFinishDownloading;
@@ -614,7 +614,7 @@ API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 @property (nonatomic, copy) AFURLSessionTaskProgressBlock foot;
 
 //: @property (nonatomic, strong) NSURLSessionTaskMetrics *sessionTaskMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (nonatomic, strong) NSURLSessionTaskMetrics *sense //: @property (nonatomic, strong) NSProgress *downloadProgress;
+@property (nonatomic, strong) NSURLSessionTaskMetrics *sense; //: @property (nonatomic, strong) NSProgress *downloadProgress;
 @property (nonatomic, strong) NSProgress *dismiss;
 //: @property (nonatomic, copy) AFURLSessionTaskProgressBlock uploadProgressBlock;
 @property (nonatomic, copy) AFURLSessionTaskProgressBlock rule;
@@ -1173,7 +1173,7 @@ static NSString * const commonAccelerateDate (NSString *value) {
 //: @property (readwrite, nonatomic, strong) NSMutableDictionary *mutableTaskDelegatesKeyedByTaskIdentifier;
 @property (readwrite, nonatomic, strong) NSMutableDictionary *adminPosition;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock didFinishEventsForBackgroundURLSession API_UNAVAILABLE(macos);
-@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock sternPair//: @property (readwrite, nonatomic, copy) AFURLSessionTaskAuthenticationChallengeBlock authenticationChallengeHandler;
+@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock sternPair;//: @property (readwrite, nonatomic, copy) AFURLSessionTaskAuthenticationChallengeBlock authenticationChallengeHandler;
 @property (readwrite, nonatomic, copy) AFURLSessionTaskAuthenticationChallengeBlock transmit;
 //: @property (readwrite, nonatomic, strong) NSLock *lock;
 @property (readwrite, nonatomic, strong) NSLock *wander;
@@ -1200,7 +1200,7 @@ API_UNAVAILABLE(macos);
 //: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock dataTaskWillCacheResponse;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskWillCacheResponseBlock foot;
  //: @property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock taskDidFinishCollectingMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock document//: @property (readwrite, nonatomic, copy) AFURLSessionDidReceiveAuthenticationChallengeBlock sessionDidReceiveAuthenticationChallenge;
+@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock document;//: @property (readwrite, nonatomic, copy) AFURLSessionDidReceiveAuthenticationChallengeBlock sessionDidReceiveAuthenticationChallenge;
 @property (readwrite, nonatomic, copy) AFURLSessionDidReceiveAuthenticationChallengeBlock flash;
 //: @property (readwrite, nonatomic, strong) NSOperationQueue *operationQueue;
 @property (readwrite, nonatomic, strong) NSOperationQueue *command;

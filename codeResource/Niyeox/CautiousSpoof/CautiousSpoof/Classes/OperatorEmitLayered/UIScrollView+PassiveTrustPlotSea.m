@@ -509,7 +509,7 @@ static char layoutBoxNumber;
 //: - (void)setScrollViewContentInsetForLoading {
 - (void)create {
     //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
-    CGFloat offset = ((self.neatVariableSure.contentOffset.broadcast * -1) > (0) ? (self.neatVariableSure.contentOffset.broadcast * -1) : (0));
+    CGFloat offset = ((self.neatVariableSure.contentOffset.y * -1) > (0) ? (self.neatVariableSure.contentOffset.y * -1) : (0));
     //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
     UIEdgeInsets currentInsets = self.neatVariableSure.contentInset;
     //: switch (self.position) {
@@ -721,7 +721,7 @@ static char layoutBoxNumber;
             //: case PassiveTrustPlotSeaPositionTop:
             case PassiveTrustPlotSeaPositionTop:
                 //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                scrollOffsetThreshold = self.frame.origin.broadcast - self.hard;
+                scrollOffsetThreshold = self.frame.origin.y - self.hard;
                 //: break;
                 break;
             //: case PassiveTrustPlotSeaPositionBottom:
@@ -737,19 +737,19 @@ static char layoutBoxNumber;
             //: self.state = PassiveTrustPlotSeaStateLoading;
             self.accurateActualled = PassiveTrustPlotSeaStateLoading;
         //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == PassiveTrustPlotSeaStateStopped && self.position == PassiveTrustPlotSeaPositionTop)
-        else if(contentOffset.broadcast < scrollOffsetThreshold && self.neatVariableSure.isDragging && self.accurateActualled == PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.neatVariableSure.isDragging && self.accurateActualled == PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionTop)
             //: self.state = PassiveTrustPlotSeaStateTriggered;
             self.accurateActualled = PassiveTrustPlotSeaStateTriggered;
         //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != PassiveTrustPlotSeaStateStopped && self.position == PassiveTrustPlotSeaPositionTop)
-        else if(contentOffset.broadcast >= scrollOffsetThreshold && self.accurateActualled != PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.accurateActualled != PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionTop)
             //: self.state = PassiveTrustPlotSeaStateStopped;
             self.accurateActualled = PassiveTrustPlotSeaStateStopped;
         //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == PassiveTrustPlotSeaStateStopped && self.position == PassiveTrustPlotSeaPositionBottom)
-        else if(contentOffset.broadcast > scrollOffsetThreshold && self.neatVariableSure.isDragging && self.accurateActualled == PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.neatVariableSure.isDragging && self.accurateActualled == PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionBottom)
             //: self.state = PassiveTrustPlotSeaStateTriggered;
             self.accurateActualled = PassiveTrustPlotSeaStateTriggered;
         //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != PassiveTrustPlotSeaStateStopped && self.position == PassiveTrustPlotSeaPositionBottom)
-        else if(contentOffset.broadcast <= scrollOffsetThreshold && self.accurateActualled != PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.accurateActualled != PassiveTrustPlotSeaStateStopped && self.quitRich == PassiveTrustPlotSeaPositionBottom)
             //: self.state = PassiveTrustPlotSeaStateStopped;
             self.accurateActualled = PassiveTrustPlotSeaStateStopped;
     //: } else {
@@ -763,7 +763,7 @@ static char layoutBoxNumber;
             //: case PassiveTrustPlotSeaPositionTop:
             case PassiveTrustPlotSeaPositionTop:
                 //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
-                offset = ((self.neatVariableSure.contentOffset.broadcast * -1) > (0.0f) ? (self.neatVariableSure.contentOffset.broadcast * -1) : (0.0f));
+                offset = ((self.neatVariableSure.contentOffset.y * -1) > (0.0f) ? (self.neatVariableSure.contentOffset.y * -1) : (0.0f));
                 //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 offset = ((offset) < (self.hard + self.bounds.size.height) ? (offset) : (self.hard + self.bounds.size.height));
                 //: contentInset = self.scrollView.contentInset;
@@ -810,7 +810,7 @@ static char layoutBoxNumber;
         case PassiveTrustPlotSeaPositionTop:
 
             //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
-            if((fabs(self.neatVariableSure.contentOffset.broadcast) < 1.19209290e-7F)) {
+            if((fabs(self.neatVariableSure.contentOffset.y) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 [self.neatVariableSure setContentOffset:CGPointMake(self.neatVariableSure.contentOffset.x, -self.frame.size.height) animated:YES];
                 //: self.wasTriggeredByUser = NO;
@@ -827,11 +827,11 @@ static char layoutBoxNumber;
         case PassiveTrustPlotSeaPositionBottom:
 
             //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-            if(((fabs(self.neatVariableSure.contentOffset.broadcast) < 1.19209290e-7F) && self.neatVariableSure.contentSize.height < self.neatVariableSure.bounds.size.height)
+            if(((fabs(self.neatVariableSure.contentOffset.y) < 1.19209290e-7F) && self.neatVariableSure.contentSize.height < self.neatVariableSure.bounds.size.height)
                //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
-               || (fabs((self.neatVariableSure.contentOffset.broadcast) - (self.neatVariableSure.contentSize.height - self.neatVariableSure.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.neatVariableSure.contentOffset.y) - (self.neatVariableSure.contentSize.height - self.neatVariableSure.bounds.size.height)) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
-                [self.scrollView setContentOffset:(CGPoint){.broadcast = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.neatVariableSure setContentOffset:(CGPoint){.y = ((self.neatVariableSure.contentSize.height - self.neatVariableSure.bounds.size.height) > (0.0f) ? (self.neatVariableSure.contentSize.height - self.neatVariableSure.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
                 //: self.wasTriggeredByUser = NO;
                 self.might = NO;
             }
@@ -1027,7 +1027,7 @@ static char layoutBoxNumber;
         //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
-        [customView setFrame:CGRectMake(origin.x, origin.broadcast, viewBounds.size.width, viewBounds.size.height)];
+        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
     //: else {
     else {

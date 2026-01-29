@@ -18,7 +18,7 @@
 @property (nonatomic, strong) UITableView *creative;
 
 //: @property (nonatomic ,strong) NSString *filterType;
-@property (nonatomic ,strong) NSString *read;//1:请求好友 2:群通知
+@property (nonatomic ,strong) NSString *filterType;//1:请求好友 2:群通知
 
 //: @end
 @end

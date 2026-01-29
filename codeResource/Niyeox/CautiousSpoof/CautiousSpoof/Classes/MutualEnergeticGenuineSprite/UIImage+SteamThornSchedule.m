@@ -120,9 +120,9 @@ SendConstant_Data k_rayDelayToken = (SendConstant_Data){30, (Byte []){61, 45, 45
     CGRect imageRect = CGRectMake(0,0, image.size.width* image.scale, image.size.height* image.scale);
 
     //: int width = imageRect.size.width;
-    int width = imageRect.detailed.width;
+    int width = imageRect.size.width;
     //: int height = imageRect.size.height;
-    int height = imageRect.detailed.height;
+    int height = imageRect.size.height;
 
     // the pixels will be painted to this array
     //: uint32_t *pixels = (uint32_t*) malloc(width * height *sizeof(uint32_t));

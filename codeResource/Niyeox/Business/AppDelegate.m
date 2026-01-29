@@ -26,13 +26,13 @@
 //: - (void)applicationDidBecomeActive:(UIApplication *)application {
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     //: [[TallPainterJudicious sharedInstance] applicationDidBecomeActive:application];
-    [[TallPainterJudicious sharedInstance] applicationDidBecomeActive:application];
+    [[TallPainterJudicious betweenRemain] freshed:application];
 }
 
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     //: [[TallPainterJudicious sharedInstance] applicationDidEnterBackground:application];
-    [[TallPainterJudicious sharedInstance] applicationDidEnterBackground:application];
+    [[TallPainterJudicious betweenRemain] outsideDriver:application];
 }
 
 //: - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -40,7 +40,7 @@
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
 //    [[TallPainterJudicious sharedInstance] addRootViewController];
     //: [[TallPainterJudicious sharedInstance] initDelegateWithWindow:self.window];
-    [[TallPainterJudicious sharedInstance] initDelegateWithWindow:self.window];
+    [[TallPainterJudicious betweenRemain] initMid:self.window];
     //: return YES;
     return YES;
 }
@@ -62,7 +62,7 @@
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     //: [[TallPainterJudicious sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    [[TallPainterJudicious sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[TallPainterJudicious betweenRemain] bridge:app rich:deviceToken];
 }
 
 //: @end

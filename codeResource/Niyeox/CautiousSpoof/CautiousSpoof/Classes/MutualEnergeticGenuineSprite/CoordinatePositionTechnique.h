@@ -21,7 +21,7 @@ IB_DESIGNABLE
 //: @property (nonatomic) IBInspectable CGFloat textSize; 
 @property (nonatomic) IBInspectable CGFloat crop;// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *siteBalancePerNS_AVAILABLE_IOS(8_0);// UI_APPEARANCE_SELECTOR;
+@property (nonatomic) UIBlurEffect *siteBalancePer NS_AVAILABLE_IOS(8_0);// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) IBInspectable BOOL usesVibrancyEffect; 
 @property (nonatomic) IBInspectable BOOL step;// UI_APPEARANCE_SELECTOR;
 

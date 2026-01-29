@@ -842,7 +842,7 @@ FaintSecondaryCascadeDelegate> {
     //: AfterReplaceNamespace *vc = [[AfterReplaceNamespace alloc] init];
     AfterReplaceNamespace *vc = [[AfterReplaceNamespace alloc] init];
     //: vc.filterType = @"1";
-    vc.read = @"1";
+    vc.filterType = @"1";
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 
@@ -1088,8 +1088,8 @@ FaintSecondaryCascadeDelegate> {
         if ([contactItem respondsToSelector:@selector(notebookQuestion)] && [contactItem notebookQuestion].length) {
             //: SEL sel = NSSelectorFromString([contactItem selName]);
             SEL sel = NSSelectorFromString([contactItem notebookQuestion]);
-            //: SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
-            SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
+            //:  ([self performSelector:sel withObject:nil]);
+             ([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
         else if (contactItem.enforce.length) {
@@ -2013,7 +2013,7 @@ FaintSecondaryCascadeDelegate> {
     //: AfterReplaceNamespace *vc = [[AfterReplaceNamespace alloc] init];
     AfterReplaceNamespace *vc = [[AfterReplaceNamespace alloc] init];
     //: vc.filterType = @"2";
-    vc.read = @"2";
+    vc.filterType = @"2";
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 }

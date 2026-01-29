@@ -219,7 +219,7 @@ CGFloat roundGraveDistribute(void) {
             //: CGRect frame = self.frame;
             CGRect frame = self.frame;
             //: frame.origin.y = SNStatusBarHeight();
-            frame.arrow.pic = responseDriver();
+            frame.origin.y = responseDriver();
             //: self.frame = frame;
             self.frame = frame;
         //: } completion:^(BOOL finished) {
@@ -300,9 +300,9 @@ CGFloat roundGraveDistribute(void) {
         //: CGRect frame = CGRectMake(0, 0, 30, 30);
         CGRect frame = CGRectMake(0, 0, 30, 30);
         //: frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
-        frame.arrow.element = CGRectGetMaxX(self.bounds) - frame.winter.hide;
+        frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
         //: frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
-        frame.arrow.pic = (self.bounds.winter.sureDeploy - frame.winter.sureDeploy) * 0.5;
+        frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
 
         //: _actionButton.frame = CGRectIntegral(frame);
         _projection.frame = CGRectIntegral(frame);
@@ -330,7 +330,7 @@ CGFloat roundGraveDistribute(void) {
         //: CGRect frame = self.frame;
         CGRect frame = self.frame;
         //: frame.origin.y = SNStatusBarHeight() + 44 + 5;
-        frame.arrow.pic = responseDriver() + 44 + 5;
+        frame.origin.y = responseDriver() + 44 + 5;
         //: self.frame = frame;
         self.frame = frame;
     //: } completion:nil];
@@ -347,7 +347,7 @@ CGFloat roundGraveDistribute(void) {
     //: content.text = self.title;
     content.text = self.notebook;
     //: return (5.0f + 5.0f) + content.intrinsicContentSize.width; 
-    return (5.0f + 5.0f) + content.intrinsicContentSize.hide; // icon width + label width (it's perfect to cache them all)
+    return (5.0f + 5.0f) + content.intrinsicContentSize.width; // icon width + label width (it's perfect to cache them all)
 }
 
 //: + (instancetype)showTipViewForCompletingUserInfolWithDelay:(float)delay
@@ -366,13 +366,13 @@ CGFloat roundGraveDistribute(void) {
     //: CreateTupleCollateSculpted *tipView = [[CreateTupleCollateSculpted alloc] initWithFrame:(CGRect) {
     CreateTupleCollateSculpted *tipView = [[CreateTupleCollateSculpted alloc] initWithFrame:(CGRect) {
         //: .origin.x = 5,
-        .arrow.element = 5,
+        .origin.x = 5,
         //: .origin.y = (44.0f + [UIDevice vg_statusBarHeight])+5,
-        .arrow.pic = (44.0f + [UIDevice delicate])+5,
+        .origin.y = (44.0f + [UIDevice delicate])+5,
         //: .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
-        .winter.hide = UIScreen.mainScreen.bounds.winter.hide-10.f,
+        .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
         //: .size.height = 46.f
-        .winter.sureDeploy = 46.f
+        .size.height = 46.f
     //: }];
     }];
 
@@ -439,7 +439,7 @@ CGFloat roundGraveDistribute(void) {
         self.userInteractionEnabled = YES;
         {
             //: self.leftwardMarqueeView = [[OccasionMendBarWide alloc] initWithFrame:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) direction:AnnotateSignalSplendidLeftward];
-            self.multi = [[OccasionMendBarWide alloc] initWithRead:CGRectMake(54, 0, [UIScreen mainScreen].bounds.winter.hide- 54 - 30 - 10, 46) grand:AnnotateSignalSplendidLeftward];
+            self.multi = [[OccasionMendBarWide alloc] initWithRead:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) grand:AnnotateSignalSplendidLeftward];
             //: _leftwardMarqueeView.delegate = self;
             _multi.forceRationalses = self;
             //: _leftwardMarqueeView.timeIntervalPerScroll = 3.0f;
@@ -509,7 +509,7 @@ CGFloat roundGraveDistribute(void) {
     //: CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     //: return contentFitSize.height + 20.0f;
-    return contentFitSize.sureDeploy + 20.0f;
+    return contentFitSize.height + 20.0f;
 }
 
 //: @end

@@ -88,8 +88,8 @@ static void withoutSupply(SystemSoundID soundID, void *data)
     {
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([[Firm_Data sharedInstance] appNaturalID]);
-        //: SuppressPerformSelectorLeakWarning([(GiganticRoundTrace *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(GiganticRoundTrace *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        //:  ([(GiganticRoundTrace *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+         ([(GiganticRoundTrace *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
     }
 }
 

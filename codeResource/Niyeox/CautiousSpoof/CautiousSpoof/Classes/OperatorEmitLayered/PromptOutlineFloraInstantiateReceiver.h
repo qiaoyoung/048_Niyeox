@@ -111,14 +111,14 @@ __attribute__((annotate("ui_appearance_selector")));
 /// The image displayed when showing informational messages.
 /// @discussion Default: info.circle from SF Symbols (iOS 13+) or the bundled info image provided by Freepik.
 //: @property (strong, nonatomic, nonnull) UIImage *infoImage __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIImage *logicDetect /// The maximum amount of time in seconds the HUD will display.
+@property (strong, nonatomic, nonnull) UIImage *logicDetect; /// The maximum amount of time in seconds the HUD will display.
 /// @discussion Default: CGFLOAT_MAX.
 //: @property (assign, nonatomic) NSTimeInterval maximumDismissTimeInterval;
 @property (assign, nonatomic) NSTimeInterval primaryMode;
  /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
 /// @discussion Default: CGSizeZero.
 //: @property (assign, nonatomic) CGSize minimumSize __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGSize exit
+@property (assign, nonatomic) CGSize exit;
 /// Indicates if motion effects should be applied to the HUD.
 /// @discussion Default: YES.
 //: @property (assign, nonatomic) BOOL motionEffectEnabled;
@@ -158,7 +158,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Defines the animation type used when the HUD is displayed.
 /// @discussion Default: PromptOutlineFloraInstantiateReceiverAnimationTypeFlat.
 //: @property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverAnimationType defaultAnimationType __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverAnimationType restrictionDerive //: @property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverStyle defaultStyle __attribute__((annotate("ui_appearance_selector")));
+@property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverAnimationType restrictionDerive; //: @property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverStyle defaultStyle __attribute__((annotate("ui_appearance_selector")));
 @property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverStyle adapt __attribute__((annotate("ui_appearance_selector")));
 
 /// A specific view for extensions. This property is only used if #define SV_APP_EXTENSIONS is set.
@@ -179,7 +179,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Represents the type of mask applied when the HUD is displayed.
 /// @discussion Default: PromptOutlineFloraInstantiateReceiverMaskTypeNone.
 //: @property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverMaskType defaultMaskType __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverMaskType personalIdeal /// The minimum amount of time in seconds the HUD will display.
+@property (assign, nonatomic) PromptOutlineFloraInstantiateReceiverMaskType personalIdeal; /// The minimum amount of time in seconds the HUD will display.
 /// @discussion Default: 5.0 seconds.
 //: @property (assign, nonatomic) NSTimeInterval minimumDismissTimeInterval;
 @property (assign, nonatomic) NSTimeInterval detailed;
@@ -232,7 +232,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Color for any foreground images in the HUD.
 /// @discussion Default: same as foregroundColor.
 //: @property (strong, nonatomic, nullable) UIColor *foregroundImageColor __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nullable) UIColor *spokeLedge
+@property (strong, nonatomic, nullable) UIColor *spokeLedge;
 /// Offset from the center position, can be used to adjust the HUD position.
 /// @discussion Default: 0, 0.
 //: @property (assign, nonatomic) UIOffset offsetFromCenter __attribute__((annotate("ui_appearance_selector")));
@@ -242,7 +242,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// Thickness of the ring shown in the HUD.
 /// @discussion Default: 2 pt.
 //: @property (assign, nonatomic) CGFloat ringThickness __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat mountainStairActivity
+@property (assign, nonatomic) CGFloat mountainStairActivity;
 /// Sets the error image for the HUD.
 /// @param image The desired error image.
 //: + (void)setErrorImage:(nonnull UIImage*)image;

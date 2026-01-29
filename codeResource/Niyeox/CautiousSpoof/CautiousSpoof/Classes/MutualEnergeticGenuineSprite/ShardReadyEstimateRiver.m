@@ -716,7 +716,7 @@
 @property (nonatomic, strong) ProgramConsistentSpoofSpiritAnnotate *extendLoose;
 //: @property (nonatomic, strong) MixerFrostSlice *noticeView;
 @property (nonatomic, strong) MixerFrostSlice *rayGroupReply;
-@property (nonatomic, strong) BaselineMethodUpdateView *control
+@property (nonatomic, strong) BaselineMethodUpdateView *control;
 //: @property (nonatomic, strong) UIView *reqView;
 @property (nonatomic, strong) UIView *valley;
 

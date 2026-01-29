@@ -516,7 +516,7 @@
 //: - (void)rightButtonClicked:(id)sender{
 - (void)confirmMerge:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = cliffProcessing(self.forceRationalses);
+    Class currentClass = object_getClass(self.forceRationalses);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == independent) && [self.forceRationalses respondsToSelector:@selector(proudPrivate)]) {
         //: [self.delegate dismissDataPickerView];
@@ -547,7 +547,7 @@
     //: self.delegate = delegate;
     self.forceRationalses = delegate;
     //: delegateClass = object_getClass(delegate);
-    independent = cliffProcessing(delegate);
+    independent = object_getClass(delegate);
 }
 
 //: #pragma mark ==================================================
@@ -559,7 +559,7 @@
 //: - (void)leftButtonClicked:(id)sender{
 - (void)takeOf:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = cliffProcessing(self.forceRationalses);
+    Class currentClass = object_getClass(self.forceRationalses);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == independent) && [self.forceRationalses respondsToSelector:@selector(proudPrivate)]) {
         //: [self.delegate dismissDataPickerView];

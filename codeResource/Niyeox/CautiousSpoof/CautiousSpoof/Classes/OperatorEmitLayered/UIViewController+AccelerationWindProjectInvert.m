@@ -48,8 +48,8 @@ Byte widgetUrbanResource[] = {93, 10, 56, 13, 241, 239, 145, 25, 59, 254, 23, 20
     BOOL use = NO;
     //: if ([self respondsToSelector:sel]) {
     if ([self respondsToSelector:sel]) {
-        //: SuppressPerformSelectorLeakWarning(use = (BOOL)[self performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[self performSelector:sel]);
+        //:  (use = (BOOL)[self performSelector:sel]);
+         (use = (BOOL)[self performSelector:sel]);
     }
     //: return use;
     return use;

@@ -10,7 +10,7 @@
 
 // __M_A_C_R_O__
 //:  
- 
+#import "RevokeHashSnapTower.h"
 
 //: @interface RevokeHashSnapTower (ViewAngleFind)
 @interface RevokeHashSnapTower (ViewAngleFind)

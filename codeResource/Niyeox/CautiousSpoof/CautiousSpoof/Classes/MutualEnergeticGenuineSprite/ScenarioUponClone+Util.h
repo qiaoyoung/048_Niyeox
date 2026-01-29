@@ -31,7 +31,7 @@
 //: @property (nonatomic ,strong) NSString *ismustmobile;
 @property (nonatomic ,strong) NSString *iconThin;//客户端注册ID是否必须为手机号
 //: @property (nonatomic ,strong) NSString *isavatar;
-@property (nonatomic ,strong) NSString *row;//是否强制上传头像
+@property (nonatomic ,strong) NSString *isavatar;//是否强制上传头像
 //: @property (nonatomic ,strong) NSString *yshref;
 @property (nonatomic ,strong) NSString *ocean;//隐私协议链接
 //: @property (nonatomic ,strong) NSString *isclose;
