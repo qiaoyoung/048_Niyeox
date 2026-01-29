@@ -1,9 +1,9 @@
 //
 //  AAAA_FFFUserInfoViewController_BBBB.m
-//  Riverla
+//  Niyeox
 //
 //  Created by Yan Wang on 2024/12/30.
-//  Copyright © 2024 Riverla. All rights reserved.
+//  Copyright © 2024 Niyeox. All rights reserved.
 //
 
 #import "AAAA_FFFUserInfoViewController_BBBB.h"

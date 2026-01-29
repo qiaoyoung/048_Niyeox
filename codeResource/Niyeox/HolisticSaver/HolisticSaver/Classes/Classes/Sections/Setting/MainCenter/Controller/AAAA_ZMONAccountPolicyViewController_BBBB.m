@@ -1,9 +1,9 @@
 //
 //  AAAA_ZMONAccountPolicyViewController_BBBB.m
-//  Riverla
+//  Niyeox
 //
 //  Created by Yan Wang on 2025/2/8.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Niyeox. All rights reserved.
 //
 
 #import "AAAA_ZMONAccountPolicyViewController_BBBB.h"

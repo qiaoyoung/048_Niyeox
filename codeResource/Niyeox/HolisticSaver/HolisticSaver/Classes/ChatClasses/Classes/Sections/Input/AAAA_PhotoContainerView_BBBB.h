@@ -1,9 +1,9 @@
 //
 //  AAAA_PhotoContainerView_BBBB.h
-//  Riverla
+//  Niyeox
 //
 //  Created by mac on 2025/4/22.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Niyeox. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

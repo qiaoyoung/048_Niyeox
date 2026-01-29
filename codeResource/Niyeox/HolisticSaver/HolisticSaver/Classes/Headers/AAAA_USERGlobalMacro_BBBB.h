@@ -139,7 +139,7 @@ win;})
 
 
 //颜色
-#define ThemeColor                  RGB_COLOR_String(@"#B391FF")  // 主题色
+#define ThemeColor                  RGB_COLOR_String(@"#33B0F0")  // 主题色
 #define DeepBtnColor                RGB_COLOR_String(@"#009ADC")  // 按钮厚度色
 #define CommonBGView_Color          RGB_COLOR_String(@"#F6F7FA")  //view通用背景色
 #define TableSeparatorLineColor     RGB_COLOR_String(@"eeeeee")

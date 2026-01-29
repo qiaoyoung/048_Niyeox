@@ -1,9 +1,9 @@
 //
 //  AAAA_ZMONReport_BBBBView.m
-//  Riverla
+//  Niyeox
 //
 //  Created by Yan Wang on 2025/2/20.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Niyeox. All rights reserved.
 //
 
 #import "AAAA_ZMONReport_BBBBView.h"

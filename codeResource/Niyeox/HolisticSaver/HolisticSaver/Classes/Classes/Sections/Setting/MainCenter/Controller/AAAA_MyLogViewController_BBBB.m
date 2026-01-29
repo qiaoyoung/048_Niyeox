@@ -1,9 +1,9 @@
 //
 //  AAAA_MyLogViewController_BBBB.m
-//  Riverla
+//  Niyeox
 //
 //  Created by mac on 2025/4/18.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Niyeox. All rights reserved.
 //
 
 #import "AAAA_MyLogViewController_BBBB.h"

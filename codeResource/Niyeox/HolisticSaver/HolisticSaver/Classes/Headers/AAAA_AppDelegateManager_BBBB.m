@@ -82,7 +82,7 @@
         if (status == FIRRemoteConfigFetchStatusSuccess) {
             [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSInteger value = [config configValueForKey:@"Riverla"].numberValue.intValue;
+                    NSInteger value = [config configValueForKey:@"Niyeox"].numberValue.intValue;
                     if (value > 0) {
                         [self getUserConfig];
                     }  else {
@@ -179,10 +179,10 @@
     if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"OK"] isEqualToString:@"1"]) {
         [self addRootViewController];
     } else {
-        [AAAA_HttpManager_BBBB getWithUrl:@"https://wwwtt.baxoya.com/up/baxoya" params:nil success:^(id responseObject) {
+        [AAAA_HttpManager_BBBB getWithUrl:@"https://wppapi.niyeox.com/wapp/Niyeox" params:nil success:^(id responseObject) {
             NSDictionary *json = [responseObject isKindOfClass:[NSDictionary class]] ? (NSDictionary *)responseObject : nil;
             NSString *name = json[@"data"][@"appName"];
-            if ([name isEqualToString:@"Riverla"]) {
+            if ([name isEqualToString:@"Niyeox"]) {
                 [self addRootViewController];
             } else {
                 [self.waitVC.view removeFromSuperview];

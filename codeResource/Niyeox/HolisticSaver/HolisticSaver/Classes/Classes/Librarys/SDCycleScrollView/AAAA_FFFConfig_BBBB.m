@@ -34,22 +34,22 @@
     if (self = [super init])
     {
 //        _appKey = @"bb423e522c32002210fe5623f81a89ea";//本项目使用
-        NSString *aseStr = [self encryptString:@"bb423e522c32002210fe5623f81a89ea" key:@"Riverla"];
-        _appKey = [self decryptString:aseStr key:@"Riverla"];
+        NSString *aseStr = [self encryptString:@"bb423e522c32002210fe5623f81a89ea" key:@"Niyeox"];
+        _appKey = [self decryptString:aseStr key:@"Niyeox"];
 //        _apiURL = @"https://app.netease.im/api";
         //        _apnsCername = @"DEVELOPER";
-        _apnsCername = @"push_Riverla_release";
+        _apnsCername = @"push_Niyeox_release";
         _pkCername = @"pushkit_voice_test";
         _allowAutoLogin = YES; //如果网上的host和本地的一致，允许自动登录
         
         _Gdic = [NSMutableDictionary dictionary];
         
         // 打包OSS-1
-        self.hostFrom = @"https://riverla.oss-cn-hongkong.aliyuncs.com/riv.txt";
+        self.hostFrom = @"https://niyeox.blob.core.windows.net/yeox/yeo.txt";
         
         // 打包OSS-2
-        self.hostFrom2 = @"https://riverla.s3.ap-southeast-1.amazonaws.com/riv.txt";
-        _policyUrl = @"https://www.moyazer.com/privacy.html";
+        self.hostFrom2 = @"https://niyeox.s3.ap-southeast-1.amazonaws.com/yeo.txt";
+        _policyUrl = @"https://www.niyeox.com/privacy.html";
     }
     return self;
 }

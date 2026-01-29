@@ -1,9 +1,9 @@
 //
 //  AAAA_DeleteAccountTipView_BBBB.h
-//  Riverla
+//  Niyeox
 //
 //  Created by mac on 2025/5/16.
-//  Copyright © 2025 Riverla. All rights reserved.
+//  Copyright © 2025 Niyeox. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

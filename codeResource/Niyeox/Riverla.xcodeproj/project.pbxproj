@@ -637,7 +637,7 @@
 					"$(SRCROOT)/../NIMKit/NIMKit/**",
 				);
 				INFOPLIST_FILE = "Business/Supporting Files/en.lproj/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Riverla;
+				INFOPLIST_KEY_CFBundleDisplayName = Niyeox;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -693,7 +693,7 @@
 					"$(SRCROOT)/../NIMKit/NIMKit/**",
 				);
 				INFOPLIST_FILE = "Business/Supporting Files/en.lproj/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Riverla;
+				INFOPLIST_KEY_CFBundleDisplayName = Niyeox;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
