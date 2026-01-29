@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)initDelegateWithWindow:(UIWindow *)window;
 
-//- (void)addRootViewController;
+- (void)addRootViewController;
 
 - (void)applicationDidBecomeActive:(UIApplication *)application;
 

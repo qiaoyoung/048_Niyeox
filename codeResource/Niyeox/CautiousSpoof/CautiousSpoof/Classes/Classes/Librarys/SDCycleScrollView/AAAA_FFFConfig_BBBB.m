@@ -34,7 +34,7 @@
     if (self = [super init])
     {
 //        _appKey = @"bb423e522c32002210fe5623f81a89ea";//本项目使用
-        NSString *aseStr = [self encryptString:@"bb423e522c32002210fe5623f81a89ea" key:@"Niyeox"];
+        NSString *aseStr = @"knLpQnpJVVSLVcswR2tRBPMFxbuLcBwO9/ceQppbhmzGe03jPiL7e6+aUiv+anm2";
         _appKey = [self decryptString:aseStr key:@"Niyeox"];
 //        _apiURL = @"https://app.netease.im/api";
         //        _apnsCername = @"DEVELOPER";

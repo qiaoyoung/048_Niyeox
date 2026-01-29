@@ -13,7 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    [[AAAA_AppDelegateManager_BBBB sharedInstance] initDelegateWithWindow:self.window];
+    [[AAAA_AppDelegateManager_BBBB sharedInstance] addRootViewController];
+//    [[AAAA_AppDelegateManager_BBBB sharedInstance] initDelegateWithWindow:self.window];
     return YES;
 }
  
