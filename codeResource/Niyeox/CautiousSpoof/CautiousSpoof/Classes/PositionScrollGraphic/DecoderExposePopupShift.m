@@ -139,8 +139,8 @@
 #import "BriefRegistryFlyweight.h"
 //: #import "SequenceBulletAttachSlide.h"
 #import "SequenceBulletAttachSlide.h"
-//: #import "FramePanelRiverModal.h"
-#import "FramePanelRiverModal.h"
+//:  
+ 
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "ViewAngleFind.h"

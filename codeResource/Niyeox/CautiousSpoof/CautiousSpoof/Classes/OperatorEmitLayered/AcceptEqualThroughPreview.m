@@ -26,8 +26,8 @@ Byte userPlaceTreasureID[] = {81, 25, 42, 14, 117, 141, 40, 180, 145, 85, 120, 2
 #import "BriefRegistryFlyweight.h"
 //: #import "SequenceBulletAttachSlide.h"
 #import "SequenceBulletAttachSlide.h"
-//: #import "FramePanelRiverModal.h"
-#import "FramePanelRiverModal.h"
+//:  
+ 
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "CoordinatePositionTechnique.h"

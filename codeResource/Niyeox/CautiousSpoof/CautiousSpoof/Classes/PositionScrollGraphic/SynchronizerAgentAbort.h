@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "TrainFleetingConvert.h"
 #import "TrainFleetingConvert.h"
-//: #import "FramePanelRiverModal.h"
-#import "FramePanelRiverModal.h"
+//:  
+ 
 
 //: @interface SynchronizerAgentAbort : TrainFleetingConvert
 @interface SynchronizerAgentAbort : TrainFleetingConvert

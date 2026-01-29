@@ -186,8 +186,8 @@
 #import "BriefRegistryFlyweight.h"
 //: #import "ViewAngleFind.h"
 #import "ViewAngleFind.h"
-//: #import "FramePanelRiverModal.h"
-#import "FramePanelRiverModal.h"
+//:  
+ 
 //: #import "DiscretePatchConductor.h"
 #import "DiscretePatchConductor.h"
 //: #import "PatternAggregatorSunnyListener.h"

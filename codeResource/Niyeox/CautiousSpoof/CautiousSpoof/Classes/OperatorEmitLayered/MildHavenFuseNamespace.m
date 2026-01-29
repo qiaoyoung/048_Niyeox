@@ -238,8 +238,8 @@ typedef struct {
 #import "ViaChapterNegateSoft.h"
 //: #import "ArchitectureSilent.h"
 #import "ArchitectureSilent.h"
-//: #import "FramePanelRiverModal.h"
-#import "FramePanelRiverModal.h"
+//:  
+ 
 //: #import "WaveformResolveSurfaceMixerRoadmap.h"
 #import "WaveformResolveSurfaceMixerRoadmap.h"
 //: #import "DiscretePatchConductor.h"

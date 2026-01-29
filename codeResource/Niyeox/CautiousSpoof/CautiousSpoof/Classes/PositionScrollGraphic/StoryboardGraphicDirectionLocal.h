@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FramePanelRiverModal.h"
-#import "FramePanelRiverModal.h"
+//:  
+ 
 
 //: @interface StoryboardGraphicDirectionLocal : UIControl
 @interface StoryboardGraphicDirectionLocal : UIControl

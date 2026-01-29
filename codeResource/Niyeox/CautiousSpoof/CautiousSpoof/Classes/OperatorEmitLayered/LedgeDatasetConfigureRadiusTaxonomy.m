@@ -265,8 +265,8 @@
 #import "ErrorTensionTangentReuse.h"
 //: #import "IntegratePlanetAccelerationMacro.h"
 #import "IntegratePlanetAccelerationMacro.h"
-//: #import "FramePanelRiverModal.h"
-#import "FramePanelRiverModal.h"
+//:  
+ 
 //: #import "WaveformResolveSurfaceMixerRoadmap.h"
 #import "WaveformResolveSurfaceMixerRoadmap.h"
 //: #import "DiscretePatchConductor.h"
