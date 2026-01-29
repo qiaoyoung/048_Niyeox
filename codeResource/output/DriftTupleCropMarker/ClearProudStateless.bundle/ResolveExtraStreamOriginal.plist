@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>elementalFunction</key>
+    <string>LedgerAspect</string>
+    <key>directFor</key>
+    <string>SurgeAmidCivic</string>
+    <key>ensureHearty</key>
+    <string>EnableRepaintDirectoryRecursionMobile</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>momentFreshEqualization</key>
+    <string>CubeBuilderDisableSet</string>
+    <key>characterOver</key>
+    <string>StarAbsoluteSpringAdaptive</string>
+    <key>naturalDrawArithmetic</key>
+    <string>ControlDiscreteTailor</string>
+    <key>cleverOn</key>
+    <string>StretchArithmeticNear</string>
+    <key>darkRebuild</key>
+    <string>AccelerateAbsorbSprite</string>
+    <key>cellBy</key>
+    <string>RectShrinkGetInsideGracious</string>
+    <key>gulfOptimizerCivicSave</key>
+    <string>PopulateUpCollateFill</string>
+    <key>topicConfigEnhanceIncremental</key>
+    <string>CropConvergeCaptionPeak</string>
+    <key>identifyNotification</key>
+    <string>InspectorActivityMultiplication</string>
+    <key>splendidAlignmentTracker</key>
+    <string>PortalLocalLogic</string>
+</dict>
+</plist>

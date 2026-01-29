@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>secureBridgeQueue</key>
+    <string>JungleInteractionShell</string>
+    <key>meadowTopmost</key>
+    <string>InvertSyncPlayback</string>
+    <key>hintedAgainstLifecycle</key>
+    <string>InterpolationEdgeJoyfulFluent</string>
+    <key>environmentTuple</key>
+    <string>DramaticCoolFormat</string>
+</dict>
+</plist>

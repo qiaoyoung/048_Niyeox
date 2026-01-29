@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deliveryMethodDelete</key>
+    <string>ExactGlimpsePopupParameter</string>
+    <key>notificationFancyRecalculate</key>
+    <string>InterpolationDelegateCatalyst</string>
+    <key>heartyCross</key>
+    <string>FeatherMultiplySwirlDuplicate</string>
+    <key>truncateGrowingSlideClipper</key>
+    <string>EmitterMemoryResumeObserverDecode</string>
+</dict>
+</plist>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>pushVineNotifier</key>
+    <string>MotionTaskRowTimer</string>
+    <key>restrictionComplex</key>
+    <string>ValueResizePerform</string>
+</dict>
+</plist>

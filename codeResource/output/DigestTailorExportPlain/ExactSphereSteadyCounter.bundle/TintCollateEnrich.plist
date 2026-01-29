@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>aerialSpotPatch</key>
+    <string>AllocatorVertex</string>
+    <key>contentSegueEnable</key>
+    <string>WaterDeployPluginInfoShader</string>
+    <key>plateSymbol</key>
+    <string>ParcelForestJungle</string>
+    <key>awaitFramePrompt</key>
+    <string>StableChart</string>
+    <key>resolveCommandFluent</key>
+    <string>YardCreateRound</string>
+    <key>sensorSwitch</key>
+    <string>FlexibleColorLeaf</string>
+    <key>desertPressureUpright</key>
+    <string>StyleTransitFeatheredRefined</string>
+</dict>
+</plist>
