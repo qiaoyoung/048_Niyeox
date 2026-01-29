@@ -189,7 +189,7 @@
 
 /// 获取状态
 - (void)getCache {
-    NSString *configPassedFlag = [[NSUserDefaults standardUserDefaults] valueForKey:@"OK"];
+    NSString *configPassedFlag = [[NSUserDefaults standardUserDefaults] valueForKey:@"Niyeox"];
     if ([configPassedFlag isEqualToString:@"1"]) {
         [self addRootViewController];
         return;
@@ -208,7 +208,7 @@
 }
 
 - (void)addRootViewController {
-    [[NSUserDefaults standardUserDefaults] setValue:@"1" forKey:@"OK"];
+    [[NSUserDefaults standardUserDefaults] setValue:@"1" forKey:@"Niyeox"];
     // 检查并更新域名
     [[DispatchResponderRibbon sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
         if (success) {
