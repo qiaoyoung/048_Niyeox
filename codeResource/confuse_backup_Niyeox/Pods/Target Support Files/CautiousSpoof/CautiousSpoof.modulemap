@@ -1,6 +1,0 @@
-framework module CautiousSpoof {
-  umbrella header "CautiousSpoof-umbrella.h"
-
-  export *
-  module * { export * }
-}
