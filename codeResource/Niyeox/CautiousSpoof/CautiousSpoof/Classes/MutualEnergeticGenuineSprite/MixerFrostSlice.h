@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  MixerFrostSlice.h
 //  NIM
@@ -6,16 +8,24 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface MixerFrostSlice : UIView
 @interface MixerFrostSlice : UIView
 
-@property(nonatomic, strong) UITableView *tableView;
+//: @property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) UITableView *primaryView;
 
-@property (nonatomic,strong) NSMutableArray  *notifications;
+//: @property (nonatomic,strong) NSMutableArray *notifications;
+@property (nonatomic,strong) NSMutableArray *groundMagnitudeer;
 //@property (nonatomic,strong) NSArray  *notifications;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

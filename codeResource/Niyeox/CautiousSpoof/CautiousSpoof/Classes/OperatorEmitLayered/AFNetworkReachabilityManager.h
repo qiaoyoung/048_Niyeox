@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // AFNetworkReachabilityManager.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -19,18 +21,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
-#if !TARGET_OS_WATCH
+//: #import <SystemConfiguration/SystemConfiguration.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
+//: typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
 typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
-    AFNetworkReachabilityStatusUnknown          = -1,
-    AFNetworkReachabilityStatusNotReachable     = 0,
+    //: AFNetworkReachabilityStatusUnknown = -1,
+    AFNetworkReachabilityStatusUnknown = -1,
+    //: AFNetworkReachabilityStatusNotReachable = 0,
+    AFNetworkReachabilityStatusNotReachable = 0,
+    //: AFNetworkReachabilityStatusReachableViaWWAN = 1,
     AFNetworkReachabilityStatusReachableViaWWAN = 1,
+    //: AFNetworkReachabilityStatusReachableViaWiFi = 2,
     AFNetworkReachabilityStatusReachableViaWiFi = 2,
+//: };
 };
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -42,27 +52,32 @@ NS_ASSUME_NONNULL_BEGIN
 
  @warning Instances of `AFNetworkReachabilityManager` must be started with `-startMonitoring` before reachability status can be determined.
  */
+//: @interface AFNetworkReachabilityManager : NSObject
 @interface AFNetworkReachabilityManager : NSObject
 
 /**
  The current network reachability status.
  */
-@property (readonly, nonatomic, assign) AFNetworkReachabilityStatus networkReachabilityStatus;
+/**
+ Whether or not the network is currently reachable via WiFi.
+ */
+//: @property (readonly, nonatomic, assign, getter = isReachableViaWiFi) BOOL reachableViaWiFi;
+@property (readonly, nonatomic, assign, getter = isReachableViaWiFi) BOOL woman;
 
 /**
  Whether or not the network is currently reachable.
  */
-@property (readonly, nonatomic, assign, getter = isReachable) BOOL reachable;
+//: @property (readonly, nonatomic, assign, getter = isReachable) BOOL reachable;
+@property (readonly, nonatomic, assign, getter = isReachable) BOOL current;
+
+//: @property (readonly, nonatomic, assign) AFNetworkReachabilityStatus networkReachabilityStatus;
+@property (readonly, nonatomic, assign) AFNetworkReachabilityStatus surface;
 
 /**
  Whether or not the network is currently reachable via WWAN.
  */
-@property (readonly, nonatomic, assign, getter = isReachableViaWWAN) BOOL reachableViaWWAN;
-
-/**
- Whether or not the network is currently reachable via WiFi.
- */
-@property (readonly, nonatomic, assign, getter = isReachableViaWiFi) BOOL reachableViaWiFi;
+//: @property (readonly, nonatomic, assign, getter = isReachableViaWWAN) BOOL reachableViaWWAN;
+@property (readonly, nonatomic, assign, getter = isReachableViaWWAN) BOOL unitChild;
 
 ///---------------------
 /// @name Initialization
@@ -71,74 +86,28 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Returns the shared network reachability manager.
  */
-+ (instancetype)sharedManager;
+//: + (instancetype)sharedManager;
++ (instancetype)inputFrom;
+
+/**
+ *  Unavailable initializer
+ */
+//: - (instancetype)init UNAVAILABLE_ATTRIBUTE;
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
+
+/**
+ Stops monitoring for changes in network reachability status.
+ */
+//: - (void)stopMonitoring;
+- (void)assemble;
 
 /**
  Creates and returns a network reachability manager with the default socket address.
  
  @return An initialized network reachability manager, actively monitoring the default socket address.
  */
-+ (instancetype)manager;
-
-/**
- Creates and returns a network reachability manager for the specified domain.
-
- @param domain The domain used to evaluate network reachability.
-
- @return An initialized network reachability manager, actively monitoring the specified domain.
- */
-+ (instancetype)managerForDomain:(NSString *)domain;
-
-/**
- Creates and returns a network reachability manager for the socket address.
-
- @param address The socket address (`sockaddr_in6`) used to evaluate network reachability.
-
- @return An initialized network reachability manager, actively monitoring the specified socket address.
- */
-+ (instancetype)managerForAddress:(const void *)address;
-
-/**
- Initializes an instance of a network reachability manager from the specified reachability object.
-
- @param reachability The reachability object to monitor.
-
- @return An initialized network reachability manager, actively monitoring the specified reachability.
- */
-- (instancetype)initWithReachability:(SCNetworkReachabilityRef)reachability NS_DESIGNATED_INITIALIZER;
-
-/**
- *  Unavailable initializer
- */
-+ (instancetype)new NS_UNAVAILABLE;
-
-/**
- *  Unavailable initializer
- */
-- (instancetype)init NS_UNAVAILABLE;
-
-///--------------------------------------------------
-/// @name Starting & Stopping Reachability Monitoring
-///--------------------------------------------------
-
-/**
- Starts monitoring for changes in network reachability status.
- */
-- (void)startMonitoring;
-
-/**
- Stops monitoring for changes in network reachability status.
- */
-- (void)stopMonitoring;
-
-///-------------------------------------------------
-/// @name Getting Localized Reachability Description
-///-------------------------------------------------
-
-/**
- Returns a localized string representation of the current network reachability status.
- */
-- (NSString *)localizedNetworkReachabilityStatusString;
+//: + (instancetype)manager;
++ (instancetype)able;
 
 ///---------------------------------------------------
 /// @name Setting Network Reachability Change Callback
@@ -149,8 +118,66 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param block A block object to be executed when the network availability of the `baseURL` host changes.. This block has no return value and takes a single argument which represents the various reachability states from the device to the `baseURL`.
  */
-- (void)setReachabilityStatusChangeBlock:(nullable void (^)(AFNetworkReachabilityStatus status))block;
+//: - (void)setReachabilityStatusChangeBlock:(nullable void (^)(AFNetworkReachabilityStatus status))block;
+- (void)setNetDoingOrientation:(nullable void (^)(AFNetworkReachabilityStatus status))block;
 
+/**
+ Initializes an instance of a network reachability manager from the specified reachability object.
+
+ @param reachability The reachability object to monitor.
+
+ @return An initialized network reachability manager, actively monitoring the specified reachability.
+ */
+//: - (instancetype)initWithReachability:(SCNetworkReachabilityRef)reachability NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithPromise:(SCNetworkReachabilityRef)reachability NS_DESIGNATED_INITIALIZER;
+
+/**
+ Creates and returns a network reachability manager for the socket address.
+
+ @param address The socket address (`sockaddr_in6`) used to evaluate network reachability.
+
+ @return An initialized network reachability manager, actively monitoring the specified socket address.
+ */
+//: + (instancetype)managerForAddress:(const void *)address;
++ (instancetype)sharpBy:(const void *)address;
+
+///-------------------------------------------------
+/// @name Getting Localized Reachability Description
+///-------------------------------------------------
+
+/**
+ Returns a localized string representation of the current network reachability status.
+ */
+//: - (NSString *)localizedNetworkReachabilityStatusString;
+- (NSString *)underSub;
+
+///--------------------------------------------------
+/// @name Starting & Stopping Reachability Monitoring
+///--------------------------------------------------
+
+/**
+ Starts monitoring for changes in network reachability status.
+ */
+//: - (void)startMonitoring;
+- (void)hint;
+
+/**
+ Creates and returns a network reachability manager for the specified domain.
+
+ @param domain The domain used to evaluate network reachability.
+
+ @return An initialized network reachability manager, actively monitoring the specified domain.
+ */
+//: + (instancetype)managerForDomain:(NSString *)domain;
++ (instancetype)piece:(NSString *)domain;
+
+/**
+ *  Unavailable initializer
+ */
+//: + (instancetype)new UNAVAILABLE_ATTRIBUTE;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
+
+//: @end
 @end
 
 ///----------------
@@ -198,10 +225,12 @@ NS_ASSUME_NONNULL_BEGIN
  Posted when network reachability changes.
  This notification assigns no notification object. The `userInfo` dictionary contains an `NSNumber` object under the `AFNetworkingReachabilityNotificationStatusItem` key, representing the `AFNetworkReachabilityStatus` value for the current network reachability.
 
- @warning In order for network reachability to be monitored, include the `SystemConfiguration` framework in the active target's "Link Binary With Library" build phase, and add `#import <SystemConfiguration/SystemConfiguration.h>` to the header prefix of the project (`Prefix.pch`).
+ @warning In order for network reachability to be monitored, include the `SystemConfiguration` framework in the active target's "Link Binary With Library" build phase, and add `` to the header prefix of the project (`Prefix.pch`).
  */
-FOUNDATION_EXPORT NSString * const AFNetworkingReachabilityDidChangeNotification;
-FOUNDATION_EXPORT NSString * const AFNetworkingReachabilityNotificationStatusItem;
+//: extern NSString * const AFNetworkingReachabilityDidChangeNotification;
+extern NSString * const k_billInsertReferEvent(NSString *value);
+//: extern NSString * const AFNetworkingReachabilityNotificationStatusItem;
+extern NSString * const appSuspendHourName(NSString *value);
 
 ///--------------------
 /// @name Functions
@@ -210,7 +239,8 @@ FOUNDATION_EXPORT NSString * const AFNetworkingReachabilityNotificationStatusIte
 /**
  Returns a localized string representation of an `AFNetworkReachabilityStatus` value.
  */
-FOUNDATION_EXPORT NSString * AFStringFromNetworkReachabilityStatus(AFNetworkReachabilityStatus status);
+//: extern NSString * AFStringFromNetworkReachabilityStatus(AFNetworkReachabilityStatus status);
+extern NSString * clientAdd(AFNetworkReachabilityStatus status);
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
-#endif

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UINavigationController+OrientationSignerDecentGlacierAccount.h
 //
@@ -21,11 +23,16 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface UINavigationController (OrientationSignerDecentGlacierAccount)
 @interface UINavigationController (OrientationSignerDecentGlacierAccount)
 
 // By default this is white, it is related to issue with transparent navigationBar
-- (UIColor *)km_containerViewBackgroundColor;
+//: - (UIColor *)km_containerViewBackgroundColor;
+- (UIColor *)particleResolve;
 
+//: @end
 @end

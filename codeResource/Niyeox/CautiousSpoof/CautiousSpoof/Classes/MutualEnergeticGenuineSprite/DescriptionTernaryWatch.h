@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DescriptionTernaryWatch.h
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -21,41 +23,49 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "AccentBelowSyncVerse.h"
 #import "AccentBelowSyncVerse.h"
-
 
 /**
  DescriptionTernaryWatch for ByEasyRefresh.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface DescriptionTernaryWatch : UIToolbar <UIInputViewAudioFeedback>
 @interface DescriptionTernaryWatch : UIToolbar <UIInputViewAudioFeedback>
 
 /**
  Previous bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *previousBarButton;
-
-/**
- Next bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *nextBarButton;
-
 /**
  Title bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong, readonly) AccentBelowSyncVerse *titleBarButton;
+//: @property(nonnull, nonatomic, strong, readonly) AccentBelowSyncVerse *titleBarButton;
+@property(nonnull, nonatomic, strong, readonly) AccentBelowSyncVerse *remote;
 
 /**
  Done bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *doneBarButton;
+//: @property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *doneBarButton;
+@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *snow;
 
 /**
  Fixed space bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *fixedSpaceBarButton;
+//: @property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *fixedSpaceBarButton;
+@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *translate;
 
+/**
+ Next bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *nextBarButton;
+@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *shrinkBroad;
+
+//: @property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *previousBarButton;
+@property(nonnull, nonatomic, strong) RobustReloadLatticeBegin *natureDrop;
+
+//: @end
 @end
-

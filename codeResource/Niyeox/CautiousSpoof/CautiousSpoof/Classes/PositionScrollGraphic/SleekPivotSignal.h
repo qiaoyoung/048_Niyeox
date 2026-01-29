@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SleekPivotSignal.h
 //  NIM
@@ -6,24 +8,37 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @class PruneRestDurationReturn;
 @class PruneRestDurationReturn;
+//: @interface SleekPivotSignal : NSObject
 @interface SleekPivotSignal : NSObject
 
-dSINGLETON_FOR_CLASS_HEADER(SleekPivotSignal);
+//: + (instancetype)sharedInstance;;
++ (instancetype)orbitMemory;;
 
-@property (nonatomic,assign) NSInteger unreadCount;
+//: @property (nonatomic,assign) NSInteger unreadCount;
+@property (nonatomic,assign) NSInteger marker;
 
-- (NSArray *)fetchNotifications:(PruneRestDurationReturn *)notification
-                          limit:(NSInteger)limit;
+//: - (BOOL)saveNotification:(PruneRestDurationReturn *)notification;
+- (BOOL)date:(PruneRestDurationReturn *)notification;
 
-- (BOOL)saveNotification:(PruneRestDurationReturn *)notification;
 
-- (void)deleteNotification:(PruneRestDurationReturn *)notification;
+//: - (NSArray *)fetchNotifications:(PruneRestDurationReturn *)notification
+- (NSArray *)cropTo:(PruneRestDurationReturn *)notification
+                          //: limit:(NSInteger)limit;
+                          wave:(NSInteger)limit;
+//: - (void)deleteAllNotification;
+- (void)digital;
 
-- (void)deleteAllNotification;
+//: - (void)markAllNotificationsAsRead;
+- (void)doSunRadar;
 
-- (void)markAllNotificationsAsRead;
+//: - (void)deleteNotification:(PruneRestDurationReturn *)notification;
+- (void)withoutDown:(PruneRestDurationReturn *)notification;
 
+//: @end
 @end

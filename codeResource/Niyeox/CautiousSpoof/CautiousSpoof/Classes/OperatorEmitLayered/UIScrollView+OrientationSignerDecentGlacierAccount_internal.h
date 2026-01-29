@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIScrollView+OrientationSignerDecentGlacierAccount_internal.h
 //
@@ -20,14 +22,18 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+// __M_A_C_R_O__
+
+//: @interface UIScrollView (OrientationSignerDecentGlacierAccount_internal)
 @interface UIScrollView (OrientationSignerDecentGlacierAccount_internal)
 
-#ifdef __IPHONE_11_0
-@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior km_originalContentInsetAdjustmentBehavior NS_AVAILABLE_IOS(11_0);
-@property (nonatomic, assign) BOOL km_shouldRestoreContentInsetAdjustmentBehavior NS_AVAILABLE_IOS(11_0);
-#endif
 
+
+
+
+
+//: @end
 @end

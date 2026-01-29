@@ -1,24 +1,42 @@
-#import <Foundation/Foundation.h>
-#import <SSZipArchive/SSZipArchive.h>
-NS_ASSUME_NONNULL_BEGIN
-#define kCautiousSpoof @"CautiousSpoof"
+// __DEBUG__
+// __CLOSE_PRINT__
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+//: #import <SSZipArchive/SSZipArchive.h>
+#import <SSZipArchive/SSZipArchive.h>
+
+//: NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
+
+
+//: @interface NotebookDeviceLeanAnimationManager : NSObject
 @interface NotebookDeviceLeanAnimationManager : NSObject
 
-+ (instancetype)sharedManager;
+//: - (NSString *)getVoicePath;
+- (NSString *)excessTiny;
 
-- (NSString *)getHtml_filePath;
+//: - (NSString *)getXML_filePath;
+- (NSString *)chief;
 
-- (NSString *)getXML_filePath;
+//: - (NSString *)getEmojiPath;
+- (NSString *)anyConstantHost;
 
-- (NSString *)getEmojiPath;
+//: + (instancetype)sharedManager;
++ (instancetype)inputFrom;
 
-- (NSString *)getLprojPath;
+//: - (NSString *)getHtml_filePath;
+- (NSString *)builder;
 
-- (NSString *)getVoicePath;
+//: - (NSString *)getLprojPath;
+- (NSString *)jetDoing;
 
-- (UIImage *)zip_imageNamed:(NSString *)name;
+//: - (UIImage *)zip_imageNamed:(NSString *)name;
+- (UIImage *)passOf:(NSString *)name;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

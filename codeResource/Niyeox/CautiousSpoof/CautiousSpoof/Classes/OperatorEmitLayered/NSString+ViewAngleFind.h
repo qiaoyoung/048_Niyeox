@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+NIM.h
 // ViewAngleFind
@@ -6,30 +8,45 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface NSString (ViewAngleFind)
 @interface NSString (ViewAngleFind)
 
-- (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+//: - (BOOL)nim_containsEmoji;
+- (BOOL)river;
 
-- (NSString *)nim_MD5String;
+//: - (NSString *)nim_localizedWithTable:(NSString *)table;
+- (NSString *)nearFind:(NSString *)table;
 
-- (NSUInteger)nim_getBytesLength;
+//: - (NSDictionary *)toDictionary ;
+- (NSDictionary *)amidComponent ;
 
-- (NSString *)nim_stringByDeletingPictureResolution;
+//: - (UIColor *)nim_hexToColor;
+- (UIColor *)crystal;
 
-- (UIColor *)nim_hexToColor;
+//: - (NSString *)nim_localized;
+- (NSString *)providerShade;
 
-- (BOOL)nim_fileIsExist;
+//: - (NSString *)nim_MD5String;
+- (NSString *)location;
 
 
-- (NSString *)nim_localized;
+//: - (NSString *)nim_stringByDeletingPictureResolution;
+- (NSString *)anyMake;
 
-- (NSString *)nim_localizedWithTable:(NSString *)table;
+//: - (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+- (CGSize)fluentLeap:(UIFont *)font;
 
-- (BOOL)nim_containsEmoji;
+//: - (NSRange)nim_rangeOfLastUnicode;
+- (NSRange)hero;
 
-- (NSRange)nim_rangeOfLastUnicode;
+//: - (BOOL)nim_fileIsExist;
+- (BOOL)edge;
 
-- (NSDictionary *)toDictionary ;
+//: - (NSUInteger)nim_getBytesLength;
+- (NSUInteger)anyHandsome;
+//: @end
 @end

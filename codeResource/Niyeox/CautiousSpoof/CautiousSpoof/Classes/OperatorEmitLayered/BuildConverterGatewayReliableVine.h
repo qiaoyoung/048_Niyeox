@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  BuildConverterGatewayReliableVine.h
 //  二维码测试
@@ -6,8 +8,11 @@
 //  Copyright © 2016年 刘通超. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface BuildConverterGatewayReliableVine : NSObject
 @interface BuildConverterGatewayReliableVine : NSObject
 /**
  *  生成二维码图片
@@ -18,8 +23,6 @@
  *
  *  @return  二维码图片
  */
-+(UIImage *)createQRimageString:(NSString *)QRString sizeWidth:(CGFloat)sizeWidth fillColor:(UIColor *)color;
-
 /**
  *  读取图片中二维码信息
  *
@@ -27,5 +30,10 @@
  *
  *  @return 二维码内容
  */
-+(NSString *)readQRCodeFromImage:(UIImage *)image;
+//: +(NSString *)readQRCodeFromImage:(UIImage *)image;
++(NSString *)future:(UIImage *)image;
+
+//: +(UIImage *)createQRimageString:(NSString *)QRString sizeWidth:(CGFloat)sizeWidth fillColor:(UIColor *)color;
++(UIImage *)monthSlip:(NSString *)QRString giftedHour:(CGFloat)sizeWidth weave:(UIColor *)color;
+//: @end
 @end

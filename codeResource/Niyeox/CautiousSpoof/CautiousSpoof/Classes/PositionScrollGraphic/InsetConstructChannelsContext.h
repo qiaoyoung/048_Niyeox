@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  InsetConstructChannelsContext.h
 //  Niyeox
@@ -6,18 +8,27 @@
 //  Copyright © 2025 Niyeox. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface InsetConstructChannelsContext : UICollectionViewCell
 @interface InsetConstructChannelsContext : UICollectionViewCell
 
-@property (nonatomic,strong) UIImageView *ImageView;
+//: @property (nonatomic,strong) UIImageView *ImageView;
+@property (nonatomic,strong) UIImageView *mist;
 
-@property (nonatomic,strong) UILabel *titleLabel;
+//: @property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UILabel *messageReduction;
 
-- (void)refreshWithModel:(NIMTeamMember *)member;
+//: - (void)refreshWithModel:(NIMTeamMember *)member;
+- (void)searcher:(NIMTeamMember *)member;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

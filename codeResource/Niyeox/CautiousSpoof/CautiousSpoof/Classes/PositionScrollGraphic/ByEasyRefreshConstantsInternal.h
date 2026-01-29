@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ByEasyRefreshConstantsInternal.h
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -21,8 +23,4 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#ifndef ByEasyRefreshConstantsInternal_h
-#define ByEasyRefreshConstantsInternal_h
-
-
-#endif
+// __M_A_C_R_O__

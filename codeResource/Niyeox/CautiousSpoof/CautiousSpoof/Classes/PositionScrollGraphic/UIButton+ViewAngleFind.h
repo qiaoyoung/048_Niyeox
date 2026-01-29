@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIButton+ViewAngleFind.h
 // ViewAngleFind
@@ -6,10 +8,14 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface UIButton (ViewAngleFind)
 @interface UIButton (ViewAngleFind)
 
 /**
@@ -17,8 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 *
 *  @param spacing - image 和 title 的垂直间距, 单位point
 */
-- (void)nim_verticalCenterImageAndTitleWithSpacing:(CGFloat)spacing;
+//: - (void)nim_verticalCenterImageAndTitleWithSpacing:(CGFloat)spacing;
+- (void)equal:(CGFloat)spacing;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

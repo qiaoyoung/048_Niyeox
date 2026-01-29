@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIColor+ViewAngleFind.h
 // ViewAngleFind
@@ -6,12 +8,19 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface UIColor (ViewAngleFind)
 @interface UIColor (ViewAngleFind)
-+ (instancetype)colorWithHex:(NSInteger)rgbValue alpha:(CGFloat)alphaValue;
+//: + (instancetype)colorWithHex:(NSInteger)rgbValue alpha:(CGFloat)alphaValue;
++ (instancetype)correctComplexForget:(NSInteger)rgbValue distinct:(CGFloat)alphaValue;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERSessionMsgHelper.h
 //  NIMDemo
@@ -6,53 +8,84 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class ConsoleGridlineSignatureClean;
 @class ConsoleGridlineSignatureClean;
+//: @class GlobeTimeDecode;
 @class GlobeTimeDecode;
+//: @class UpMightyNavigatorOverlay;
 @class UpMightyNavigatorOverlay;
+//: @class ShimmeringPrefetchEnhanceMigrateEmit;
 @class ShimmeringPrefetchEnhanceMigrateEmit;
+//: @class RefinedStrengthBufferPropagate;
 @class RefinedStrengthBufferPropagate;
+//: @class CuratedVersionShortcutPrune;
 @class CuratedVersionShortcutPrune;
+//: @class FallbackMomentumPager;
 @class FallbackMomentumPager;
 
+//: @interface HighlightedBesideImage : NSObject
 @interface HighlightedBesideImage : NSObject
 
-+ (NIMMessage *)msgWithText:(NSString *)text;
+//: + (NIMMessage *)msgWithVideo:(NSString *)filePath;
++ (NIMMessage *)mission:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithImage:(UIImage *)image;
+//: + (NIMMessage *)msgWithFileData:(NSData *)data extension:(NSString *)extension;
++ (NIMMessage *)consume:(NSData *)data schedule:(NSString *)extension;
 
-+ (NIMMessage *)msgWithImagePath:(NSString *)path;
+//: + (NIMMessage *)msgWithTip:(NSString *)tip
++ (NIMMessage *)depthAcross:(NSString *)tip
+              //: revokeAttach:(NSString *)revokeAttach
+              compute:(NSString *)revokeAttach
+         //: revokeCallbackExt:(NSString *)revokeCallbackExt;
+         length:(NSString *)revokeCallbackExt;
+//: + (NIMMessage *)msgWithImagePath:(NSString *)path;
++ (NIMMessage *)draw:(NSString *)path;
 
-+ (NIMMessage *)msgWithAudio:(NSString *)filePath;
+//: + (NIMMessage *)msgWithRedPacket:(ShimmeringPrefetchEnhanceMigrateEmit *)attachment;
++ (NIMMessage *)via:(ShimmeringPrefetchEnhanceMigrateEmit *)attachment;
 
-+ (NIMMessage *)msgWithVideo:(NSString *)filePath;
+//: + (NIMMessage *)msgWithTip:(NSString *)tip;
++ (NIMMessage *)wisdomDistribute:(NSString *)tip;
 
-+ (NIMMessage *)msgWithJenKenPon:(ConsoleGridlineSignatureClean *)attachment;
+//: + (NIMMessage *)msgWithFilePath:(NSString *)path;
++ (NIMMessage *)blend:(NSString *)path;
 
-+ (NIMMessage *)msgWithSnapchatAttachment:(GlobeTimeDecode *)attachment;
+//: + (NIMMessage *)msgWithRedPacketTip:(RefinedStrengthBufferPropagate *)attachment;
++ (NIMMessage *)shape:(RefinedStrengthBufferPropagate *)attachment;
 
-+ (NIMMessage *)msgWithWhiteboardAttachment:(UpMightyNavigatorOverlay *)attachment;
+//: + (NIMMessage *)msgWithMultiRetweetAttachment:(CuratedVersionShortcutPrune *)attachment;
++ (NIMMessage *)propertyFlip:(CuratedVersionShortcutPrune *)attachment;
 
-+ (NIMMessage *)msgWithFilePath:(NSString *)path;
+//: + (NIMMessage *)msgWithImage:(UIImage *)image;
++ (NIMMessage *)fragmentDown:(UIImage *)image;
 
-+ (NIMMessage *)msgWithFileData:(NSData *)data extension:(NSString *)extension;
+//: + (NIMMessage *)msgWithText:(NSString *)text;
++ (NIMMessage *)on:(NSString *)text;
 
-+ (NIMMessage *)msgWithTip:(NSString *)tip;
+//: + (NIMMessage *)msgWithJenKenPon:(ConsoleGridlineSignatureClean *)attachment;
++ (NIMMessage *)run:(ConsoleGridlineSignatureClean *)attachment;
 
-+ (NIMMessage *)msgWithTip:(NSString *)tip
-              revokeAttach:(NSString *)revokeAttach
-         revokeCallbackExt:(NSString *)revokeCallbackExt;
 
-+ (NIMMessage *)msgWithRedPacket:(ShimmeringPrefetchEnhanceMigrateEmit *)attachment;
+//: + (NIMMessage *)msgWithRevocationMessage:(NIMMessage *)revocationMessage;
++ (NIMMessage *)consumption:(NIMMessage *)revocationMessage;
 
-+ (NIMMessage *)msgWithRedPacketTip:(RefinedStrengthBufferPropagate *)attachment;
+//: + (NIMMessage *)msgWithSnapchatAttachment:(GlobeTimeDecode *)attachment;
++ (NIMMessage *)suite:(GlobeTimeDecode *)attachment;
 
-+ (NIMMessage *)msgWithMultiRetweetAttachment:(CuratedVersionShortcutPrune *)attachment;
+//: + (NIMMessage *)msgWithAudio:(NSString *)filePath;
++ (NIMMessage *)request:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithRevocationMessage:(NIMMessage *)revocationMessage;
+//: + (NIMMessage *)msgWithShareCard:(FallbackMomentumPager *)attachment;
++ (NIMMessage *)firm:(FallbackMomentumPager *)attachment;
 
-+ (NIMMessage *)msgWithShareCard:(FallbackMomentumPager *)attachment;
+//: + (NIMMessage *)msgWithWhiteboardAttachment:(UpMightyNavigatorOverlay *)attachment;
++ (NIMMessage *)motion:(UpMightyNavigatorOverlay *)attachment;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CreateSendShowOrganic.h
 //  ZCBusinessCar
@@ -5,21 +7,20 @@
 //  Created by peng on 2021/2/24.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define FXX_AppVersion                  @"1.0.0"//上架显示的版本号
-#define CURRENT_APP_DOT_VERSION         @"1.0.0"//版本号
-#define CURRENT_APP_VERSION             @"0100"
-#define INT_CURRENT_APP_VERSION         @"100"
-#define CURRENT_APP_TYPE                @"ios"
-#define DISTRIBUTION_CHANNAL            @"app"
-#define DEVICE_ID                       [[UIDevice currentDevice]uniqueDeviceIdentifier]
-
-
+//: @interface CreateSendShowOrganic : NSObject
 @interface CreateSendShowOrganic : NSObject
-+(NSDictionary *)getHeader;
-+ (NSString *)getAppID;
+//: + (NSString *)getAppID;
++ (NSString *)snow;
+//: +(NSString*)deviceVersion;
++(NSString*)landRow;
 
-+(NSString *)getIOSVersion;
-+(NSString*)deviceVersion;
+//: +(NSDictionary *)getHeader;
++(NSDictionary *)sum;
+//: +(NSString *)getIOSVersion;
++(NSString *)instance;
+//: @end
 @end

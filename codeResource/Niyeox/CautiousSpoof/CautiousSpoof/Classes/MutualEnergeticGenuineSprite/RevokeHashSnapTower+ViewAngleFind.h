@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  RevokeHashSnapTower+ViewAngleFind.h
 //  NIM
@@ -6,8 +8,13 @@
 //  Copyright (c) 2015 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "FramePanelRiverModal.h"
 #import "FramePanelRiverModal.h"
 
+//: @interface RevokeHashSnapTower (ViewAngleFind)
 @interface RevokeHashSnapTower (ViewAngleFind)
-- (void)nim_setText:(NSString *)text;
+//: - (void)nim_setText:(NSString *)text;
+- (void)scheduleInsert:(NSString *)text;
+//: @end
 @end

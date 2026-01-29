@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  StoryboardGraphicDirectionLocal.h
 // ViewAngleFind
@@ -6,18 +8,30 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
+//: #import "FramePanelRiverModal.h"
 #import "FramePanelRiverModal.h"
 
+//: @interface StoryboardGraphicDirectionLocal : UIControl
 @interface StoryboardGraphicDirectionLocal : UIControl
-@property (nonatomic,strong)    UIImage *image;
-@property (nonatomic,assign)    CGFloat cornerRadius;
+//: @property (nonatomic,strong) UIImage *image;
+@property (nonatomic,strong) UIImage *green;
+//: @property (nonatomic,assign) CGFloat cornerRadius;
+@property (nonatomic,assign) CGFloat tribeGender;
 
-- (void)setAvatarBySession:(NIMSession *)session;
-- (void)setAvatarByMessage:(NIMMessage *)message;
+//: - (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options;
+- (void)factoryAcross:(NSURL *)url screen:(UIImage *)placeholder plain:(SDWebImageOptions)options;
+//: - (void)setAvatarByMessage:(NIMMessage *)message;
+- (void)setExceptImpact:(NIMMessage *)message;
 
-- (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
-- (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options;
+//: - (void)setAvatarBySession:(NIMSession *)session;
+- (void)setVideo:(NIMSession *)session;
+//: - (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
+- (void)honestPlanet:(NSURL *)url pastGravityStem:(UIImage *)placeholder;
 
+//: @end
 @end

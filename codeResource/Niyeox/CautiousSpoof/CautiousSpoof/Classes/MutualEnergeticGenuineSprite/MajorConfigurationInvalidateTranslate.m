@@ -1,3 +1,177 @@
+
+#import <Foundation/Foundation.h>
+
+@interface BasicGlobalData : NSObject
+
++ (instancetype)sharedInstance;
+
+@end
+
+@implementation BasicGlobalData
+
+//: tableButtonCell%ld%ld
+- (NSString *)themeGrainPlatform {
+    /* static */ NSString *themeGrainPlatform = nil;
+    if (!themeGrainPlatform) {
+		NSArray<NSNumber *> *origin = @[@21, @7, @12, @124, @237, @116, @39, @232, @187, @179, @237, @211, @109, @90, @91, @101, @94, @59, @110, @109, @109, @104, @103, @60, @94, @101, @101, @30, @101, @93, @30, @101, @93, @133];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        themeGrainPlatform = [self StringFromBasicGlobalData:value];
+    }
+    return themeGrainPlatform;
+}
+
+//: tableButtonCell
+- (NSString *)appSignThroughMessage {
+    /* static */ NSString *appSignThroughMessage = nil;
+    if (!appSignThroughMessage) {
+		NSArray<NSNumber *> *origin = @[@15, @36, @6, @222, @83, @150, @80, @61, @62, @72, @65, @30, @81, @80, @80, @75, @74, @31, @65, @72, @72, @153];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        appSignThroughMessage = [self StringFromBasicGlobalData:value];
+    }
+    return appSignThroughMessage;
+}
+
+//: personCard_bg
+- (NSString *)themeFitEvent {
+    /* static */ NSString *themeFitEvent = nil;
+    if (!themeFitEvent) {
+		NSArray<NSNumber *> *origin = @[@13, @65, @9, @18, @39, @191, @7, @192, @218, @47, @36, @49, @50, @46, @45, @2, @32, @49, @35, @30, @33, @38, @45];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        themeFitEvent = [self StringFromBasicGlobalData:value];
+    }
+    return themeFitEvent;
+}
+
+//: #2C3042
+- (NSString *)modulePageTitle {
+    /* static */ NSString *modulePageTitle = nil;
+    if (!modulePageTitle) {
+		NSArray<NSNumber *> *origin = @[@7, @78, @11, @103, @126, @95, @66, @72, @65, @243, @254, @213, @228, @245, @229, @226, @230, @228, @82];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        modulePageTitle = [self StringFromBasicGlobalData:value];
+    }
+    return modulePageTitle;
+}
+
++ (instancetype)sharedInstance {
+    static BasicGlobalData *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
+
+- (NSString *)StringFromBasicGlobalData:(Byte *)data {
+    return [NSString stringWithUTF8String:(char *)[self BasicGlobalDataToCache:data]];
+}
+
+//: contact_tag_fragment_cancel
+- (NSString *)widgetSurfaceTime {
+    /* static */ NSString *widgetSurfaceTime = nil;
+    if (!widgetSurfaceTime) {
+		NSArray<NSNumber *> *origin = @[@27, @43, @5, @54, @52, @56, @68, @67, @73, @54, @56, @73, @52, @73, @54, @60, @52, @59, @71, @54, @60, @66, @58, @67, @73, @52, @56, @54, @67, @56, @58, @65, @41];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        widgetSurfaceTime = [self StringFromBasicGlobalData:value];
+    }
+    return widgetSurfaceTime;
+}
+
+- (Byte *)BasicGlobalDataToCache:(Byte *)data {
+    int just = data[0];
+    Byte arena = data[1];
+    int system = data[2];
+    for (int i = system; i < system + just; i++) {
+        int value = data[i] + arena;
+        if (value > 255) {
+            value -= 256;
+        }
+        data[i] = value;
+    }
+    data[system + just] = 0;
+    return data + system;
+}
+
++ (NSData *)BasicGlobalDataToData:(NSArray<NSNumber *> *)value {
+    NSMutableArray<NSNumber *> *array = [NSMutableArray arrayWithArray:value];
+    NSInteger length = array.count;
+    Byte *buffer = (Byte *)malloc(length + 1);
+    for (int i = 0; i < length; i++) {
+        buffer[i] = [array[i] unsignedCharValue];
+    }
+    buffer[length] = 0;
+    return [NSData dataWithBytesNoCopy:buffer length:length freeWhenDone:YES];
+}
+
+//: #F6F7FA
+- (NSString *)themeEarthTreeID {
+    /* static */ NSString *themeEarthTreeID = nil;
+    if (!themeEarthTreeID) {
+		NSArray<NSNumber *> *origin = @[@7, @46, @10, @47, @26, @131, @216, @239, @251, @166, @245, @24, @8, @24, @9, @24, @19, @115];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        themeEarthTreeID = [self StringFromBasicGlobalData:value];
+    }
+    return themeEarthTreeID;
+}
+
+//: back_arrow_bl
+- (NSString *)dataCoordinatePreference {
+    /* static */ NSString *dataCoordinatePreference = nil;
+    if (!dataCoordinatePreference) {
+		NSArray<NSNumber *> *origin = @[@13, @16, @4, @96, @82, @81, @83, @91, @79, @81, @98, @98, @95, @103, @79, @82, @92, @250];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        dataCoordinatePreference = [self StringFromBasicGlobalData:value];
+    }
+    return dataCoordinatePreference;
+}
+
+//: tableMemberCell
+- (NSString *)componentGrandDeleteName {
+    /* static */ NSString *componentGrandDeleteName = nil;
+    if (!componentGrandDeleteName) {
+		NSArray<NSNumber *> *origin = @[@15, @79, @10, @49, @225, @127, @25, @50, @16, @39, @37, @18, @19, @29, @22, @254, @22, @30, @19, @22, @35, @244, @22, @29, @29, @197];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        componentGrandDeleteName = [self StringFromBasicGlobalData:value];
+    }
+    return componentGrandDeleteName;
+}
+
+//: TableSwitch%ld%ld
+- (NSString *)viewCleanDate {
+    /* static */ NSString *viewCleanDate = nil;
+    if (!viewCleanDate) {
+		NSArray<NSNumber *> *origin = @[@17, @39, @13, @252, @222, @38, @129, @130, @141, @129, @87, @156, @162, @45, @58, @59, @69, @62, @44, @80, @66, @77, @60, @65, @254, @69, @61, @254, @69, @61, @96];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        viewCleanDate = [self StringFromBasicGlobalData:value];
+    }
+    return viewCleanDate;
+}
+
+//: builidCommonCell%ld%ld
+- (NSString *)networkAppearanceSpeedMessage {
+    /* static */ NSString *networkAppearanceSpeedMessage = nil;
+    if (!networkAppearanceSpeedMessage) {
+		NSArray<NSNumber *> *origin = @[@22, @38, @7, @188, @137, @72, @143, @60, @79, @67, @70, @67, @62, @29, @73, @71, @71, @73, @72, @29, @63, @70, @70, @255, @70, @62, @255, @70, @62, @46];
+		NSData *data = [BasicGlobalData BasicGlobalDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        networkAppearanceSpeedMessage = [self StringFromBasicGlobalData:value];
+    }
+    return networkAppearanceSpeedMessage;
+}
+
+@end
+
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  MajorConfigurationInvalidateTranslate.m
 // ViewAngleFind
@@ -6,115 +180,252 @@
 //  Copyright © 2019 NetEase. All rights reserved.
 //  
 
+// __M_A_C_R_O__
+//: #import "MajorConfigurationInvalidateTranslate.h"
 #import "MajorConfigurationInvalidateTranslate.h"
+//: #import "ExoticVistaConvertBehaviorFlags.h"
 #import "ExoticVistaConvertBehaviorFlags.h"
+//: #import "BriefRegistryFlyweight.h"
 #import "BriefRegistryFlyweight.h"
+//: #import "MatchFormatError.h"
 #import "MatchFormatError.h"
+//: #import "VesselInteractorResult.h"
 #import "VesselInteractorResult.h"
+//: #import "FramePanelRiverModal.h"
 #import "FramePanelRiverModal.h"
+//: #import "StrategyConfigIntegrity.h"
 #import "StrategyConfigIntegrity.h"
+//: #import "BriefSerializeSubmitLedge.h"
 #import "BriefSerializeSubmitLedge.h"
-#define TableCellReuseId        @"tableCell"
-#define TableButtonCellReuseId  @"tableButtonCell"
-#define TableMemberCellReuseId  @"tableMemberCell"
-#define TableSwitchReuseId      @"tableSwitchCell"
-#define TableSepTag 10001
 
+//: @interface MajorConfigurationInvalidateTranslate () <UITableViewDataSource,
 @interface MajorConfigurationInvalidateTranslate () <UITableViewDataSource,
+                                         //: UITableViewDelegate,
                                          UITableViewDelegate,
+                                         //: UIImagePickerControllerDelegate,
                                          UIImagePickerControllerDelegate,
+                                         //: UINavigationControllerDelegate>
                                          UINavigationControllerDelegate>
-@property (nonatomic, copy) NIMTeamCardPickerHandle pickerSelectedBlock;
+//: @property (nonatomic, copy) NIMTeamCardPickerHandle pickerSelectedBlock;
+@property (nonatomic, copy) NIMTeamCardPickerHandle resFirm;
+//: @end
 @end
 
+//: @implementation MajorConfigurationInvalidateTranslate
 @implementation MajorConfigurationInvalidateTranslate
 
+//: - (UITableViewCell*)builidRedButtonCell:(id<AnimatorUploadTopmost>) bodyData indexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell*)holder:(id<AnimatorUploadTopmost>) bodyData sine:(NSIndexPath *)indexPath{
+//    tableButtonCell
+    //: NSString *identifier = [NSString stringWithFormat:@"tableButtonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
+    NSString *identifier = [NSString stringWithFormat:[[BasicGlobalData sharedInstance] themeGrainPlatform],(long)indexPath.section,(long)indexPath.row];
+    //: MatchFormatError * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    MatchFormatError * cell = [self.shouldView dequeueReusableCellWithIdentifier:identifier];
+    //: if (!cell) {
+    if (!cell) {
+        //: cell = [[MatchFormatError alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[MatchFormatError alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //: cell.button.style = AlongsideJustWishStyleRed;
+    cell.rootStable.request = AlongsideJustWishStyleRed;
+    //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
+    [cell.rootStable setTitle:bodyData.throughout forState:UIControlStateNormal];
+    //: return cell;
+    return cell;
+}
+//: - (void)viewDidLoad {
 - (void)viewDidLoad {
+    //: [super viewDidLoad];
     [super viewDidLoad];
-    self.view.backgroundColor = CommonBGView_Color;
-    UIImageView *Bg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 250)];
-    Bg.image = [UIImage imageNamed:@"personCard_bg"];
+    //: self.view.backgroundColor = [UIColor colorWithHexString:@"#F6F7FA"];
+    self.view.backgroundColor = [UIColor take:[[BasicGlobalData sharedInstance] themeEarthTreeID]];
+    //: UIImageView *Bg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 250)];
+    UIImageView *Bg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 250)];
+    //: Bg.image = [UIImage imageNamed:@"personCard_bg"];
+    Bg.image = [UIImage imageNamed:[[BasicGlobalData sharedInstance] themeFitEvent]];
+    //: [self.view addSubview:Bg];
     [self.view addSubview:Bg];
-    
+
+    //: UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton.frame = CGRectMake(5, SCREEN_STATUS_HEIGHT, 40, 40);
-    [backButton setImage:[UIImage imageNamed:@"back_arrow_bl"] forState:(UIControlStateNormal)];
-    [backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    //: backButton.frame = CGRectMake(5, [UIDevice vg_statusBarHeight], 40, 40);
+    backButton.frame = CGRectMake(5, [UIDevice delicate], 40, 40);
+    //: [backButton setImage:[UIImage imageNamed:@"back_arrow_bl"] forState:(UIControlStateNormal)];
+    [backButton setImage:[UIImage imageNamed:[[BasicGlobalData sharedInstance] dataCoordinatePreference]] forState:(UIControlStateNormal)];
+    //: [backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [backButton addTarget:self action:@selector(underFillRare) forControlEvents:UIControlEventTouchUpInside];
+    //: [self.view addSubview:backButton];
     [self.view addSubview:backButton];
-    
-    [self.view addSubview:self.tableView];
-}
-- (void)backAction{
-    [self.navigationController popViewControllerAnimated:NO];
+
+    //: [self.view addSubview:self.tableView];
+    [self.view addSubview:self.shouldView];
 }
 
-#pragma mark - Public
-- (void)showImagePicker:(UIImagePickerControllerSourceType)type
-             completion:(NIMTeamCardPickerHandle)completion {
-    _pickerSelectedBlock = [completion copy];
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate      = self;
-    picker.sourceType    = type;
-    picker.allowsEditing = YES;
+//: - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    //: return 2.2250738585072014e-308;
+    return 2.2250738585072014e-308;
+}
+
+//: - (void)didBuildTeamMemberCell:(VesselInteractorResult *)cell {}
+- (void)ocean:(VesselInteractorResult *)cell {}
+
+
+//: - (void)showAlert:(UIAlertController *)alert {
+- (void)relatedPrevious:(UIAlertController *)alert {
+    //: self.modalPresentationStyle = UIModalPresentationFullScreen;
     self.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:picker animated:YES completion:nil];
-}
-
-- (UIAlertController *)makeAlertSheetWithTitle:(NSString *)title
-                                       actions:(NSArray <UIAlertAction *>*)actions {
-    
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
-                                                                   message:nil
-                                                            preferredStyle:UIAlertControllerStyleActionSheet];
-    [actions enumerateObjectsUsingBlock:^(UIAlertAction * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [alert addAction:obj];
-    }];
-    
-    [alert addAction:[self makeCancelAction]];
-    return alert;
-}
-
-- (UIAlertAction *)makeCancelAction {
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:LangKey(@"contact_tag_fragment_cancel")
-                                                     style:UIAlertActionStyleCancel
-                                                   handler:nil];
-    return cancel;
-}
-
-- (void)showAlert:(UIAlertController *)alert {
-    self.modalPresentationStyle = UIModalPresentationFullScreen;
+    //: [self presentViewController:alert animated:YES completion:nil];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)showToastMsg:(NSString *)msg {
-    if (msg) {
-        [self.view makeToast:msg
-                    duration:2.0
-                    position:CSToastPositionCenter];
+//: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //: id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
+    id<AnimatorUploadTopmost> bodyData = [self device:indexPath];
+    //: UITableViewCell * cell;
+    UITableViewCell * cell;
+    //: KnackWinterRetreatApplyRefined type = bodyData.type;
+    KnackWinterRetreatApplyRefined type = bodyData.searchJob;
+    //: switch (type) {
+    switch (type) {
+        //: case KnackWinterRetreatApplyRefinedCommon:
+        case KnackWinterRetreatApplyRefinedCommon:
+            //: cell = [self builidCommonCell:bodyData indexPath:indexPath];
+            cell = [self additionalPanel:bodyData unique:indexPath];
+            //: break;
+            break;
+        //: case KnackWinterRetreatApplyRefinedRedButton:
+        case KnackWinterRetreatApplyRefinedRedButton:
+            //: cell = [self builidRedButtonCell:bodyData indexPath:indexPath];
+            cell = [self holder:bodyData sine:indexPath];
+            //: break;
+            break;
+        //: case KnackWinterRetreatApplyRefinedBlueButton:
+        case KnackWinterRetreatApplyRefinedBlueButton:
+            //: cell = [self builidBlueButtonCell:bodyData ];
+            cell = [self cropSmooth:bodyData ];
+            //: break;
+            break;
+        //: case KnackWinterRetreatApplyRefinedTeamMember:
+        case KnackWinterRetreatApplyRefinedTeamMember:
+            //: cell = [self builidTeamMemberCell:bodyData];
+            cell = [self willing:bodyData];
+            //: break;
+            break;
+        //: case KnackWinterRetreatApplyRefinedSwitch:
+        case KnackWinterRetreatApplyRefinedSwitch:
+            //: cell = [self buildTeamSwitchCell:bodyData indexPath:indexPath];
+            cell = [self exitRiver:bodyData traitYoung:indexPath];
+            //: break;
+            break;
+        //: case KnackWinterRetreatApplyRefinedSelected:
+        case KnackWinterRetreatApplyRefinedSelected:
+            //: cell = [self builidCommonCell:bodyData indexPath:indexPath];
+            cell = [self additionalPanel:bodyData unique:indexPath];
+        //: default:
+        default:
+            //: break;
+            break;
     }
+    //: return cell;
+    return cell;
 }
 
-#pragma mark - Private
-- (id<AnimatorUploadTopmost>)bodyDataAtIndexPath:(NSIndexPath*)indexpath{
-    NSArray *sectionData = self.datas[indexpath.section];
-    return sectionData[indexpath.row];
+//: - (UITableViewCell*)builidTeamMemberCell:(id<AnimatorUploadTopmost>) bodyData{
+- (UITableViewCell*)willing:(id<AnimatorUploadTopmost>) bodyData{
+    //: VesselInteractorResult * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
+    VesselInteractorResult * cell = [self.shouldView dequeueReusableCellWithIdentifier:[[BasicGlobalData sharedInstance] componentGrandDeleteName]];
+    //: if (!cell) {
+    if (!cell) {
+        //: cell = [[VesselInteractorResult alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
+        cell = [[VesselInteractorResult alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[[BasicGlobalData sharedInstance] componentGrandDeleteName]];
+    }
+    //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.throughout,bodyData.blueEffect];
+    //: cell.textLabel.font = [UIFont systemFontOfSize:14];
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
+    //: cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.textColor = [UIColor blackColor];
+
+//    cell.imageView.image = bodyData.img;
+
+    //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
+    if ([bodyData respondsToSelector:@selector(correctChaining)] && bodyData.sequenceIn) {
+        //: cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    //: }else{
+    }else{
+        //: cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+
+    //: [self didBuildTeamMemberCell:cell];
+    [self ocean:cell];
+
+    //: return cell;
+    return cell;
+//    UITableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:TableMemberCellReuseId];
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableMemberCellReuseId];
+//    }
+//    
+//    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
+//    cell.textLabel.font = [UIFont systemFontOfSize:14];
+//    cell.textLabel.textColor = [UIColor blackColor];
+//    
+//    cell.imageView.image = bodyData.img;
+//    
+//    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
+//        cell.accessoryType = UITableViewCellAccessoryNone;
+//    }else{
+//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    }
+//    
+//    return cell;
 }
+
+//: - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    //: [picker dismissViewControllerAnimated:YES completion:nil];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+//: - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    //: id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
+    id<AnimatorUploadTopmost> bodyData = [self device:indexPath];
+    //: return bodyData.rowHeight;
+    return bodyData.wealth;
+}
+
+//: #pragma mark - UITableViewDelegate, UITableViewDataSource
 #pragma mark - UITableViewDelegate, UITableViewDataSource
+//: - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
     // 圆角弧度半径
+    //: CGFloat cornerRadius = 8.f;
     CGFloat cornerRadius = 8.f;
     // 设置cell的背景色为透明，如果不设置这个的话，则原来的背景色不会被覆盖
+    //: cell.backgroundColor = UIColor.clearColor;
     cell.backgroundColor = UIColor.clearColor;
 
     // 创建一个shapeLayer
+    //: CAShapeLayer *layer = [[CAShapeLayer alloc] init];
     CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+    //: CAShapeLayer *backgroundLayer = [[CAShapeLayer alloc] init]; 
     CAShapeLayer *backgroundLayer = [[CAShapeLayer alloc] init]; //显示选中
     // 创建一个可变的图像Path句柄，该路径用于保存绘图信息
+    //: CGMutablePathRef pathRef = CGPathCreateMutable();
     CGMutablePathRef pathRef = CGPathCreateMutable();
     // 获取cell的size
     // 第一个参数,是整个 cell 的 bounds, 第二个参数是距左右两端的距离,第三个参数是距上下两端的距离
+    //: CGRect bounds = CGRectInset(cell.bounds, 0, 0);
     CGRect bounds = CGRectInset(cell.bounds, 0, 0);
 
     // CGRectGetMinY：返回对象顶点坐标
@@ -125,192 +436,506 @@
     // CGRectGetMidY: 返回对象中心点的Y坐标
 
     // 这里要判断分组列表中的第一行，每组section的第一行，每组section的中间行
+    //: NSInteger row = indexPath.row;
     NSInteger row = indexPath.row;
     //最后一行
+    //: NSInteger lastRow =[tableView numberOfRowsInSection:indexPath.section] - 1;
     NSInteger lastRow =[tableView numberOfRowsInSection:indexPath.section] - 1;
 
     //如果即使第一行也是最后一行,只有一个cell 四个圆角
+    //: if (row == 0 && row == lastRow) {
     if (row == 0 && row == lastRow) {
 
+            //: CGPoint p = CGPointMake(CGRectGetMinX(bounds), CGRectGetMaxY(bounds) - cornerRadius);
             CGPoint p = CGPointMake(CGRectGetMinX(bounds), CGRectGetMaxY(bounds) - cornerRadius);
+            //: CGPoint p1 = CGPointMake(CGRectGetMinX(bounds), CGRectGetMinY(bounds));
             CGPoint p1 = CGPointMake(CGRectGetMinX(bounds), CGRectGetMinY(bounds));
             //用最小 minX  + cornerRadius
+            //: CGPoint p2 = CGPointMake(CGRectGetMinX(bounds) + cornerRadius, CGRectGetMinY(bounds));
             CGPoint p2 = CGPointMake(CGRectGetMinX(bounds) + cornerRadius, CGRectGetMinY(bounds));
+            //: CGPoint p3 = CGPointMake(CGRectGetMaxX(bounds), CGRectGetMinY(bounds));
             CGPoint p3 = CGPointMake(CGRectGetMaxX(bounds), CGRectGetMinY(bounds));
+            //: CGPoint p4 = CGPointMake(CGRectGetMaxX(bounds), CGRectGetMinY(bounds) +cornerRadius);
             CGPoint p4 = CGPointMake(CGRectGetMaxX(bounds), CGRectGetMinY(bounds) +cornerRadius);
+            //: CGPoint p5 = CGPointMake(CGRectGetMaxX(bounds), CGRectGetMaxY(bounds));
             CGPoint p5 = CGPointMake(CGRectGetMaxX(bounds), CGRectGetMaxY(bounds));
+            //: CGPoint p6 = CGPointMake(CGRectGetMaxX(bounds)- cornerRadius, CGRectGetMaxY(bounds));
             CGPoint p6 = CGPointMake(CGRectGetMaxX(bounds)- cornerRadius, CGRectGetMaxY(bounds));
+            //: CGPoint p7 = CGPointMake(CGRectGetMinX(bounds), CGRectGetMaxY(bounds));
             CGPoint p7 = CGPointMake(CGRectGetMinX(bounds), CGRectGetMaxY(bounds));
 
+            //: CGPathMoveToPoint(pathRef, nil, p.x, p.y);
             CGPathMoveToPoint(pathRef, nil, p.x, p.y);
             //左上角圆角
+            //: CGPathAddArcToPoint(pathRef, nil, p1.x, p1.y, p2.x, p2.y, cornerRadius);
             CGPathAddArcToPoint(pathRef, nil, p1.x, p1.y, p2.x, p2.y, cornerRadius);
             //右上角圆角
+            //: CGPathAddArcToPoint(pathRef, nil, p3.x, p3.y, p4.x, p4.y, cornerRadius);
             CGPathAddArcToPoint(pathRef, nil, p3.x, p3.y, p4.x, p4.y, cornerRadius);
             //右下角圆角
+            //: CGPathAddArcToPoint(pathRef, nil, p5.x, p5.y, p6.x, p6.y, cornerRadius);
             CGPathAddArcToPoint(pathRef, nil, p5.x, p5.y, p6.x, p6.y, cornerRadius);
             // 左下角圆角
+            //: CGPathAddArcToPoint(pathRef, nil, p7.x, p7.y, p.x, p.y, cornerRadius);
             CGPathAddArcToPoint(pathRef, nil, p7.x, p7.y, p.x, p.y, cornerRadius);
-        
+
+        //: cell.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0400].CGColor;
         cell.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0400].CGColor;
+        //: cell.layer.shadowOffset = CGSizeMake(0,4);
         cell.layer.shadowOffset = CGSizeMake(0,4);
+        //: cell.layer.shadowOpacity = 1;
         cell.layer.shadowOpacity = 1;
+        //: cell.layer.shadowRadius = 16;
         cell.layer.shadowRadius = 16;
     }
     //第一行
+    //: else if(row == 0)
     else if(row == 0)
     {
         // 初始起点为cell的左下角坐标
+        //: CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds));
         CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds));
         // 起始坐标为左下角，设为p，（CGRectGetMinX(bounds), CGRectGetMinY(bounds)）为左上角的点，设为p1(x1,y1)，(CGRectGetMidX(bounds), CGRectGetMinY(bounds))为顶部中点的点，设为p2(x2,y2)。然后连接p1和p2为一条直线l1，连接初始点p到p1成一条直线l，则在两条直线相交处绘制弧度为r的圆角。
+        //: CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds), CGRectGetMidX(bounds), CGRectGetMinY(bounds), cornerRadius);
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds), CGRectGetMidX(bounds), CGRectGetMinY(bounds), cornerRadius);
 
+        //: CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
         // 终点坐标为右下角坐标点，把绘图信息都放到路径中去,根据这些路径就构成了一块区域了
+        //: CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds));
         CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds));
-        
+
     }
     //最后一行
+    //: else if (row == lastRow)
     else if (row == lastRow)
     {
         // 初始起点为cell的左上角坐标
+        //: CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds));
         CGPathMoveToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMinY(bounds));
+        //: CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds), CGRectGetMidX(bounds), CGRectGetMaxY(bounds), cornerRadius);
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(bounds), CGRectGetMaxY(bounds), CGRectGetMidX(bounds), CGRectGetMaxY(bounds), cornerRadius);
+        //: CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMaxY(bounds), CGRectGetMaxX(bounds), CGRectGetMidY(bounds), cornerRadius);
         // 添加一条直线，终点坐标为右下角坐标点并放到路径中去
+        //: CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds));
         CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(bounds), CGRectGetMinY(bounds));
-        
+
 //        cell.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0800].CGColor;
 //        cell.layer.shadowOffset = CGSizeMake(0,3);
 //        cell.layer.shadowOpacity = 1;
 //        cell.layer.shadowRadius = 0;
-     
+
+        //: cell.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0400].CGColor;
         cell.layer.shadowColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.0400].CGColor;
+        //: cell.layer.shadowOffset = CGSizeMake(0,4);
         cell.layer.shadowOffset = CGSizeMake(0,4);
+        //: cell.layer.shadowOpacity = 1;
         cell.layer.shadowOpacity = 1;
+        //: cell.layer.shadowRadius = 16;
         cell.layer.shadowRadius = 16;
-        
-        
-        
+
+
+
+    //: }else
     }else
     {
         //添加cell的rectangle信息到path中（不包括圆角）
+        //: CGPathAddRect(pathRef, nil, bounds);
         CGPathAddRect(pathRef, nil, bounds);
     }
 
 
     // 把已经绘制好的可变图像路径赋值给图层，然后图层根据这图像path进行图像渲染render
+    //: layer.path = pathRef;
     layer.path = pathRef;
+    //: backgroundLayer.path = pathRef;
     backgroundLayer.path = pathRef;
     // 注意：但凡通过Quartz2D中带有creat/copy/retain方法创建出来的值都必须要释放
+    //: CFRelease(pathRef);
     CFRelease(pathRef);
     // 按照shape layer的path填充颜色，类似于渲染render
     // layer.fillColor = [UIColor colorWithWhite:1.f alpha:0.8f].CGColor;
+    //: layer.fillColor = [UIColor whiteColor].CGColor;
     layer.fillColor = [UIColor whiteColor].CGColor;
 //    layer.strokeColor = [UIColor colorWithRed:236/255.0 green:236/255.0 blue:236/255.0 alpha:1].CGColor;
 
     // view大小与cell一致
+    //: UIView *roundView = [[UIView alloc] initWithFrame:bounds];
     UIView *roundView = [[UIView alloc] initWithFrame:bounds];
     // 添加自定义圆角后的图层到roundView中
+    //: [roundView.layer insertSublayer:layer atIndex:0];
     [roundView.layer insertSublayer:layer atIndex:0];
+    //: roundView.backgroundColor = UIColor.clearColor;
     roundView.backgroundColor = UIColor.clearColor;
     // cell的背景view
+    //: cell.backgroundView = roundView;
     cell.backgroundView = roundView;
 
 
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
-    return bodyData.rowHeight;
+//: #pragma mark - Private
+#pragma mark - Private
+//: - (id<AnimatorUploadTopmost>)bodyDataAtIndexPath:(NSIndexPath*)indexpath{
+- (id<AnimatorUploadTopmost>)device:(NSIndexPath*)indexpath{
+    //: NSArray *sectionData = self.datas[indexpath.section];
+    NSArray *sectionData = self.galaxy[indexpath.section];
+    //: return sectionData[indexpath.row];
+    return sectionData[indexpath.row];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.datas.count;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSArray *sectionData = self.datas[section];
-    return sectionData.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
-    UITableViewCell * cell;
-    KnackWinterRetreatApplyRefined type = bodyData.type;
-    switch (type) {
-        case KnackWinterRetreatApplyRefinedCommon:
-            cell = [self builidCommonCell:bodyData indexPath:indexPath];
-            break;
-        case KnackWinterRetreatApplyRefinedRedButton:
-            cell = [self builidRedButtonCell:bodyData indexPath:indexPath];
-            break;
-        case KnackWinterRetreatApplyRefinedBlueButton:
-            cell = [self builidBlueButtonCell:bodyData ];
-            break;
-        case KnackWinterRetreatApplyRefinedTeamMember:
-            cell = [self builidTeamMemberCell:bodyData];
-            break;
-        case KnackWinterRetreatApplyRefinedSwitch:
-            cell = [self buildTeamSwitchCell:bodyData indexPath:indexPath];
-            break;
-        case KnackWinterRetreatApplyRefinedSelected:
-            cell = [self builidCommonCell:bodyData indexPath:indexPath];
-        default:
-            break;
+//: - (UITableViewCell *)buildTeamSwitchCell:(id<AnimatorUploadTopmost>)bodyData indexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)exitRiver:(id<AnimatorUploadTopmost>)bodyData traitYoung:(NSIndexPath *)indexPath
+{
+    //: NSString *identifier = [NSString stringWithFormat:@"TableSwitch%ld%ld",(long)indexPath.section,(long)indexPath.row];
+    NSString *identifier = [NSString stringWithFormat:[[BasicGlobalData sharedInstance] viewCleanDate],(long)indexPath.section,(long)indexPath.row];
+    //: TransformerAdaptCapacitiesJetRefresh *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    TransformerAdaptCapacitiesJetRefresh *cell = [self.shouldView dequeueReusableCellWithIdentifier:identifier];
+    //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //: if (!cell) {
+    if (!cell) {
+        //: cell = [[TransformerAdaptCapacitiesJetRefresh alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[TransformerAdaptCapacitiesJetRefresh alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: CGFloat left = 60.f;
+        CGFloat left = 60.f;
+        //: CGFloat height = 1.f;
+        CGFloat height = 1.f;
+        //: UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(left, cell.device_height-height, cell.device_width-90, height)];
+        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(left, cell.root-height, cell.pickFinishPresent-90, height)];
+        //: sep.backgroundColor = [UIColor colorWithRed:((float)((0xebebeb & 0xFF0000) >> 16))/255.0 green:((float)((0xebebeb & 0x00FF00) >> 8))/255.0 blue:((float)(0xebebeb & 0x0000FF))/255.0 alpha:1.0];
+        sep.backgroundColor = [UIColor colorWithRed:((float)((0xebebeb & 0xFF0000) >> 16))/255.0 green:((float)((0xebebeb & 0x00FF00) >> 8))/255.0 blue:((float)(0xebebeb & 0x0000FF))/255.0 alpha:1.0];
+        //: [cell addSubview:sep];
+        [cell addSubview:sep];
+        //: [sep setTag:10001];
+        [sep setTag:10001];
+        //: sep.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+        sep.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     }
+
+    //: UIView *sep = [cell viewWithTag:10001];
+    UIView *sep = [cell viewWithTag:10001];
+    //: sep.hidden = (indexPath.row + 1 == [self.tableView numberOfRowsInSection:indexPath.section]);
+    sep.hidden = (indexPath.row + 1 == [self.shouldView numberOfRowsInSection:indexPath.section]);
+
+    //: cell.textLabel.text = bodyData.title;
+    cell.textLabel.text = bodyData.throughout;
+    //: cell.textLabel.font = [UIFont systemFontOfSize:14];
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
+    //: cell.textLabel.textColor = [UIColor colorWithHexString:@"#2C3042"];
+    cell.textLabel.textColor = [UIColor take:[[BasicGlobalData sharedInstance] modulePageTitle]];
+    //: cell.imageView.image = bodyData.img;
+    cell.imageView.image = bodyData.man;
+
+    //: cell.switcher.on = bodyData.switchOn;
+    cell.primary.on = bodyData.theReliable;
+    //: cell.identify = bodyData.identify;
+    cell.cart = bodyData.abstractFor;
+
+    //: [self didBuildTeamSwitchCell:cell];
+    [self proud:cell];
+
+    //: return cell;
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return CGFLOAT_MIN;
+//: #pragma mark - Getter
+#pragma mark - Getter
+//: - (UITableView *)tableView {
+- (UITableView *)shouldView {
+    //: if (!_tableView) {
+    if (!_shouldView) {
+        //: _tableView = [[UITableView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width-30, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight])) style:UITableViewStyleGrouped];
+        _shouldView = [[UITableView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice delicate]), [[UIScreen mainScreen] bounds].size.width-30, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice delicate])) style:UITableViewStyleGrouped];
+//        _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//        _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        //: _tableView.backgroundColor = [UIColor clearColor];
+        _shouldView.backgroundColor = [UIColor clearColor];
+        //: _tableView.showsVerticalScrollIndicator = NO;
+        _shouldView.showsVerticalScrollIndicator = NO;
+        //: _tableView.delegate = self;
+        _shouldView.delegate = self;
+        //: _tableView.dataSource = self;
+        _shouldView.dataSource = self;
+        //: _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _shouldView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    //: return _tableView;
+    return _shouldView;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *backView = [UIView new];
-    backView.backgroundColor = [UIColor clearColor];
-    return backView;
+//: - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    //: NSArray *sectionData = self.datas[section];
+    NSArray *sectionData = self.galaxy[section];
+    //: return sectionData.count;
+    return sectionData.count;
 }
 
+//: #pragma mark - Public
+#pragma mark - Public
+//: - (void)showImagePicker:(UIImagePickerControllerSourceType)type
+- (void)norm:(UIImagePickerControllerSourceType)type
+             //: completion:(NIMTeamCardPickerHandle)completion {
+             spokeDry:(NIMTeamCardPickerHandle)completion {
+    //: _pickerSelectedBlock = [completion copy];
+    _resFirm = [completion copy];
+    //: UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    //: picker.delegate = self;
+    picker.delegate = self;
+    //: picker.sourceType = type;
+    picker.sourceType = type;
+    //: picker.allowsEditing = YES;
+    picker.allowsEditing = YES;
+    //: self.modalPresentationStyle = UIModalPresentationFullScreen;
+    self.modalPresentationStyle = UIModalPresentationFullScreen;
+    //: [self presentViewController:picker animated:YES completion:nil];
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+//: - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    //: return 16.f;
     return 16.f;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIView *backView = [UIView new];
-    backView.backgroundColor = [UIColor clearColor];
-    return backView;
+//: - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    //: return self.datas.count;
+    return self.galaxy.count;
 }
 
 
-- (UITableViewCell*)builidCommonCell:(id<AnimatorUploadTopmost>) bodyData indexPath:(NSIndexPath *)indexPath
+//: - (UIAlertAction *)makeCancelAction {
+- (UIAlertAction *)engine {
+    //: UIAlertAction *cancel = [UIAlertAction actionWithTitle:[InflateEnsureEfficiencySliderIdeal getTextWithKey:@"contact_tag_fragment_cancel"]
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:[InflateEnsureEfficiencySliderIdeal manTotalact:[[BasicGlobalData sharedInstance] widgetSurfaceTime]]
+                                                     //: style:UIAlertActionStyleCancel
+                                                     style:UIAlertActionStyleCancel
+                                                   //: handler:nil];
+                                                   handler:nil];
+    //: return cancel;
+    return cancel;
+}
+
+//: #pragma mark - 旋转处理 (iOS7)
+#pragma mark - 旋转处理 (iOS7)
+//: - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
-    NSString *identifier = [NSString stringWithFormat:@"builidCommonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
-    BriefSerializeSubmitLedge * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: NSIndexPath *reloadIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    NSIndexPath *reloadIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    //: [self.tableView reloadRowsAtIndexPaths:@[reloadIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+    [self.shouldView reloadRowsAtIndexPaths:@[reloadIndexPath] withRowAnimation:UITableViewRowAnimationNone];
+}
+
+//: - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //: [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    //: id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
+    id<AnimatorUploadTopmost> bodyData = [self device:indexPath];
+    //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
+    if ([bodyData respondsToSelector:@selector(correctChaining)] && bodyData.sequenceIn) {
+        //: return;
+        return;
+    }
+    //: if (bodyData.type == KnackWinterRetreatApplyRefinedSelected) {
+    if (bodyData.searchJob == KnackWinterRetreatApplyRefinedSelected) {
+        //: StrategyConfigIntegrity *vc = [StrategyConfigIntegrity instanceWithTitle:bodyData.title
+        StrategyConfigIntegrity *vc = [StrategyConfigIntegrity informationSurf:bodyData.throughout
+                                                                               //: items:bodyData.optionItems
+                                                                               package:bodyData.accurate
+                                                                              //: result:^(id<MockEffectPanelTense> _Nonnull item) {
+                                                                              quantityo:^(id<MockEffectPanelTense> _Nonnull item) {
+              //: if (bodyData.selectedBlock) {
+              if (bodyData.gladWithoutRoundTo) {
+                  //: bodyData.selectedBlock(item);
+                  bodyData.gladWithoutRoundTo(item);
+              }
+          //: }];
+          }];
+        //: [self.navigationController pushViewController:vc animated:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+    //: } else {
+    } else {
+        //: if ([bodyData respondsToSelector:@selector(action)]) {
+        if ([bodyData respondsToSelector:@selector(firstThinned)]) {
+            //: if (bodyData.action) {
+            if (bodyData.impressionStay) {
+                //: do {
+                do {
+                //: [self performSelector:bodyData.action];
+                [self performSelector:bodyData.impressionStay];
+                //: } while (0);
+                } while (0);
+            }
+        }
+    }
+}
+
+//: - (void)reloadTableViewData {};
+- (void)way {}
+
+//: #pragma mark - UIImagePickerControllerDelegate
+#pragma mark - UIImagePickerControllerDelegate
+//: - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    //: __weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self;
+    //: UIImage *image = info[UIImagePickerControllerEditedImage];
+    UIImage *image = info[UIImagePickerControllerEditedImage];
+    //: [picker dismissViewControllerAnimated:YES completion:^{
+    [picker dismissViewControllerAnimated:YES completion:^{
+        //: if (weakSelf.pickerSelectedBlock) {
+        if (weakSelf.resFirm) {
+            //: weakSelf.pickerSelectedBlock(image);
+            weakSelf.resFirm(image);
+        }
+        //: weakSelf.pickerSelectedBlock = nil;
+        weakSelf.resFirm = nil;
+    //: }];
+    }];
+}
+
+//: - (UIAlertController *)makeAlertSheetWithTitle:(NSString *)title
+- (UIAlertController *)minimumSubmit:(NSString *)title
+                                       //: actions:(NSArray <UIAlertAction *>*)actions {
+                                       subtle:(NSArray <UIAlertAction *>*)actions {
+
+    //: UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
+                                                                   //: message:nil
+                                                                   message:nil
+                                                            //: preferredStyle:UIAlertControllerStyleActionSheet];
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    //: [actions enumerateObjectsUsingBlock:^(UIAlertAction * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [actions enumerateObjectsUsingBlock:^(UIAlertAction * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [alert addAction:obj];
+        [alert addAction:obj];
+    //: }];
+    }];
+
+    //: [alert addAction:[self makeCancelAction]];
+    [alert addAction:[self engine]];
+    //: return alert;
+    return alert;
+}
+
+//: - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    //: UIView *backView = [UIView new];
+    UIView *backView = [UIView new];
+    //: backView.backgroundColor = [UIColor clearColor];
+    backView.backgroundColor = [UIColor clearColor];
+    //: return backView;
+    return backView;
+}
+
+//: - (void)showToastMsg:(NSString *)msg {
+- (void)attachBoard:(NSString *)msg {
+    //: if (msg) {
+    if (msg) {
+        //: [self.view makeToast:msg
+        [self.view collapse:msg
+                    //: duration:2.0
+                    disk:2.0
+                    //: position:CSToastPositionCenter];
+                    result:colorReliefResult];
+    }
+}
+
+//: - (void)reloadTableHeaderData {};
+- (void)ember {}
+
+//: - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    //: UIView *backView = [UIView new];
+    UIView *backView = [UIView new];
+    //: backView.backgroundColor = [UIColor clearColor];
+    backView.backgroundColor = [UIColor clearColor];
+    //: return backView;
+    return backView;
+}
+
+//: - (void)backAction{
+- (void)underFillRare{
+    //: [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:NO];
+}
+
+//: #pragma mark - 旋转处理 (iOS8 or above)
+#pragma mark - 旋转处理 (iOS8 or above)
+//: - (void)viewWillTransitionToSize:(CGSize)size
+- (void)viewWillTransitionToSize:(CGSize)size
+       //: withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    //: [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    //: [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> _Nonnull context) {
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> _Nonnull context) {
+        //: NSIndexPath *reloadIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        NSIndexPath *reloadIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        //: [self.tableView reloadRowsAtIndexPaths:@[reloadIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.shouldView reloadRowsAtIndexPaths:@[reloadIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    //: } completion:nil];
+    } completion:nil];
+}
+
+//: #pragma mark - virtual function
+#pragma mark - virtual function
+//: - (UIView *)didGetHeaderView { return [UIView new]; }
+- (UIView *)finish { return [UIView new]; }
+
+//: - (UITableViewCell*)builidCommonCell:(id<AnimatorUploadTopmost>) bodyData indexPath:(NSIndexPath *)indexPath
+- (UITableViewCell*)additionalPanel:(id<AnimatorUploadTopmost>) bodyData unique:(NSIndexPath *)indexPath
+{
+    //: NSString *identifier = [NSString stringWithFormat:@"builidCommonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
+    NSString *identifier = [NSString stringWithFormat:[[BasicGlobalData sharedInstance] networkAppearanceSpeedMessage],(long)indexPath.section,(long)indexPath.row];
+    //: BriefSerializeSubmitLedge * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    BriefSerializeSubmitLedge * cell = [self.shouldView dequeueReusableCellWithIdentifier:identifier];
+    //: if (!cell) {
     if (!cell) {
+        //: cell = [[BriefSerializeSubmitLedge alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[BriefSerializeSubmitLedge alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        CGFloat left   = 60.f;
+        //: CGFloat left = 60.f;
+        CGFloat left = 60.f;
+        //: CGFloat height = 1.f;
         CGFloat height = 1.f;
-        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(left, cell.device_height-height, cell.device_width-90, height)];
-        sep.backgroundColor = NEEKIT_UIColorFromRGB(0xebebeb);
+        //: UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(left, cell.device_height-height, cell.device_width-90, height)];
+        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(left, cell.root-height, cell.pickFinishPresent-90, height)];
+        //: sep.backgroundColor = [UIColor colorWithRed:((float)((0xebebeb & 0xFF0000) >> 16))/255.0 green:((float)((0xebebeb & 0x00FF00) >> 8))/255.0 blue:((float)(0xebebeb & 0x0000FF))/255.0 alpha:1.0];
+        sep.backgroundColor = [UIColor colorWithRed:((float)((0xebebeb & 0xFF0000) >> 16))/255.0 green:((float)((0xebebeb & 0x00FF00) >> 8))/255.0 blue:((float)(0xebebeb & 0x0000FF))/255.0 alpha:1.0];
+        //: [cell addSubview:sep];
         [cell addSubview:sep];
-        [sep setTag:TableSepTag];
+        //: [sep setTag:10001];
+        [sep setTag:10001];
+        //: sep.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         sep.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     }
-    
-    UIView *sep = [cell viewWithTag:TableSepTag];
-    sep.hidden = (indexPath.row + 1 == [self.tableView numberOfRowsInSection:indexPath.section]);
-    
+
+    //: UIView *sep = [cell viewWithTag:10001];
+    UIView *sep = [cell viewWithTag:10001];
+    //: sep.hidden = (indexPath.row + 1 == [self.tableView numberOfRowsInSection:indexPath.section]);
+    sep.hidden = (indexPath.row + 1 == [self.shouldView numberOfRowsInSection:indexPath.section]);
+
+    //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.titleLabel.text = bodyData.title;
-    cell.iconImageView.image = bodyData.img;
+    //: cell.titleLabel.text = bodyData.title;
+    cell.remoteSpeed.text = bodyData.throughout;
+    //: cell.iconImageView.image = bodyData.img;
+    cell.be.image = bodyData.man;
 //    cell.contentLabel.text = bodyData.subTitle;
 //    if ([bodyData respondsToSelector:@selector(subTitle)]) {
 //        cell.contentLabel.text = bodyData.subTitle ?: LangKey(@"未设置");
 //    }
-    
+
+    //: return cell;
     return cell;
-    
+
 //    UITableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:TableCellReuseId];
 //    if (!cell) {
 //        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableCellReuseId];
@@ -352,196 +977,42 @@
 //    }
 //
 //    return cell;
-    
+
 }
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
-    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-        return;
-    }
-    if (bodyData.type == KnackWinterRetreatApplyRefinedSelected) {
-        StrategyConfigIntegrity *vc = [StrategyConfigIntegrity instanceWithTitle:bodyData.title
-                                                                               items:bodyData.optionItems
-                                                                              result:^(id<MockEffectPanelTense>  _Nonnull item) {
-              if (bodyData.selectedBlock) {
-                  bodyData.selectedBlock(item);
-              }
-          }];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else {
-        if ([bodyData respondsToSelector:@selector(action)]) {
-            if (bodyData.action) {
-                NEEKIT_SuppressPerformSelectorLeakWarning([self performSelector:bodyData.action]);
-            }
-        }
-    }
-}
-
-- (UITableViewCell*)builidRedButtonCell:(id<AnimatorUploadTopmost>) bodyData indexPath:(NSIndexPath *)indexPath{
-//    tableButtonCell
-    NSString *identifier = [NSString stringWithFormat:@"tableButtonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
-    MatchFormatError * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[MatchFormatError alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.button.style = AlongsideJustWishStyleRed;
-    [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    return cell;
-}
-
-- (UITableViewCell*)builidBlueButtonCell:(id<AnimatorUploadTopmost>) bodyData{
-    MatchFormatError * cell = [self.tableView dequeueReusableCellWithIdentifier:TableButtonCellReuseId];
-    if (!cell) {
-        cell = [[MatchFormatError alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableButtonCellReuseId];
-    }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.button.style = AlongsideJustWishStyleBlue;
-    [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    return cell;
-}
-
-- (UITableViewCell*)builidTeamMemberCell:(id<AnimatorUploadTopmost>) bodyData{
-    VesselInteractorResult * cell = [self.tableView dequeueReusableCellWithIdentifier:TableMemberCellReuseId];
-    if (!cell) {
-        cell = [[VesselInteractorResult alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableMemberCellReuseId];
-    }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.font = [UIFont systemFontOfSize:14];
-    cell.textLabel.textColor = [UIColor blackColor];
-
-//    cell.imageView.image = bodyData.img;
-
-    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }else{
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
-
-    [self didBuildTeamMemberCell:cell];
-
-    return cell;
-//    UITableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:TableMemberCellReuseId];
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableMemberCellReuseId];
-//    }
-//    
-//    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-//    cell.textLabel.font = [UIFont systemFontOfSize:14];
-//    cell.textLabel.textColor = [UIColor blackColor];
-//    
-//    cell.imageView.image = bodyData.img;
-//    
-//    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-//        cell.accessoryType = UITableViewCellAccessoryNone;
-//    }else{
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-//    }
-//    
-//    return cell;
-}
-
-- (UITableViewCell *)buildTeamSwitchCell:(id<AnimatorUploadTopmost>)bodyData indexPath:(NSIndexPath *)indexPath
-{
-    NSString *identifier = [NSString stringWithFormat:@"TableSwitch%ld%ld",(long)indexPath.section,(long)indexPath.row];
-    TransformerAdaptCapacitiesJetRefresh *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    if (!cell) {
-        cell = [[TransformerAdaptCapacitiesJetRefresh alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        CGFloat left   = 60.f;
-        CGFloat height = 1.f;
-        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(left, cell.device_height-height, cell.device_width-90, height)];
-        sep.backgroundColor = NEEKIT_UIColorFromRGB(0xebebeb);
-        [cell addSubview:sep];
-        [sep setTag:TableSepTag];
-        sep.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-    }
-    
-    UIView *sep = [cell viewWithTag:TableSepTag];
-    sep.hidden = (indexPath.row + 1 == [self.tableView numberOfRowsInSection:indexPath.section]);
-    
-    cell.textLabel.text = bodyData.title;
-    cell.textLabel.font = [UIFont systemFontOfSize:14];
-    cell.textLabel.textColor = kTextColor_2c3042;
-    cell.imageView.image = bodyData.img;
-    
-    cell.switcher.on = bodyData.switchOn;
-    cell.identify = bodyData.identify;
-    
-    [self didBuildTeamSwitchCell:cell];
-    
-    return cell;
-}
-
-#pragma mark - UIImagePickerControllerDelegate
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    __weak typeof(self) weakSelf = self;
-    UIImage *image = info[UIImagePickerControllerEditedImage];
-    [picker dismissViewControllerAnimated:YES completion:^{
-        if (weakSelf.pickerSelectedBlock) {
-            weakSelf.pickerSelectedBlock(image);
-        }
-        weakSelf.pickerSelectedBlock = nil;
-    }];
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-    [picker dismissViewControllerAnimated:YES completion:nil];
-}
-
+//: #pragma mark - Setter
 #pragma mark - Setter
-- (void)setDatas:(NSArray<NSArray<AttachElevateBlueprint *> *> *)datas {
-    _datas = datas;
-    [_tableView reloadData];
+//: - (void)setDatas:(NSArray<NSArray<AttachElevateBlueprint *> *> *)datas {
+- (void)setGalaxy:(NSArray<NSArray<AttachElevateBlueprint *> *> *)datas {
+    //: _datas = datas;
+    _galaxy = datas;
+    //: [_tableView reloadData];
+    [_shouldView reloadData];
 }
+//: - (void)didBuildTeamSwitchCell:(TransformerAdaptCapacitiesJetRefresh *)cell {}
+- (void)proud:(TransformerAdaptCapacitiesJetRefresh *)cell {}
+;
 
-#pragma mark - 旋转处理 (iOS7)
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
-    NSIndexPath *reloadIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView reloadRowsAtIndexPaths:@[reloadIndexPath] withRowAnimation:UITableViewRowAnimationNone];
-}
+//: - (void)reloadOtherData {};
+- (void)tween {};
 
-#pragma mark - 旋转处理 (iOS8 or above)
-- (void)viewWillTransitionToSize:(CGSize)size
-       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
-{
-    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-        NSIndexPath *reloadIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-        [self.tableView reloadRowsAtIndexPaths:@[reloadIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    } completion:nil];
-}
-
-#pragma mark - Getter
-- (UITableView *)tableView {
-    if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(15, SCREEN_TOP_HEIGHT, SCREEN_WIDTH-30, SCREEN_HEIGHT-SCREEN_TOP_HEIGHT) style:UITableViewStyleGrouped];
-//        _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-//        _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-        _tableView.backgroundColor = [UIColor clearColor];
-        _tableView.showsVerticalScrollIndicator = NO;
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//: - (UITableViewCell*)builidBlueButtonCell:(id<AnimatorUploadTopmost>) bodyData{
+- (UITableViewCell*)cropSmooth:(id<AnimatorUploadTopmost>) bodyData{
+    //: MatchFormatError * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableButtonCell"];
+    MatchFormatError * cell = [self.shouldView dequeueReusableCellWithIdentifier:[[BasicGlobalData sharedInstance] appSignThroughMessage]];
+    //: if (!cell) {
+    if (!cell) {
+        //: cell = [[MatchFormatError alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableButtonCell"];
+        cell = [[MatchFormatError alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[[BasicGlobalData sharedInstance] appSignThroughMessage]];
     }
-    return _tableView;
-}
+    //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //: cell.button.style = AlongsideJustWishStyleBlue;
+    cell.rootStable.request = AlongsideJustWishStyleBlue;
+    //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
+    [cell.rootStable setTitle:bodyData.throughout forState:UIControlStateNormal];
+    //: return cell;
+    return cell;
+};
 
-#pragma mark - virtual function
-- (UIView *)didGetHeaderView { return [UIView new]; }
-
-- (void)didBuildTeamMemberCell:(VesselInteractorResult *)cell {}
-
-- (void)didBuildTeamSwitchCell:(TransformerAdaptCapacitiesJetRefresh *)cell {}
-
-- (void)reloadTableViewData {};
-
-- (void)reloadTableHeaderData {};
-
-- (void)reloadOtherData {};
-
+//: @end
 @end

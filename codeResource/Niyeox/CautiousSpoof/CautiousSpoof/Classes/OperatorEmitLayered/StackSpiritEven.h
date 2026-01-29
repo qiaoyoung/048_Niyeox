@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  StackSpiritEven.h
 //  NIM
@@ -6,13 +8,18 @@
 //  Copyright © 2019 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface StackSpiritEven : NSObject <NIMDatabaseHandleExceptionProtocol>
 @interface StackSpiritEven : NSObject <NIMDatabaseHandleExceptionProtocol>
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

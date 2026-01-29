@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // UIRefreshControl+AFNetworking.m
 //
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
@@ -20,19 +22,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
+//: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
-
-#if TARGET_OS_IOS
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  This category adds methods to the UIKit framework's `UIRefreshControl` class. The methods in this category provide support for automatically beginning and ending refreshing depending on the loading state of a session task.
  */
+//: @interface UIRefreshControl (AFNetworking)
 @interface UIRefreshControl (AFNetworking)
 
 ///-----------------------------------
@@ -44,10 +48,11 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param task The task. If `nil`, automatic updating from any previously specified operation will be disabled.
  */
-- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
+//: - (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task;
+- (void)setEmotion:(NSURLSessionTask *)task;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
-
-#endif

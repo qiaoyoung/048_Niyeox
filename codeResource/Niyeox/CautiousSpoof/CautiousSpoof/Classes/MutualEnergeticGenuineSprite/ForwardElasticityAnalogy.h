@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ForwardElasticityAnalogy.h
 // ViewAngleFind
@@ -6,133 +8,179 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "GridMixer.h"
 #import "GridMixer.h"
+//: #import "DurationWeaveViaRepaint.h"
 #import "DurationWeaveViaRepaint.h"
 
 /**
  *  联系人选择器数据回调
  */
+//: typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *titles);
 typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *titles);
 
+//: @protocol ForwardElasticityAnalogy <NSObject>
 @protocol ForwardElasticityAnalogy <NSObject>
 
+//: @optional
 @optional
 
 /**
  *  联系人选择器标题
  */
-- (NSString *)title;
+//: - (NSString *)title;
+- (NSString *)tillFile;
 
 /**
  *  最多选择的人数
  */
-- (NSInteger)maxSelectedNum;
+//: - (NSInteger)maxSelectedNum;
+- (NSInteger)paintVine;
 
 /**
  *  超过最多选择人数时的提示
  */
-- (NSString *)selectedOverFlowTip;
+//: - (NSString *)selectedOverFlowTip;
+- (NSString *)fullGrain;
 
 /**
  *  默认已经勾选的人或群组
  */
-- (NSArray *)alreadySelectedMemberId;
+//: - (NSArray *)alreadySelectedMemberId;
+- (NSArray *)outline;
 
 /**
  *  需要过滤的人或群组id
  */
-- (NSArray *)filterIds;
+//: - (NSArray *)filterIds;
+- (NSArray *)external;
 
 /**
  *  当数据源类型为群组时，需要设置的群id
  *
  *  @return 群id
  */
-- (NSString *)teamId;
+//: - (NSString *)teamId;
+- (NSString *)translate;
 
 /**
  *  显示具体选择人数
  */
-- (BOOL)showSelectDetail;
+//: - (BOOL)showSelectDetail;
+- (BOOL)magnet;
 
 /**
  *  提供联系人选择期的昵称，title信息
  */
-- (void)getContactData:(NIMContactDataProviderHandler)handler;
+//: - (void)getContactData:(NIMContactDataProviderHandler)handler;
+- (void)rowBy:(NIMContactDataProviderHandler)handler;
 
 /**
  *  提供联系人id、显示名、头像等信息
  */
-- (GridMixer *)getInfoById:(NSString *)selectedId;
+//: - (GridMixer *)getInfoById:(NSString *)selectedId;
+- (GridMixer *)starting:(NSString *)selectedId;
 
 /// 是否显示头部的群头像 群名字headerview
-- (BOOL)showSelectHeaderview;
+//: - (BOOL)showSelectHeaderview;
+- (BOOL)duringGray;
 
+//: @end
 @end
 
 /**
  *  内置配置-选择好友
  */
+//: @interface ImageStreamInvokeExpose : NSObject<ForwardElasticityAnalogy>
 @interface ImageStreamInvokeExpose : NSObject<ForwardElasticityAnalogy>
 
-@property (nonatomic,assign) BOOL needMutiSelected;
+//: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+@property (nonatomic,copy) NSArray *uponBolding;
 
-@property (nonatomic,assign) NSInteger maxSelectMemberCount;
+//: @property (nonatomic,copy) NSArray *filterIds;
+@property (nonatomic,copy) NSArray *mFactorsing;
 
-@property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+//: @property (nonatomic,assign) NSInteger maxSelectMemberCount;
+@property (nonatomic,assign) NSInteger accelerate;
 
-@property (nonatomic,copy) NSArray *filterIds;
+//: @property (nonatomic,assign) BOOL showSelectDetail;
+@property (nonatomic,assign) BOOL playerKey;
 
-@property (nonatomic,assign) BOOL showSelectDetail;
+//: @property (nonatomic,assign) BOOL showSelectHeaderview;
+@property (nonatomic,assign) BOOL cart;
 
-@property (nonatomic,assign) BOOL showSelectHeaderview;
+//: @property (nonatomic,assign) BOOL needMutiSelected;
+@property (nonatomic,assign) BOOL envelope;
 
+//: @end
 @end
 
 /**
  *  内置配置-选择群成员
  */
+//: @interface FixAdapter : NSObject<ForwardElasticityAnalogy>
 @interface FixAdapter : NSObject<ForwardElasticityAnalogy>
 
-@property (nonatomic,copy) NSString *teamId;
+//: @property (nonatomic,copy) NSString *teamId;
+@property (nonatomic,copy) NSString *arc;
 
-@property (nonatomic,strong) NIMSession *session;
+//: @property (nonatomic,copy) NSArray *filterIds;
+@property (nonatomic,copy) NSArray *mFactorsing;
 
-@property (nonatomic,assign) OfDependencyProjectorConvolutionEqual teamType;
+//: @property (nonatomic,strong) NIMSession *session;
+@property (nonatomic,strong) NIMSession *leave;
 
-@property (nonatomic,assign) BOOL needMutiSelected;
+//: @property (nonatomic,assign) BOOL needMutiSelected;
+@property (nonatomic,assign) BOOL field;
 
-@property (nonatomic,assign) NSInteger maxSelectMemberCount;
+//: @property (nonatomic,assign) BOOL showSelectDetail;
+@property (nonatomic,assign) BOOL selectedReplaceTableCollect;
 
-@property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+//: @property (nonatomic,assign) NSInteger maxSelectMemberCount;
+@property (nonatomic,assign) NSInteger transmitSecure;
 
-@property (nonatomic,copy) NSArray *filterIds;
+//: @property (nonatomic,assign) OfDependencyProjectorConvolutionEqual teamType;
+@property (nonatomic,assign) OfDependencyProjectorConvolutionEqual arrowParent;
 
-@property (nonatomic,assign) BOOL showSelectDetail;
+//: @property (nonatomic,assign) BOOL showSelectHeaderview;
+@property (nonatomic,assign) BOOL delicate;
 
-@property (nonatomic,assign) BOOL showSelectHeaderview;
+//: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+@property (nonatomic,copy) NSArray *uponBolding;
 
+//: @end
 @end
 
 
 /**
  *  内置配置-选择群
  */
+//: @interface ToneNavigateSinkUpdate : NSObject<ForwardElasticityAnalogy>
 @interface ToneNavigateSinkUpdate : NSObject<ForwardElasticityAnalogy>
 
-@property (nonatomic,assign) OfDependencyProjectorConvolutionEqual teamType;
+//: @property (nonatomic,copy) NSArray *filterIds;
+@property (nonatomic,copy) NSArray *mFactorsing;
 
-@property (nonatomic,assign) BOOL needMutiSelected;
+//: @property (nonatomic,assign) NSInteger maxSelectMemberCount;
+@property (nonatomic,assign) NSInteger givenStroke;
 
-@property (nonatomic,assign) NSInteger maxSelectMemberCount;
+//: @property (nonatomic,assign) OfDependencyProjectorConvolutionEqual teamType;
+@property (nonatomic,assign) OfDependencyProjectorConvolutionEqual humor;
 
-@property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+//: @property (nonatomic,assign) BOOL needMutiSelected;
+@property (nonatomic,assign) BOOL flex;
 
-@property (nonatomic,copy) NSArray *filterIds;
+//: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
+@property (nonatomic,copy) NSArray *uponBolding;
 
-@property (nonatomic,assign) BOOL showSelectDetail;
+//: @property (nonatomic,assign) BOOL showSelectHeaderview;
+@property (nonatomic,assign) BOOL terrain;
 
-@property (nonatomic,assign) BOOL showSelectHeaderview;
+//: @property (nonatomic,assign) BOOL showSelectDetail;
+@property (nonatomic,assign) BOOL modeTitle;
 
+//: @end
 @end

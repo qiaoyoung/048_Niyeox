@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AccentBelowSyncVerse.h
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -21,53 +23,65 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
+//: #import "ByEasyRefreshConstants.h"
 #import "ByEasyRefreshConstants.h"
+//: #import "RobustReloadLatticeBegin.h"
 #import "RobustReloadLatticeBegin.h"
-
 
 /**
  BarButtonItem with title text.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface AccentBelowSyncVerse : RobustReloadLatticeBegin
 @interface AccentBelowSyncVerse : RobustReloadLatticeBegin
 
 /**
  Font to be used in bar button. Default is (system font 12.0 bold).
  */
-@property(nullable, nonatomic, strong) UIFont *titleFont;
+/**
+ selectableTitleColor to be used for displaying button text when button is enabled.
+ */
+//: @property(nullable, nonatomic, strong) UIColor *selectableTitleColor;
+@property(nullable, nonatomic, strong) UIColor *picture;
+
+//: @property(nullable, nonatomic, strong) UIFont *titleFont;
+@property(nullable, nonatomic, strong) UIFont *deviceGraph;
 
 /**
  titleColor to be used for displaying button text when displaying title (disabled state).
  */
-@property(nullable, nonatomic, strong) UIColor *titleColor;
+//: @property(nullable, nonatomic, strong) UIColor *titleColor;
+@property(nullable, nonatomic, strong) UIColor *exotic;
 
 /**
- selectableTitleColor to be used for displaying button text when button is enabled.
+ Unavailable. Please use initWithFrame:title: method
  */
-@property(nullable, nonatomic, strong) UIColor *selectableTitleColor;
+//: -(nonnull instancetype)init UNAVAILABLE_ATTRIBUTE;
+-(nonnull instancetype)init UNAVAILABLE_ATTRIBUTE;
+
+/**
+ Unavailable. Please use initWithFrame:title: method
+ */
+//: + (nonnull instancetype)new UNAVAILABLE_ATTRIBUTE;
++ (nonnull instancetype)new UNAVAILABLE_ATTRIBUTE;
 
 /**
  Initialize with frame and title.
  
  @param title Title of barButtonItem.
  */
--(nonnull instancetype)initWithTitle:(nullable NSString *)title NS_DESIGNATED_INITIALIZER;
+//: -(nonnull instancetype)initWithTitle:(nullable NSString *)title NS_DESIGNATED_INITIALIZER;
+-(nonnull instancetype)initWithSequence:(nullable NSString *)title NS_DESIGNATED_INITIALIZER;
 
 /**
  Unavailable. Please use initWithFrame:title: method
  */
--(nonnull instancetype)init NS_UNAVAILABLE;
+//: -(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder UNAVAILABLE_ATTRIBUTE;
+-(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder UNAVAILABLE_ATTRIBUTE;
 
-/**
- Unavailable. Please use initWithFrame:title: method
- */
--(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder NS_UNAVAILABLE;
-
-/**
- Unavailable. Please use initWithFrame:title: method
- */
-+ (nonnull instancetype)new NS_UNAVAILABLE;
-
+//: @end
 @end

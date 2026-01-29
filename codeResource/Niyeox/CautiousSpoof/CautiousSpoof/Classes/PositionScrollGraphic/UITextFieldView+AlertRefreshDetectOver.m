@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UITextFieldView+AlertRefreshDetectOver.m
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -21,64 +23,90 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
+//: #import "UITextFieldView+AlertRefreshDetectOver.h"
 #import "UITextFieldView+AlertRefreshDetectOver.h"
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UIView (AlertRefreshDetectOver)
 @implementation UIView (AlertRefreshDetectOver)
 
--(void)setKeyboardDistanceFromTextField:(CGFloat)keyboardDistanceFromTextField
+//: -(void)setKeyboardDistanceFromTextField:(CGFloat)keyboardDistanceFromTextField
+-(void)setPersonSparkses:(CGFloat)keyboardDistanceFromTextField
 {
     //Can't be less than zero. Minimum is zero.
-    keyboardDistanceFromTextField = MAX(keyboardDistanceFromTextField, 0);
-    
-    objc_setAssociatedObject(self, @selector(keyboardDistanceFromTextField), @(keyboardDistanceFromTextField), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    //: keyboardDistanceFromTextField = ((keyboardDistanceFromTextField) > (0) ? (keyboardDistanceFromTextField) : (0));
+    keyboardDistanceFromTextField = ((keyboardDistanceFromTextField) > (0) ? (keyboardDistanceFromTextField) : (0));
+
+    //: objc_setAssociatedObject(self, @selector(keyboardDistanceFromTextField), @(keyboardDistanceFromTextField), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(personSparkses), @(keyboardDistanceFromTextField), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(CGFloat)keyboardDistanceFromTextField
+//: -(BOOL)ignoreSwitchingByNextPrevious
+-(BOOL)strikeBelowwed
 {
-    NSNumber *keyboardDistanceFromTextField = objc_getAssociatedObject(self, @selector(keyboardDistanceFromTextField));
-    
-    return (keyboardDistanceFromTextField != nil)?[keyboardDistanceFromTextField floatValue]:kIQUseDefaultKeyboardDistance;
-}
+    //: NSNumber *ignoreSwitchingByNextPrevious = objc_getAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious));
+    NSNumber *ignoreSwitchingByNextPrevious = objc_getAssociatedObject(self, @selector(strikeBelowwed));
 
--(void)setIgnoreSwitchingByNextPrevious:(BOOL)ignoreSwitchingByNextPrevious
-{
-    objc_setAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious), @(ignoreSwitchingByNextPrevious), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
--(BOOL)ignoreSwitchingByNextPrevious
-{
-    NSNumber *ignoreSwitchingByNextPrevious = objc_getAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious));
-    
+    //: return [ignoreSwitchingByNextPrevious boolValue];
     return [ignoreSwitchingByNextPrevious boolValue];
 }
 
--(void)setEnableMode:(AggregatorZealousVerify)enableMode
+//: -(AggregatorZealousVerify)shouldResignOnTouchOutsideMode
+-(AggregatorZealousVerify)flipLongs
 {
-    objc_setAssociatedObject(self, @selector(enableMode), @(enableMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
+    //: NSNumber *shouldResignOnTouchOutsideMode = objc_getAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode));
+    NSNumber *shouldResignOnTouchOutsideMode = objc_getAssociatedObject(self, @selector(flipLongs));
 
--(AggregatorZealousVerify)enableMode
-{
-    NSNumber *enableMode = objc_getAssociatedObject(self, @selector(enableMode));
-    
-    return [enableMode unsignedIntegerValue];
-}
-
--(void)setShouldResignOnTouchOutsideMode:(AggregatorZealousVerify)shouldResignOnTouchOutsideMode
-{
-    objc_setAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode), @(shouldResignOnTouchOutsideMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
--(AggregatorZealousVerify)shouldResignOnTouchOutsideMode
-{
-    NSNumber *shouldResignOnTouchOutsideMode = objc_getAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode));
-    
+    //: return [shouldResignOnTouchOutsideMode unsignedIntegerValue];
     return [shouldResignOnTouchOutsideMode unsignedIntegerValue];
 }
 
+//: -(CGFloat)keyboardDistanceFromTextField
+-(CGFloat)personSparkses
+{
+    //: NSNumber *keyboardDistanceFromTextField = objc_getAssociatedObject(self, @selector(keyboardDistanceFromTextField));
+    NSNumber *keyboardDistanceFromTextField = objc_getAssociatedObject(self, @selector(personSparkses));
+
+    //: return (keyboardDistanceFromTextField != nil)?[keyboardDistanceFromTextField floatValue]:kIQUseDefaultKeyboardDistance;
+    return (keyboardDistanceFromTextField != nil)?[keyboardDistanceFromTextField floatValue]:colorBookFormat(nil);
+}
+
+//: -(void)setIgnoreSwitchingByNextPrevious:(BOOL)ignoreSwitchingByNextPrevious
+-(void)setStrikeBelowwed:(BOOL)ignoreSwitchingByNextPrevious
+{
+    //: objc_setAssociatedObject(self, @selector(ignoreSwitchingByNextPrevious), @(ignoreSwitchingByNextPrevious), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(strikeBelowwed), @(ignoreSwitchingByNextPrevious), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: -(AggregatorZealousVerify)enableMode
+-(AggregatorZealousVerify)rangeNeed
+{
+    //: NSNumber *enableMode = objc_getAssociatedObject(self, @selector(enableMode));
+    NSNumber *enableMode = objc_getAssociatedObject(self, @selector(rangeNeed));
+
+    //: return [enableMode unsignedIntegerValue];
+    return [enableMode unsignedIntegerValue];
+}
+
+//: -(void)setShouldResignOnTouchOutsideMode:(AggregatorZealousVerify)shouldResignOnTouchOutsideMode
+-(void)setFlipLongs:(AggregatorZealousVerify)shouldResignOnTouchOutsideMode
+{
+    //: objc_setAssociatedObject(self, @selector(shouldResignOnTouchOutsideMode), @(shouldResignOnTouchOutsideMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(flipLongs), @(shouldResignOnTouchOutsideMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: -(void)setEnableMode:(AggregatorZealousVerify)enableMode
+-(void)setRangeNeed:(AggregatorZealousVerify)enableMode
+{
+    //: objc_setAssociatedObject(self, @selector(enableMode), @(enableMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(rangeNeed), @(enableMode), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: @end
 @end
 
 ///------------------------------------
@@ -88,5 +116,11 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 /**
  Uses default keyboard distance for textField.
  */
-CGFloat const kIQUseDefaultKeyboardDistance = CGFLOAT_MAX;
+//: CGFloat const kIQUseDefaultKeyboardDistance = 1.7976931348623157e+308;
 
+CGFloat const colorBookFormat (NSString *value) {
+    if (value) {
+        return  1.7976931348623157e+308;
+    }
+    return  1.7976931348623157e+308;
+};

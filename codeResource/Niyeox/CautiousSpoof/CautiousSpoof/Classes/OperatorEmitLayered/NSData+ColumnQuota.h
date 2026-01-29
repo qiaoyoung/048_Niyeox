@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSData+ColumnQuota.h
 //  NIM
@@ -6,15 +8,24 @@
 //  Copyright (c) 2015 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NSData (ColumnQuota)
 @interface NSData (ColumnQuota)
-- (NSString *)MD5String;
+//: - (NSData *)aes256EncryptWithKey:(NSString *)key vector:(NSString *)vector;
+- (NSData *)can:(NSString *)key name:(NSString *)vector;
 
-- (NSData *)aes256EncryptWithKey:(NSString *)key vector:(NSString *)vector;
-- (NSData *)aes256DecryptWithKey:(NSString *)key vector:(NSString *)vector;
+//: - (NSData *)rc4EncryptWithKey:(NSString *)key;
+- (NSData *)motion:(NSString *)key;
+//: - (NSString *)MD5String;
+- (NSString *)globe;
 
-- (NSData *)rc4EncryptWithKey:(NSString *)key;
-- (NSData *)rc4DecryptWithKey:(NSString *)key;
+//: - (NSData *)aes256DecryptWithKey:(NSString *)key vector:(NSString *)vector;
+- (NSData *)extended:(NSString *)key improvedFreshLikely:(NSString *)vector;
+//: - (NSData *)rc4DecryptWithKey:(NSString *)key;
+- (NSData *)pastPositionAnalyze:(NSString *)key;
 
+//: @end
 @end

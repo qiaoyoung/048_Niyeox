@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  MatchSelfMaskElastic.h
 // ViewAngleFind
@@ -6,10 +8,19 @@
 //  Copyright © 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+
+//: typedef NS_ENUM(NSInteger,FoldWayPaint){
 typedef NS_ENUM(NSInteger,FoldWayPaint){
-    FoldWayPaintVoice,         //录音文本切换按钮
+    //: FoldWayPaintVoice, 
+    FoldWayPaintVoice, //录音文本切换按钮
+    //: FoldWayPaintTextAndRecord, 
     FoldWayPaintTextAndRecord, //文本输入框或录音按钮
-    FoldWayPaintEmoticon,      //表情贴图
-    FoldWayPaintMore,          //更多菜单
-    FoldWayPaintSend,          //发送
+    //: FoldWayPaintEmoticon, 
+    FoldWayPaintEmoticon, //表情贴图
+    //: FoldWayPaintMore, 
+    FoldWayPaintMore, //更多菜单
+    //: FoldWayPaintSend, 
+    FoldWayPaintSend, //发送
+//: };
 };

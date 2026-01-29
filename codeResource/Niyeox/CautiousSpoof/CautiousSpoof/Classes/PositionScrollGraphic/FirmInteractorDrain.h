@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMInputAtManager.h
 // ViewAngleFind
@@ -6,31 +8,42 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define NIMInputAtStartChar  @"@"
-#define NIMInputAtEndChar    @"\u2004"
-
+//: @interface CoordinatorScanFrequencyCondenseChallenge : NSObject
 @interface CoordinatorScanFrequencyCondenseChallenge : NSObject
 
-@property (nonatomic,copy) NSString *name;
+//: @property (nonatomic,assign) NSRange range;
+@property (nonatomic,assign) NSRange outerIcon;
 
-@property (nonatomic,copy) NSString *uid;
+//: @property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *across;
 
-@property (nonatomic,assign) NSRange range;
+//: @property (nonatomic,copy) NSString *uid;
+@property (nonatomic,copy) NSString *river;
 
+//: @end
 @end
 
+//: @interface FirmInteractorDrain : NSObject
 @interface FirmInteractorDrain : NSObject
 
-- (NSArray *)allAtUid:(NSString *)sendText;
+//: - (NSArray *)allAtUid:(NSString *)sendText;
+- (NSArray *)beforeRoyal:(NSString *)sendText;
 
-- (void)clean;
+//: - (CoordinatorScanFrequencyCondenseChallenge *)removeName:(NSString *)name;
+- (CoordinatorScanFrequencyCondenseChallenge *)peaceful:(NSString *)name;
 
-- (void)addAtItem:(CoordinatorScanFrequencyCondenseChallenge *)item;
+//: - (void)clean;
+- (void)pop;
 
-- (CoordinatorScanFrequencyCondenseChallenge *)item:(NSString *)name;
+//: - (void)addAtItem:(CoordinatorScanFrequencyCondenseChallenge *)item;
+- (void)elegantEmpty:(CoordinatorScanFrequencyCondenseChallenge *)item;
 
-- (CoordinatorScanFrequencyCondenseChallenge *)removeName:(NSString *)name;
+//: - (CoordinatorScanFrequencyCondenseChallenge *)item:(NSString *)name;
+- (CoordinatorScanFrequencyCondenseChallenge *)more:(NSString *)name;
 
+//: @end
 @end

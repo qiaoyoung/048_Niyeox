@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CompareQualityDivider.h
 //  NIM
@@ -6,12 +8,18 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @class SleekPivotSignal;
 @class SleekPivotSignal;
 
+//: @interface CompareQualityDivider : NSObject
 @interface CompareQualityDivider : NSObject
 
-+ (instancetype)sharedCenter;
-- (void)start;
+//: + (instancetype)sharedCenter;
++ (instancetype)gender;
+//: - (void)start;
+- (void)worth;
 
+//: @end
 @end

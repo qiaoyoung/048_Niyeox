@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // UIKit+AFNetworking.h
 //
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
@@ -19,25 +21,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
+//: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
 
-#ifndef _UIKIT_AFNETWORKING_
-    #define _UIKIT_AFNETWORKING_
-
-#if TARGET_OS_IOS || TARGET_OS_TV
-    #import "AFAutoPurgingImageCache.h"
-    #import "AFImageDownloader.h"
-    #import "UIActivityIndicatorView+AFNetworking.h"
-    #import "UIButton+AFNetworking.h"
-    #import "UIImageView+AFNetworking.h"
-    #import "UIProgressView+AFNetworking.h"
-#endif
-
-#if TARGET_OS_IOS
-    #import "AFNetworkActivityIndicatorManager.h"
-    #import "UIRefreshControl+AFNetworking.h"
-    #import "WKWebView+AFNetworking.h"
-#endif
-
-#endif /* _UIKIT_AFNETWORKING_ */
+// __M_A_C_R_O__

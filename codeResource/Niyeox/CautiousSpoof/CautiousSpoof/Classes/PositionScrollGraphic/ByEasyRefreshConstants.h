@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ByEasyRefreshConstants.h
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -20,15 +22,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
-#ifndef ByEasyRefreshConstants_h
-#define ByEasyRefreshConstants_h
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
 ///-----------------------------------
 /// @name GraphSunTrimManageBehavior
 ///-----------------------------------
+
+// __M_A_C_R_O__
 
 /**
  `GraphSunTrimBySubviews`
@@ -40,10 +40,15 @@
  `GraphSunTrimByPosition`
  Creates Toolbar according to the y,x position of textField in it's superview coordinate.
  */
+//: typedef NS_ENUM(NSInteger, GraphSunTrimManageBehavior) {
 typedef NS_ENUM(NSInteger, GraphSunTrimManageBehavior) {
+    //: GraphSunTrimBySubviews,
     GraphSunTrimBySubviews,
+    //: GraphSunTrimByTag,
     GraphSunTrimByTag,
+    //: GraphSunTrimByPosition,
     GraphSunTrimByPosition,
+//: };
 };
 
 /**
@@ -56,10 +61,15 @@ typedef NS_ENUM(NSInteger, GraphSunTrimManageBehavior) {
  `PacificAddPlazaAlwaysShow`
  Always show nextPrevious buttons, if there are more than 1 textField then both buttons will be visible but will be shown as disabled.
  */
+//: typedef NS_ENUM(NSUInteger, PacificAddPlaza) {
 typedef NS_ENUM(NSUInteger, PacificAddPlaza) {
+    //: PacificAddPlazaDefault,
     PacificAddPlazaDefault,
+    //: PacificAddPlazaAlwaysHide,
     PacificAddPlazaAlwaysHide,
+    //: PacificAddPlazaAlwaysShow,
     PacificAddPlazaAlwaysShow,
+//: };
 };
 
 /**
@@ -72,13 +82,18 @@ typedef NS_ENUM(NSUInteger, PacificAddPlaza) {
  `AggregatorZealousVerifyDisabled`
  setting is disabled.
  */
+//: typedef NS_ENUM(NSUInteger, AggregatorZealousVerify) {
 typedef NS_ENUM(NSUInteger, AggregatorZealousVerify) {
+    //: AggregatorZealousVerifyDefault,
     AggregatorZealousVerifyDefault,
+    //: AggregatorZealousVerifyEnabled,
     AggregatorZealousVerifyEnabled,
+    //: AggregatorZealousVerifyDisabled,
     AggregatorZealousVerifyDisabled,
+//: };
 };
 
-#endif
+
 
 /*
  

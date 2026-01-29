@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PrefetchSliderDecorate.h
 //  NIM
@@ -6,20 +8,29 @@
 //  Copyright © 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface PrefetchSliderDecorate : NSObject
 @interface PrefetchSliderDecorate : NSObject
 
-+ (PrefetchSliderDecorate *)currentDevice;
+//: + (PrefetchSliderDecorate *)currentDevice;
++ (PrefetchSliderDecorate *)presentation;
 
-/// 语言
-+ (NSString *)language;
+//: - (CGFloat)compressQuality;
+- (CGFloat)sunny;
+
+//: - (CGFloat)statusBarHeight;
+- (CGFloat)captureStructure;
 
 //图片/音频推荐参数
-- (CGFloat)suggestImagePixels;
+//: - (CGFloat)suggestImagePixels;
+- (CGFloat)packPhase;
 
-- (CGFloat)compressQuality;
+/// 语言
+//: + (NSString *)language;
++ (NSString *)titBy;
 
-- (CGFloat)statusBarHeight;
-
+//: @end
 @end

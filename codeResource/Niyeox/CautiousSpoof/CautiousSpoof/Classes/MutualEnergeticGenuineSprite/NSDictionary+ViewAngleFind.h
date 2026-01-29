@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSDictionary+ViewAngleFind.h
 // ViewAngleFind
@@ -6,22 +8,35 @@
 //  Copyright © 2017年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NSDictionary (ViewAngleFind)
 @interface NSDictionary (ViewAngleFind)
 
-- (NSString *)nimkit_jsonString: (NSString *)key;
+//: - (double)nimkit_jsonDouble: (NSString *)key;
+- (double)down: (NSString *)key;
 
-- (NSDictionary *)nimkit_jsonDict: (NSString *)key;
-- (NSArray *)nimkit_jsonArray: (NSString *)key;
-- (NSArray *)nimkit_jsonStringArray: (NSString *)key;
+//: - (NSString *)nimkit_jsonString: (NSString *)key;
+- (NSString *)gifted: (NSString *)key;
+//: - (BOOL)nimkit_jsonBool: (NSString *)key;
+- (BOOL)cancel: (NSString *)key;
+//: - (NSDictionary *)nimkit_jsonDict: (NSString *)key;
+- (NSDictionary *)fleet: (NSString *)key;
 
 
-- (BOOL)nimkit_jsonBool: (NSString *)key;
-- (NSInteger)nimkit_jsonInteger: (NSString *)key;
-- (long long)nimkit_jsonLongLong: (NSString *)key;
-- (unsigned long long)nimkit_jsonUnsignedLongLong:(NSString *)key;
+//: - (long long)nimkit_jsonLongLong: (NSString *)key;
+- (long long)wing: (NSString *)key;
+//: - (NSInteger)nimkit_jsonInteger: (NSString *)key;
+- (NSInteger)delay: (NSString *)key;
+//: - (NSArray *)nimkit_jsonStringArray: (NSString *)key;
+- (NSArray *)secretPrecious: (NSString *)key;
+//: - (NSArray *)nimkit_jsonArray: (NSString *)key;
+- (NSArray *)mode: (NSString *)key;
 
-- (double)nimkit_jsonDouble: (NSString *)key;
+//: - (unsigned long long)nimkit_jsonUnsignedLongLong:(NSString *)key;
+- (unsigned long long)carrierRun:(NSString *)key;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIButton+NIMKit.m
 // ViewAngleFind
@@ -6,18 +8,29 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "UIButton+ViewAngleFind.h"
 #import "UIButton+ViewAngleFind.h"
+//: #import "BriefRegistryFlyweight.h"
 #import "BriefRegistryFlyweight.h"
 
+//: @implementation UIButton (ViewAngleFind)
 @implementation UIButton (ViewAngleFind)
 
-- (void)nim_verticalCenterImageAndTitleWithSpacing:(CGFloat)spacing
+//: - (void)nim_verticalCenterImageAndTitleWithSpacing:(CGFloat)spacing
+- (void)equal:(CGFloat)spacing
 {
+    //: CGSize imageSize = self.imageView.intrinsicContentSize;
     CGSize imageSize = self.imageView.intrinsicContentSize;
+    //: CGSize titleSize = self.titleLabel.intrinsicContentSize;
     CGSize titleSize = self.titleLabel.intrinsicContentSize;
+    //: CGFloat totalHeight = (imageSize.height + titleSize.height + spacing);
     CGFloat totalHeight = (imageSize.height + titleSize.height + spacing);
+    //: self.imageEdgeInsets = UIEdgeInsetsMake(-(totalHeight - imageSize.height), 0.0, 0.0, -titleSize.width);
     self.imageEdgeInsets = UIEdgeInsetsMake(-(totalHeight - imageSize.height), 0.0, 0.0, -titleSize.width);
+    //: self.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize.width, -(totalHeight - titleSize.height), 0.0);
     self.titleEdgeInsets = UIEdgeInsetsMake(0.0, -imageSize.width, -(totalHeight - titleSize.height), 0.0);
 }
 
+//: @end
 @end

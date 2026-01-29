@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+OrientationSignerDecentGlacierAccount.h
 //
@@ -21,10 +23,15 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface UIViewController (OrientationSignerDecentGlacierAccount)
 @interface UIViewController (OrientationSignerDecentGlacierAccount)
 
-@property (nonatomic, weak) UIScrollView *km_scrollView;
+//: @property (nonatomic, weak) UIScrollView *km_scrollView;
+@property (nonatomic, weak) UIScrollView *belowEdge;
 
+//: @end
 @end

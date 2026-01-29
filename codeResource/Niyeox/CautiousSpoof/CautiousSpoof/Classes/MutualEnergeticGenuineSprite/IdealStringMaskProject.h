@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  IdealStringMaskProject.h
 //  NIM
@@ -5,85 +7,85 @@
 //  Created by chris on 15/6/26.
 //  Copyright © 2015年 Netease. All rights reserved.
 //
+//section key
+//row key
+//common key
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-#define SepLineLeft 15 //分割线距左边距离
-
-//section key
-#define HeaderTitle  @"headerTitle"
-#define FooterTitle  @"footerTitle"
-#define HeaderHeight @"headerHeight"
-#define FooterHeight @"footerHeight"
-#define RowContent   @"row"
-
-//row key
-#define Title         @"title"
-#define DetailTitle   @"detailTitle"
-#define CellClass     @"cellClass"
-#define CellAction    @"action"
-#define ExtraInfo     @"extraInfo"
-#define RowHeight     @"rowHeight"
-#define SepLeftEdge   @"leftEdge"
-#define Language      @"language"
-
-//common key
-#define Disable       @"disable"      //cell不可见
-#define ShowAccessory @"accessory"    //cell显示>箭头
-#define ForbidSelect  @"forbidSelect" //cell不响应select事件
-#define DisableUserInteraction @"disableUserInteraction" //cell是否响应任何事件
-
+//: @interface TowardVersionDisplayVerify : NSObject
 @interface TowardVersionDisplayVerify : NSObject
 
-@property (nonatomic,copy)   NSString *headerTitle;
+//: @property (nonatomic,copy) NSString *footerTitle;
+@property (nonatomic,copy) NSString *saving;
 
-@property (nonatomic,copy)   NSArray *rows;
+//: @property (nonatomic,assign) CGFloat uiFooterHeight;
+@property (nonatomic,assign) CGFloat icon;
 
-@property (nonatomic,copy)   NSString *footerTitle;
+//: @property (nonatomic,copy) NSArray *rows;
+@property (nonatomic,copy) NSArray *surfWealthy;
 
-@property (nonatomic,assign) CGFloat  uiHeaderHeight;
+//: @property (nonatomic,assign) CGFloat uiHeaderHeight;
+@property (nonatomic,assign) CGFloat springSearched;
 
-@property (nonatomic,assign) CGFloat  uiFooterHeight;
+//: @property (nonatomic,copy) NSString *headerTitle;
+@property (nonatomic,copy) NSString *exclude;
 
-- (instancetype) initWithDict:(NSDictionary *)dict;
+//: + (NSArray *)sectionsWithData:(NSArray *)data;
++ (NSArray *)clip:(NSArray *)data;
 
-+ (NSArray *)sectionsWithData:(NSArray *)data;
+//: - (instancetype) initWithDict:(NSDictionary *)dict;
+- (instancetype) initWithAboveMobile:(NSDictionary *)dict;
 
+//: @end
 @end
 
 
 
 
+//: @interface QuotaEqualReplaceIndex : NSObject
 @interface QuotaEqualReplaceIndex : NSObject
 
-@property (nonatomic,strong) NSString *title;
+//: @property (nonatomic,strong) NSString *title;
+@property (nonatomic,strong) NSString *remark;
 
-@property (nonatomic,copy  ) NSString *detailTitle;
+//: @property (nonatomic,copy ) NSString *cellClassName;
+@property (nonatomic,copy ) NSString *account;
 
-@property (nonatomic,copy  ) NSString *cellClassName;
+//: @property (nonatomic,copy ) NSString *detailTitle;
+@property (nonatomic,copy ) NSString *transaction;
 
-@property (nonatomic,copy  ) NSString *cellActionName;
+//: @property (nonatomic,strong) NSString *language;
+@property (nonatomic,strong) NSString *above;
 
-@property (nonatomic,assign) CGFloat  uiRowHeight;
+//: @property (nonatomic,assign) BOOL forbidSelect;
+@property (nonatomic,assign) BOOL scenario;
 
-@property (nonatomic,assign) CGFloat  sepLeftEdge;
+//: @property (nonatomic,copy ) NSString *cellActionName;
+@property (nonatomic,copy ) NSString *around;
 
-@property (nonatomic,assign) BOOL     showAccessory;
+//: @property (nonatomic,strong) id extraInfo;
+@property (nonatomic,strong) id vessel;
 
-@property (nonatomic,assign) BOOL     forbidSelect;
+//: @property (nonatomic,assign) CGFloat uiRowHeight;
+@property (nonatomic,assign) CGFloat mid;
 
-@property (nonatomic,assign) BOOL     userInteractionDisable;
+//: @property (nonatomic,assign) CGFloat sepLeftEdge;
+@property (nonatomic,assign) CGFloat totalensityBridge;
 
-@property (nonatomic,strong) id extraInfo;
+//: @property (nonatomic,assign) BOOL userInteractionDisable;
+@property (nonatomic,assign) BOOL gestureLarge;
 
-@property (nonatomic,strong) NSString *language;
+//: @property (nonatomic,assign) BOOL showAccessory;
+@property (nonatomic,assign) BOOL split;
 
-- (instancetype)initWithDict:(NSDictionary *)dict;
+//: - (instancetype)initWithDict:(NSDictionary *)dict;
+- (instancetype)initWithRandom:(NSDictionary *)dict;
 
-+ (NSArray *)rowsWithData:(NSArray *)data;
+//: + (NSArray *)rowsWithData:(NSArray *)data;
++ (NSArray *)bigSong:(NSArray *)data;
 
+//: @end
 @end
-
-
-
-

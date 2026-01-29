@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSObject+OrientationSignerDecentGlacierAccount.m
 //
@@ -21,42 +23,63 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "NSObject+OrientationSignerDecentGlacierAccount.h"
 #import "NSObject+OrientationSignerDecentGlacierAccount.h"
+//: #import "UINavigationController+OrientationSignerDecentGlacierAccount_internal.h"
 #import "UINavigationController+OrientationSignerDecentGlacierAccount_internal.h"
+//: #import "UINavigationBar+OrientationSignerDecentGlacierAccount_internal.h"
 #import "UINavigationBar+OrientationSignerDecentGlacierAccount_internal.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "ConsolidateHostHeroic.h"
 #import "ConsolidateHostHeroic.h"
 
+//: @implementation NSObject (OrientationSignerDecentGlacierAccount)
 @implementation NSObject (OrientationSignerDecentGlacierAccount)
 
+//: + (void)load {
 + (void)load {
+    //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        ConsolidateHostHeroicMethod(objc_getClass("_UIBarBackground"),
+    //: _dispatch_once(&onceToken, ^{
+    _dispatch_once(&onceToken, ^{
+        //: ConsolidateHostHeroicMethod(objc_getClass("_UIBarBackground"),
+        retainSnow(objc_getClass("_UIBarBackground"),
+                        //: @selector(setHidden:),
                         @selector(setHidden:),
+                        //: [self class],
                         [self class],
-                        @selector(km_setHidden:));
+                        //: @selector(km_setHidden:));
+                        @selector(filled:));
+    //: });
     });
 }
 
-- (void)km_setHidden:(BOOL)hidden {
+//: - (void)km_setHidden:(BOOL)hidden {
+- (void)filled:(BOOL)hidden {
+    //: UIResponder *responder = (UIResponder *)self;
     UIResponder *responder = (UIResponder *)self;
+    //: while (responder) {
     while (responder) {
-        if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).km_isFakeBar) {
+        //: if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).km_isFakeBar) {
+        if ([responder isKindOfClass:[UINavigationBar class]] && ((UINavigationBar *)responder).warmSea) {
+            //: return;
             return;
         }
+        //: if ([responder isKindOfClass:[UINavigationController class]]) {
         if ([responder isKindOfClass:[UINavigationController class]]) {
-            [self km_setHidden:((UINavigationController *)responder).km_backgroundViewHidden];
+            //: [self km_setHidden:((UINavigationController *)responder).km_backgroundViewHidden];
+            [self filled:((UINavigationController *)responder).extraIndependents];
+            //: return;
             return;
         }
+        //: responder = responder.nextResponder;
         responder = responder.nextResponder;
     }
-    [self km_setHidden:hidden];
+    //: [self km_setHidden:hidden];
+    [self filled:hidden];
 }
 
+//: @end
 @end
-
-
-
-
-

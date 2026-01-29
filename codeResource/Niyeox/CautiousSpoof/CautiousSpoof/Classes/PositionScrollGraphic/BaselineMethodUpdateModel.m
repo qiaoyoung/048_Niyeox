@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  BaselineMethodUpdateModel.m
 //  BaselineMethodUpdateDemo
@@ -6,8 +8,11 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "BaselineMethodUpdateModel.h"
 #import "BaselineMethodUpdateModel.h"
 
+//: @implementation BaselineMethodUpdateModel
 @implementation BaselineMethodUpdateModel
 
 /**
@@ -19,12 +24,19 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock {
++ (instancetype)policy:(NSString *)menuItemTitle technology:(NSString *)menuItemIconName dialog:(FFMenuBlock)menuBlock {
+    //: BaselineMethodUpdateModel *model = [BaselineMethodUpdateModel new];
     BaselineMethodUpdateModel *model = [BaselineMethodUpdateModel new];
-    model.menuItemTitle = menuItemTitle;
-    model.menuItemIconName = menuItemIconName;
-    model.menuBlock = menuBlock;
+    //: model.menuItemTitle = menuItemTitle;
+    model.walk = menuItemTitle;
+    //: model.menuItemIconName = menuItemIconName;
+    model.keepHonestAgent = menuItemIconName;
+    //: model.menuBlock = menuBlock;
+    model.characteristic = menuBlock;
+    //: return model;
     return model;
 }
 
+//: @end
 @end

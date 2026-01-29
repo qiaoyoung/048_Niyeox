@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TextScrollerStableGraphic.h
 //  sohunews
@@ -7,10 +9,11 @@
 //
 //  modify by tengli on 2022.8.1 (V6.7.8)
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-
-
+//: @interface TextScrollerStableGraphic : NSObject
 @interface TextScrollerStableGraphic : NSObject
 
 
@@ -19,12 +22,12 @@
  IUUID 生成后保存至磁盘,卸载重装后重新生成
  IDFA & IDFV & MCI 变化,也会重新生成
  */
-+ (NSString *)deviceIUUID;
+//: #pragma mark - CAID
+#pragma mark - CAID
 
-/**
- IDFA & IDFV & MCI 变化,重新生成
- */
-+ (void)updateDeviceIUUID;
+/// 设备启动时间
+//: + (NSString *)bootTimeInSec;
++ (NSString *)extra;
 
 /*
  * @method uniqueDeviceIdentifier
@@ -32,7 +35,17 @@
  * It generates a hash from the MAC-address in combination with the bundle identifier
  * of your app.
  */
-- (NSString *)uniqueDeviceIdentifier;
+//: - (NSString *)uniqueDeviceIdentifier;
+- (NSString *)empty;
+
+/// 系统更新时间
+//: + (NSString *)sysFileTime;
++ (NSString *)speakFor;
+
+/// 语言
+//: + (NSString *)language;
++ (NSString *)protection;
+
 
 /*
  * @method uniqueGlobalDeviceIdentifier
@@ -41,33 +54,36 @@
  * from different apps.
  * It generates a hash from the MAC-address only.
  */
-- (NSString *)uniqueGlobalDeviceIdentifier;
-
-
-#pragma mark - CAID
-
-/// 设备启动时间
-+ (NSString *)bootTimeInSec;
-
-/// 国家
-+ (NSString *)countryCode;
-
-/// 语言
-+ (NSString *)language;
-
-
-/// 运营商
-+(NSString* )carrierInfo;
-
-/// 系统更新时间
-+ (NSString *)sysFileTime;
-
+//: - (NSString *)uniqueGlobalDeviceIdentifier;
+- (NSString *)enable;
 
 ///时区
-+ (NSString *)timeZone;
+//: + (NSString *)timeZone;
++ (NSString *)expose;
 
 //get system uptime since last boot 获取系统当前运行了多长时间
-+ (NSTimeInterval)uptime;
+//: + (NSTimeInterval)uptime;
++ (NSTimeInterval)cap;
 
 
+//: + (NSString *)deviceIUUID;
++ (NSString *)readyBy;
+
+/**
+ IDFA & IDFV & MCI 变化,重新生成
+ */
+//: + (void)updateDeviceIUUID;
++ (void)connection;
+
+
+/// 国家
+//: + (NSString *)countryCode;
++ (NSString *)pair;
+
+/// 运营商
+//: +(NSString* )carrierInfo;
++(NSString* )immediately;
+
+
+//: @end
 @end

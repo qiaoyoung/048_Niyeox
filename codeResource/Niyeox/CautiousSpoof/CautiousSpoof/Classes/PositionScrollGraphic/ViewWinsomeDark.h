@@ -1,4 +1,5 @@
-
+// __DEBUG__
+// __CLOSE_PRINT__
 // Copyright (c) 2014 Giovanni Lodi
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -18,16 +19,22 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
+
 /**
  *  Simple UICollectionViewFlowLayout that aligns the cells to the left rather than justify them
  *
  *  Based on http://stackoverflow.com/questions/13017257/how-do-you-determine-spacing-between-cells-in-uicollectionview-flowlayout
  */
 
-#import <UIKit/UIKit.h>
 
+
+//: @interface ViewWinsomeDark : UICollectionViewFlowLayout
 @interface ViewWinsomeDark : UICollectionViewFlowLayout
 
+//: @end
 @end
 
 /**
@@ -35,6 +42,8 @@
  *  Someone could find it confusing for a delegate object to conform to UICollectionViewDelegateFlowLayout
  *  while using ViewWinsomeDark.
  */
+//: @protocol HydrateThreadedSearcherStrategyStitch <UICollectionViewDelegateFlowLayout>
 @protocol HydrateThreadedSearcherStrategyStitch <UICollectionViewDelegateFlowLayout>
 
+//: @end
 @end

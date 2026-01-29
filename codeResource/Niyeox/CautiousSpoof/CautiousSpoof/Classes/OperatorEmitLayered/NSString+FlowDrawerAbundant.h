@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+FlowDrawerAbundant.h
 //  NIMDemo
@@ -6,24 +8,36 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-NSString * emptyString(NSString *anMaybeEmptyString);
+//: NSString * emptyString(NSString *anMaybeEmptyString);
+NSString * allowWind(NSString *anMaybeEmptyString);
 
+//: @interface NSString (FlowDrawerAbundant)
 @interface NSString (FlowDrawerAbundant)
 
-- (CGSize)stringSizeWithFont:(UIFont *)font;
+//: - (NSString *)user_localized;
+- (NSString *)oceanWithinFirst;
 
-- (NSString *)MD5String;
+//: - (CGSize)stringSizeWithFont:(UIFont *)font;
+- (CGSize)relief:(UIFont *)font;
 
-- (NSUInteger)getBytesLength;
+//: - (NSString *)stringByDeletingPictureResolution;
+- (NSString *)bounce;
 
-- (NSString *)stringByDeletingPictureResolution;
+//: - (NSString *)tokenByPassword;
+- (NSString *)upon;
 
-- (NSString *)tokenByPassword;
+//: - (NSUInteger)getBytesLength;
+- (NSUInteger)acceptable;
 
-- (NSString *)user_localized;
+//: - (NSString *)MD5String;
+- (NSString *)schedule;
 
-+ (NSString *)randomStringWithLength:(NSUInteger)length;
+//: + (NSString *)randomStringWithLength:(NSUInteger)length;
++ (NSString *)towardDecision:(NSUInteger)length;
 
+//: @end
 @end

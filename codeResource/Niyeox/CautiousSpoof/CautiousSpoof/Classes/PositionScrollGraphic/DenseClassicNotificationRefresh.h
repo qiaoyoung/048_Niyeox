@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DenseClassicNotificationRefresh.h
 //  NIM
@@ -6,12 +8,18 @@
 //  Copyright (c) 2013 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface DenseClassicNotificationRefresh : NSObject
 @interface DenseClassicNotificationRefresh : NSObject
 
-+ (DenseClassicNotificationRefresh *)sharedInstance;
+//: + (DenseClassicNotificationRefresh *)sharedInstance;
++ (DenseClassicNotificationRefresh *)start;
 
-- (NSString *)toPinyin: (NSString *)source;
+//: - (NSString *)toPinyin: (NSString *)source;
+- (NSString *)gentle: (NSString *)source;
 
+//: @end
 @end

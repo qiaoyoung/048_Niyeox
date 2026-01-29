@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMSessionAudioCententView.h
 // ViewAngleFind
@@ -6,22 +8,35 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "TrainFleetingConvert.h"
 #import "TrainFleetingConvert.h"
 
+//: @protocol SlipNotifyConsolidateTag <NSObject>
 @protocol SlipNotifyConsolidateTag <NSObject>
--(void)startPlayingAudioUI;  //点击一开始就要显示
+//: -(void)startPlayingAudioUI; 
+-(void)steamExtent; //点击一开始就要显示
+//: @optional
 @optional
-- (void)retryDownloadMsg; //重收消息
+//: - (void)retryDownloadMsg; 
+- (void)componentTo; //重收消息
+//: @end
 @end
 
+//: @interface HubCreatorSpeakVirtuous : TrainFleetingConvert
 @interface HubCreatorSpeakVirtuous : TrainFleetingConvert
 
-@property (nonatomic, strong) UILabel     *audioDurationLable; //语音时长
+//: @property (nonatomic, weak) id<SlipNotifyConsolidateTag> audioUIDelegate;
+@property (nonatomic, weak) id<SlipNotifyConsolidateTag> album;
 
-@property (nonatomic, weak) id<SlipNotifyConsolidateTag> audioUIDelegate;
+//: @property (nonatomic, strong) UIView *audioBackgroundView;
+@property (nonatomic, strong) UIView *titleIndex;
 
-@property (nonatomic, strong) UIView *audioBackgroundView;
+//: @property (nonatomic, strong) UILabel *audioDurationLable; 
+@property (nonatomic, strong) UILabel *min;//语音时长
 
-- (void)setPlaying:(BOOL)isPlaying;
+//: - (void)setPlaying:(BOOL)isPlaying;
+- (void)setNotTechnique:(BOOL)isPlaying;
 
+//: @end
 @end

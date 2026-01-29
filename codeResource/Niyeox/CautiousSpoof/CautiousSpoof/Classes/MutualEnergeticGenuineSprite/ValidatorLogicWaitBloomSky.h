@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ValidatorLogicWaitBloomSky.h
 //  NIM
@@ -6,10 +8,15 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface ValidatorLogicWaitBloomSky : NSObject
 @interface ValidatorLogicWaitBloomSky : NSObject
 
-+ (NSString *)clientName:(NIMLoginClientType)clientType;
+//: + (NSString *)clientName:(NIMLoginClientType)clientType;
++ (NSString *)distant:(NIMLoginClientType)clientType;
 
+//: @end
 @end

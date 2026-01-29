@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIView+VectorCrispSteady.h
 //  SDRefreshView
@@ -5,6 +7,10 @@
 //  Created by aier on 15-2-23.
 //  Copyright (c) 2015年 GSD. All rights reserved.
 //
+
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
 /*
  
@@ -28,17 +34,23 @@
  
  */
 
-#import <UIKit/UIKit.h>
-
-#define SDColorCreater(r, g, b, a) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
 
 
+
+
+
+//: @interface UIView (VectorCrispSteady)
 @interface UIView (VectorCrispSteady)
 
-@property (nonatomic, assign) CGFloat sd_height;
-@property (nonatomic, assign) CGFloat sd_width;
+//: @property (nonatomic, assign) CGFloat sd_height;
+@property (nonatomic, assign) CGFloat targetMap;
+//: @property (nonatomic, assign) CGFloat sd_width;
+@property (nonatomic, assign) CGFloat complex;
 
-@property (nonatomic, assign) CGFloat sd_y;
-@property (nonatomic, assign) CGFloat sd_x;
+//: @property (nonatomic, assign) CGFloat sd_x;
+@property (nonatomic, assign) CGFloat scan;
+//: @property (nonatomic, assign) CGFloat sd_y;
+@property (nonatomic, assign) CGFloat drag;
 
+//: @end
 @end

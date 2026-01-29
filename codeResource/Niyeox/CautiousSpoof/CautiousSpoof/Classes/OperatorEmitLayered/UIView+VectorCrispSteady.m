@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIView+VectorCrispSteady.m
 //  SDRefreshView
@@ -5,6 +7,10 @@
 //  Created by aier on 15-2-23.
 //  Copyright (c) 2015年 GSD. All rights reserved.
 //
+
+// __M_A_C_R_O__
+//: #import "UIView+VectorCrispSteady.h"
+#import "UIView+VectorCrispSteady.h"
 
 /*
  
@@ -49,59 +55,85 @@
  */
 
 
-#import "UIView+VectorCrispSteady.h"
 
+
+//: @implementation UIView (VectorCrispSteady)
 @implementation UIView (VectorCrispSteady)
 
-- (CGFloat)sd_height
+//: - (CGFloat)sd_height
+- (CGFloat)targetMap
 {
+    //: return self.frame.size.height;
     return self.frame.size.height;
 }
 
-- (void)setSd_height:(CGFloat)sd_height
+//: - (void)setSd_width:(CGFloat)sd_width
+- (void)setComplex:(CGFloat)sd_width
 {
+    //: CGRect temp = self.frame;
     CGRect temp = self.frame;
-    temp.size.height = sd_height;
+    //: temp.size.width = sd_width;
+    temp.size.width = sd_width;
+    //: self.frame = temp;
     self.frame = temp;
 }
 
-- (CGFloat)sd_width
+//: - (void)setSd_x:(CGFloat)sd_x
+- (void)setScan:(CGFloat)sd_x
 {
+    //: CGRect temp = self.frame;
+    CGRect temp = self.frame;
+    //: temp.origin.x = sd_x;
+    temp.origin.x = sd_x;
+    //: self.frame = temp;
+    self.frame = temp;
+}
+
+//: - (void)setSd_height:(CGFloat)sd_height
+- (void)setTargetMap:(CGFloat)sd_height
+{
+    //: CGRect temp = self.frame;
+    CGRect temp = self.frame;
+    //: temp.size.height = sd_height;
+    temp.size.height = sd_height;
+    //: self.frame = temp;
+    self.frame = temp;
+}
+
+
+//: - (CGFloat)sd_width
+- (CGFloat)complex
+{
+    //: return self.frame.size.width;
     return self.frame.size.width;
 }
 
-- (void)setSd_width:(CGFloat)sd_width
+//: - (void)setSd_y:(CGFloat)sd_y
+- (void)setDrag:(CGFloat)sd_y
 {
+    //: CGRect temp = self.frame;
     CGRect temp = self.frame;
-    temp.size.width = sd_width;
-    self.frame = temp;
-}
-
-
-- (CGFloat)sd_y
-{
-    return self.frame.origin.y;
-}
-
-- (void)setSd_y:(CGFloat)sd_y
-{
-    CGRect temp = self.frame;
+    //: temp.origin.y = sd_y;
     temp.origin.y = sd_y;
+    //: self.frame = temp;
     self.frame = temp;
 }
 
-- (CGFloat)sd_x
+//: - (CGFloat)sd_x
+- (CGFloat)scan
 {
+    //: return self.frame.origin.x;
     return self.frame.origin.x;
 }
 
-- (void)setSd_x:(CGFloat)sd_x
+//: - (CGFloat)sd_y
+- (CGFloat)drag
 {
-    CGRect temp = self.frame;
-    temp.origin.x = sd_x;
-    self.frame = temp;
+    //: return self.frame.origin.y;
+    return self.frame.origin.y;
 }
 
 
 
+//: @end
 @end

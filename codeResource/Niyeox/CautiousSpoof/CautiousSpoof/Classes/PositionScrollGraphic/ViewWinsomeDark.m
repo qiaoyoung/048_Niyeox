@@ -1,4 +1,5 @@
-
+// __DEBUG__
+// __CLOSE_PRINT__
 // Copyright (c) 2014 Giovanni Lodi
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -18,100 +19,159 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "ViewWinsomeDark.h"
 #import "ViewWinsomeDark.h"
 
+//: @interface UICollectionViewLayoutAttributes (LeftAligned)
 @interface UICollectionViewLayoutAttributes (LeftAligned)
 
-- (void)device_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset;
+//: - (void)device_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset;
+- (void)pressed:(UIEdgeInsets)sectionInset;
 
+//: @end
 @end
 
+//: @implementation UICollectionViewLayoutAttributes (LeftAligned)
 @implementation UICollectionViewLayoutAttributes (LeftAligned)
 
-- (void)device_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset
+//: - (void)device_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset
+- (void)pressed:(UIEdgeInsets)sectionInset
 {
+    //: CGRect frame = self.frame;
     CGRect frame = self.frame;
+    //: frame.origin.x = sectionInset.left;
     frame.origin.x = sectionInset.left;
+    //: self.frame = frame;
     self.frame = frame;
 }
 
+//: @end
 @end
 
+//: #pragma mark -
 #pragma mark -
 
+//: @implementation ViewWinsomeDark
 @implementation ViewWinsomeDark
 
+//: #pragma mark - UICollectionViewLayout
 #pragma mark - UICollectionViewLayout
 
-- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSArray *originalAttributes = [super layoutAttributesForElementsInRect:rect];
-    NSMutableArray *updatedAttributes = [NSMutableArray arrayWithArray:originalAttributes];
-    for (UICollectionViewLayoutAttributes *attributes in originalAttributes) {
-        if (!attributes.representedElementKind) {
-            NSUInteger index = [updatedAttributes indexOfObject:attributes];
-            updatedAttributes[index] = [self layoutAttributesForItemAtIndexPath:attributes.indexPath];
-        }
-    }
-
-    return updatedAttributes;
-}
-
-- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewLayoutAttributes* currentItemAttributes = [[super layoutAttributesForItemAtIndexPath:indexPath] copy];
-    UIEdgeInsets sectionInset = [self evaluatedSectionInsetForItemAtIndex:indexPath.section];
-
-    BOOL isFirstItemInSection = indexPath.item == 0;
-    CGFloat layoutWidth = CGRectGetWidth(self.collectionView.frame) - sectionInset.left - sectionInset.right;
-
-    if (isFirstItemInSection) {
-        [currentItemAttributes device_leftAlignFrameWithSectionInset:sectionInset];
-        return currentItemAttributes;
-    }
-
-    NSIndexPath* previousIndexPath = [NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section];
-    CGRect previousFrame = [self layoutAttributesForItemAtIndexPath:previousIndexPath].frame;
-    CGFloat previousFrameRightPoint = previousFrame.origin.x + previousFrame.size.width;
-    CGRect currentFrame = currentItemAttributes.frame;
-    CGRect strecthedCurrentFrame = CGRectMake(sectionInset.left,
-                                              currentFrame.origin.y,
-                                              layoutWidth,
-                                              currentFrame.size.height);
-    // if the current frame, once left aligned to the left and stretched to the full collection view
-    // width intersects the previous frame then they are on the same line
-    BOOL isFirstItemInRow = !CGRectIntersectsRect(previousFrame, strecthedCurrentFrame);
-
-    if (isFirstItemInRow) {
-        // make sure the first item on a line is left aligned
-        [currentItemAttributes device_leftAlignFrameWithSectionInset:sectionInset];
-        return currentItemAttributes;
-    }
-
-    CGRect frame = currentItemAttributes.frame;
-    frame.origin.x = previousFrameRightPoint + [self evaluatedMinimumInteritemSpacingForSectionAtIndex:indexPath.section];
-    currentItemAttributes.frame = frame;
-    return currentItemAttributes;
-}
-
-- (CGFloat)evaluatedMinimumInteritemSpacingForSectionAtIndex:(NSInteger)sectionIndex
+//: - (UIEdgeInsets)evaluatedSectionInsetForItemAtIndex:(NSInteger)index
+- (UIEdgeInsets)mainTune:(NSInteger)index
 {
-    if ([self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) {
-        id<HydrateThreadedSearcherStrategyStitch> delegate = (id<HydrateThreadedSearcherStrategyStitch>)self.collectionView.delegate;
-
-        return [delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:sectionIndex];
-    } else {
-        return self.minimumInteritemSpacing;
-    }
-}
-
-- (UIEdgeInsets)evaluatedSectionInsetForItemAtIndex:(NSInteger)index
-{
+    //: if ([self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]) {
     if ([self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]) {
+        //: id<HydrateThreadedSearcherStrategyStitch> delegate = (id<HydrateThreadedSearcherStrategyStitch>)self.collectionView.delegate;
         id<HydrateThreadedSearcherStrategyStitch> delegate = (id<HydrateThreadedSearcherStrategyStitch>)self.collectionView.delegate;
 
+        //: return [delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:index];
         return [delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:index];
+    //: } else {
     } else {
+        //: return self.sectionInset;
         return self.sectionInset;
     }
 }
 
+//: - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+    //: UICollectionViewLayoutAttributes* currentItemAttributes = [[super layoutAttributesForItemAtIndexPath:indexPath] copy];
+    UICollectionViewLayoutAttributes* currentItemAttributes = [[super layoutAttributesForItemAtIndexPath:indexPath] copy];
+    //: UIEdgeInsets sectionInset = [self evaluatedSectionInsetForItemAtIndex:indexPath.section];
+    UIEdgeInsets sectionInset = [self mainTune:indexPath.section];
+
+    //: BOOL isFirstItemInSection = indexPath.item == 0;
+    BOOL isFirstItemInSection = indexPath.item == 0;
+    //: CGFloat layoutWidth = CGRectGetWidth(self.collectionView.frame) - sectionInset.left - sectionInset.right;
+    CGFloat layoutWidth = CGRectGetWidth(self.collectionView.frame) - sectionInset.left - sectionInset.right;
+
+    //: if (isFirstItemInSection) {
+    if (isFirstItemInSection) {
+        //: [currentItemAttributes device_leftAlignFrameWithSectionInset:sectionInset];
+        [currentItemAttributes pressed:sectionInset];
+        //: return currentItemAttributes;
+        return currentItemAttributes;
+    }
+
+    //: NSIndexPath* previousIndexPath = [NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section];
+    NSIndexPath* previousIndexPath = [NSIndexPath indexPathForItem:indexPath.item-1 inSection:indexPath.section];
+    //: CGRect previousFrame = [self layoutAttributesForItemAtIndexPath:previousIndexPath].frame;
+    CGRect previousFrame = [self layoutAttributesForItemAtIndexPath:previousIndexPath].frame;
+    //: CGFloat previousFrameRightPoint = previousFrame.origin.x + previousFrame.size.width;
+    CGFloat previousFrameRightPoint = previousFrame.origin.x + previousFrame.size.width;
+    //: CGRect currentFrame = currentItemAttributes.frame;
+    CGRect currentFrame = currentItemAttributes.frame;
+    //: CGRect strecthedCurrentFrame = CGRectMake(sectionInset.left,
+    CGRect strecthedCurrentFrame = CGRectMake(sectionInset.left,
+                                              //: currentFrame.origin.y,
+                                              currentFrame.origin.y,
+                                              //: layoutWidth,
+                                              layoutWidth,
+                                              //: currentFrame.size.height);
+                                              currentFrame.size.height);
+    // if the current frame, once left aligned to the left and stretched to the full collection view
+    // width intersects the previous frame then they are on the same line
+    //: BOOL isFirstItemInRow = !CGRectIntersectsRect(previousFrame, strecthedCurrentFrame);
+    BOOL isFirstItemInRow = !CGRectIntersectsRect(previousFrame, strecthedCurrentFrame);
+
+    //: if (isFirstItemInRow) {
+    if (isFirstItemInRow) {
+        // make sure the first item on a line is left aligned
+        //: [currentItemAttributes device_leftAlignFrameWithSectionInset:sectionInset];
+        [currentItemAttributes pressed:sectionInset];
+        //: return currentItemAttributes;
+        return currentItemAttributes;
+    }
+
+    //: CGRect frame = currentItemAttributes.frame;
+    CGRect frame = currentItemAttributes.frame;
+    //: frame.origin.x = previousFrameRightPoint + [self evaluatedMinimumInteritemSpacingForSectionAtIndex:indexPath.section];
+    frame.origin.x = previousFrameRightPoint + [self disturbing:indexPath.section];
+    //: currentItemAttributes.frame = frame;
+    currentItemAttributes.frame = frame;
+    //: return currentItemAttributes;
+    return currentItemAttributes;
+}
+
+//: - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
+    //: NSArray *originalAttributes = [super layoutAttributesForElementsInRect:rect];
+    NSArray *originalAttributes = [super layoutAttributesForElementsInRect:rect];
+    //: NSMutableArray *updatedAttributes = [NSMutableArray arrayWithArray:originalAttributes];
+    NSMutableArray *updatedAttributes = [NSMutableArray arrayWithArray:originalAttributes];
+    //: for (UICollectionViewLayoutAttributes *attributes in originalAttributes) {
+    for (UICollectionViewLayoutAttributes *attributes in originalAttributes) {
+        //: if (!attributes.representedElementKind) {
+        if (!attributes.representedElementKind) {
+            //: NSUInteger index = [updatedAttributes indexOfObject:attributes];
+            NSUInteger index = [updatedAttributes indexOfObject:attributes];
+            //: updatedAttributes[index] = [self layoutAttributesForItemAtIndexPath:attributes.indexPath];
+            updatedAttributes[index] = [self layoutAttributesForItemAtIndexPath:attributes.indexPath];
+        }
+    }
+
+    //: return updatedAttributes;
+    return updatedAttributes;
+}
+
+//: - (CGFloat)evaluatedMinimumInteritemSpacingForSectionAtIndex:(NSInteger)sectionIndex
+- (CGFloat)disturbing:(NSInteger)sectionIndex
+{
+    //: if ([self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) {
+    if ([self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) {
+        //: id<HydrateThreadedSearcherStrategyStitch> delegate = (id<HydrateThreadedSearcherStrategyStitch>)self.collectionView.delegate;
+        id<HydrateThreadedSearcherStrategyStitch> delegate = (id<HydrateThreadedSearcherStrategyStitch>)self.collectionView.delegate;
+
+        //: return [delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:sectionIndex];
+        return [delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:sectionIndex];
+    //: } else {
+    } else {
+        //: return self.minimumInteritemSpacing;
+        return self.minimumInteritemSpacing;
+    }
+}
+
+//: @end
 @end

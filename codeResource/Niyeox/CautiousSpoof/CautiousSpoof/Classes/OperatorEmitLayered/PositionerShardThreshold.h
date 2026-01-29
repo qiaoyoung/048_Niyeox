@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 // ViewAngleFindCommentUtil.h
 // ViewAngleFind
@@ -6,33 +8,52 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class NIMQuickComment;
 @class NIMQuickComment;
+//: @class RevokeHashSnapTower;
 @class RevokeHashSnapTower;
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface PositionerShardThreshold : NSObject
 @interface PositionerShardThreshold : NSObject
 
-+ (UIFont *)commentFont;
+//: + (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
++ (NSString *)member:(NSArray<NIMQuickComment *> *)comments;
 
-+ (NSString *)commentContent:(NIMQuickComment *)comment;
+//: + (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
++ (CGSize)hide:(NIMQuickComment *)comment;
 
-+ (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
+//: + (UIFont *)commentFont;
++ (UIFont *)bottom;
 
-+ (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
+//: + (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
++ (NIMQuickComment * _Nullable)white:(NSInteger )keyIndex
+                                      //: keys:(NSArray *)keys
+                                      countegrate:(NSArray *)keys
+                                  //: comments:(NSMapTable *)map;
+                                  handsome:(NSMapTable *)map;
+//: + (NSString *)commentContent:(NIMQuickComment *)comment;
++ (NSString *)steel:(NIMQuickComment *)comment;
 
-+ (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
+//: + (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
++ (NSArray *)failure:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
 
-+ (CGSize)containerSizeWithComments:(NSMapTable *)comments;
+//: + (RevokeHashSnapTower *)newCommentLabel;
++ (RevokeHashSnapTower *)appWith;
 
-+ (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
-                                      keys:(NSArray *)keys
-                                  comments:(NSMapTable *)map;
 
-+ (RevokeHashSnapTower *)newCommentLabel;
+//: + (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
++ (CGSize)capability:(NSArray<NIMQuickComment *> *)comments;
 
-+ (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
+//: + (CGSize)containerSizeWithComments:(NSMapTable *)comments;
++ (CGSize)legacy:(NSMapTable *)comments;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

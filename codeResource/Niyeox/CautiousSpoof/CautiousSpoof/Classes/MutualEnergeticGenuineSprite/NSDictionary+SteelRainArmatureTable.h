@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSDictionary+SteelRainArmatureTable.h
 //  Kitalker
@@ -6,25 +8,38 @@
 //  Copyright (c) 2012年 ibm. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface NSDictionary (SteelRainArmatureTable)
 @interface NSDictionary (SteelRainArmatureTable)
 
-- (NSString *)jsonString;
+//: - (NSArray *)arrayValueForKey:(id)aKey;
+- (NSArray *)duringSelected:(id)aKey;
 
-- (BOOL)boolValueForKey:(id)key;
+//: - (NSString *)jsonString;
+- (NSString *)womanFirm;
 
-- (int)intValueForKey:(id)key;
+//: - (float)floatValueForKey:(id)key;
+- (float)loyal:(id)key;
 
-- (NSInteger)integerValueForKey:(id)key;
+//: - (BOOL)boolValueForKey:(id)key;
+- (BOOL)save:(id)key;
 
-- (float)floatValueForKey:(id)key;
+//: - (NSString *)newStringValueForKey:(id)key;
+- (NSString *)amend:(id)key;
 
-- (double)doubleValueForKey:(id)key;
+//: - (double)doubleValueForKey:(id)key;
+- (double)sequenceLikeAvailable:(id)key;
 
-- (NSString *)newStringValueForKey:(id)key;
+//: - (NSInteger)integerValueForKey:(id)key;
+- (NSInteger)north:(id)key;
 
-- (id)valueObjectForKey:(id)aKey;
+//: - (int)intValueForKey:(id)key;
+- (int)inviteDoing:(id)key;
 
-- (NSArray *)arrayValueForKey:(id)aKey;
+//: - (id)valueObjectForKey:(id)aKey;
+- (id)successAcrossBlock:(id)aKey;
+//: @end
 @end

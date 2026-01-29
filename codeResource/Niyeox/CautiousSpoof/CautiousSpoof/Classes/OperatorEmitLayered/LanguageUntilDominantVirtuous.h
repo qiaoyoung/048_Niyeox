@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LanguageUntilDominantVirtuous.h
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -21,34 +23,37 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "ByEasyRefreshConstants.h"
 #import "ByEasyRefreshConstants.h"
-
 
 /**
  UITextView with placeholder support
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface LanguageUntilDominantVirtuous : UITextView
 @interface LanguageUntilDominantVirtuous : UITextView
 
 /**
  Set textView's placeholder text. Default is nil.
  */
-@property(nullable, nonatomic,copy) IBInspectable NSString    *placeholder;
-
 /**
  Set textView's placeholder attributed text. Default is nil.
  */
-@property(nullable, nonatomic,copy) IBInspectable NSAttributedString    *attributedPlaceholder;
+//: @property(nullable, nonatomic,copy) IBInspectable NSAttributedString *attributedPlaceholder;
+@property(nullable, nonatomic,copy) IBInspectable NSAttributedString *reliable;
+
+//: @property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
+@property(nullable, nonatomic,copy) IBInspectable NSString *quitConversation;
 
 /**
  To set textView's placeholder text color. Default is nil.
  */
-@property(nullable, nonatomic,copy) IBInspectable UIColor    *placeholderTextColor;
+//: @property(nullable, nonatomic,copy) IBInspectable UIColor *placeholderTextColor;
+@property(nullable, nonatomic,copy) IBInspectable UIColor *length;
 
+//: @end
 @end
-
-
-
-

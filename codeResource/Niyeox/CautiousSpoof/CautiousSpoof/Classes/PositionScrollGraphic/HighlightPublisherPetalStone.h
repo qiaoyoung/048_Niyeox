@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  HighlightPublisherPetalStone.h
 //  NIM
@@ -6,39 +8,61 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @protocol CenterGulfPaletteCallbackCompactified <NSObject>
 @protocol CenterGulfPaletteCallbackCompactified <NSObject>
 
-- (NSString *)groupTitle;
-- (NSString *)memberId;
-- (id)sortKey;
+//: - (NSString *)groupTitle;
+- (NSString *)smartTerrain;
+//: - (NSString *)memberId;
+- (NSString *)showDelay;
+//: - (id)sortKey;
+- (id)must;
 
+//: @end
 @end
 
+//: @interface HighlightPublisherPetalStone : NSObject
 @interface HighlightPublisherPetalStone : NSObject
 
-@property (nonatomic, strong) NSArray *members;
-@property (nonatomic, copy) NSComparator groupTitleComparator;
-@property (nonatomic, copy) NSComparator groupMemberComparator;
-@property (nonatomic, readonly) NSArray *sortedGroupTitles;
+//: @property (nonatomic, readonly) NSArray *sortedGroupTitles;
+@property (nonatomic, readonly) NSArray *steelTrust;
+//: @property (nonatomic, strong) NSArray *members;
+@property (nonatomic, strong) NSArray *expand;
+//: @property (nonatomic, copy) NSComparator groupTitleComparator;
+@property (nonatomic, copy) NSComparator frame;
+//: @property (nonatomic, copy) NSComparator groupMemberComparator;
+@property (nonatomic, copy) NSComparator novelState;
 
-- (void)addGroupMember:(id<CenterGulfPaletteCallbackCompactified>)member;
+//: - (NSInteger)groupCount;
+- (NSInteger)orbit;
 
-- (void)removeGroupMember:(id<CenterGulfPaletteCallbackCompactified>)member;
+//: - (NSString *)titleOfGroup:(NSInteger)groupIndex;
+- (NSString *)path:(NSInteger)groupIndex;
 
-- (void)addGroupAboveWithTitle:(NSString *)title members:(NSArray *)members;
+//: - (void)addGroupMember:(id<CenterGulfPaletteCallbackCompactified>)member;
+- (void)structure:(id<CenterGulfPaletteCallbackCompactified>)member;
 
-- (NSString *)titleOfGroup:(NSInteger)groupIndex;
+//: - (NSInteger)memberCountOfGroup:(NSInteger)groupIndex;
+- (NSInteger)noneTit:(NSInteger)groupIndex;
 
-- (NSArray *)membersOfGroup:(NSInteger)groupIndex;
+//: - (NSArray *)membersOfGroup:(NSInteger)groupIndex;
+- (NSArray *)stage:(NSInteger)groupIndex;
 
-- (id<CenterGulfPaletteCallbackCompactified>)memberOfIndex:(NSIndexPath *)indexPath;
+//: - (void)addGroupAboveWithTitle:(NSString *)title members:(NSArray *)members;
+- (void)additional:(NSString *)title tableStory:(NSArray *)members;
 
-- (id<CenterGulfPaletteCallbackCompactified>)memberOfId:(NSString *)uid;
+//: - (void)removeGroupMember:(id<CenterGulfPaletteCallbackCompactified>)member;
+- (void)counter:(id<CenterGulfPaletteCallbackCompactified>)member;
 
-- (NSInteger)groupCount;
+//: - (id<CenterGulfPaletteCallbackCompactified>)memberOfId:(NSString *)uid;
+- (id<CenterGulfPaletteCallbackCompactified>)disturbingGood:(NSString *)uid;
 
-- (NSInteger)memberCountOfGroup:(NSInteger)groupIndex;
+//: - (id<CenterGulfPaletteCallbackCompactified>)memberOfIndex:(NSIndexPath *)indexPath;
+- (id<CenterGulfPaletteCallbackCompactified>)flex:(NSIndexPath *)indexPath;
 
+//: @end
 @end

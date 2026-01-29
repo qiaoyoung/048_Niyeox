@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TransformerDeepPickerAbsorb.h
 //  NIM
@@ -6,20 +8,31 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "DistantEnqueueProcessorPatch.h"
 #import "DistantEnqueueProcessorPatch.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef void(^SpeiceAvaterBackBlock) (UIImage *groupAvater);
 typedef void(^SpeiceAvaterBackBlock) (UIImage *groupAvater);
 
+//: @interface TransformerDeepPickerAbsorb : UIViewController
 @interface TransformerDeepPickerAbsorb : UIViewController
 
-@property (nonatomic, copy) SpeiceAvaterBackBlock speiceBackBlock;
+//: @property (nonatomic,strong) NSString *groupName;
+@property (nonatomic,strong) NSString *evaluate;
 //群组管理
-@property (nonatomic,strong) DistantEnqueueProcessorPatch *teamListManager;
-@property (nonatomic,strong) NSString *groupName;
+//: @property (nonatomic,strong) DistantEnqueueProcessorPatch *teamListManager;
+@property (nonatomic,strong) DistantEnqueueProcessorPatch *body;
+//: @property (nonatomic, copy) SpeiceAvaterBackBlock speiceBackBlock;
+@property (nonatomic, copy) SpeiceAvaterBackBlock progress;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

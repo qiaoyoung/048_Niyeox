@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ProjectorGetMysticAtomicMove.h
 //  NIM
@@ -6,17 +8,25 @@
 //  Copyright © 2017年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
 
+//: @interface ProjectorGetMysticAtomicMove : NSObject
 @interface ProjectorGetMysticAtomicMove : NSObject
 
-+ (instancetype)sharedManager;
+//: + (instancetype)sharedManager;
++ (instancetype)inputFrom;
 
-- (void)start;
+//: - (void)subscribeTempWaitAmendOrbitState:(NSString *)userId;
+- (void)countDown:(NSString *)userId;
 
-- (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+//: - (void)unsubscribeTempWaitAmendOrbitState:(NSString *)userId;
+- (void)image:(NSString *)userId;
 
-- (void)subscribeTempWaitAmendOrbitState:(NSString *)userId;
+//: - (NSDictionary<NIMSubscribeEvent *, NSString *> *)eventsForType:(NSInteger)type;
+- (NSDictionary<NIMSubscribeEvent *, NSString *> *)wishOffSolution:(NSInteger)type;
 
-- (void)unsubscribeTempWaitAmendOrbitState:(NSString *)userId;
+//: - (void)start;
+- (void)treasureThorough;
 
+//: @end
 @end

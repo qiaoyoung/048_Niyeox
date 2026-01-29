@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSArray+BinderAlignmentCircuitHide.h
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -21,14 +23,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @class UIView;
 @class UIView;
 
 /**
  UIView.subviews sorting category.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface NSArray (BinderAlignmentCircuitHide)
 @interface NSArray (BinderAlignmentCircuitHide)
 
 ///--------------
@@ -38,11 +45,14 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 /**
  Returns the array by sorting the UIView's by their tag property.
  */
-@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByTag;
-
 /**
  Returns the array by sorting the UIView's by their tag property.
  */
-@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByPosition;
+//: @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByPosition;
+@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * utility;
 
+//: @property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * sortedArrayByTag;
+@property (nonnull, nonatomic, readonly, copy) NSArray<__kindof UIView*> * member;
+
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  RadarSetDenseOpacity.h
 //  fanxingxue
@@ -6,24 +8,38 @@
 //  Copyright © 2018年 caoyu. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface RadarSetDenseOpacity : NSObject
 @interface RadarSetDenseOpacity : NSObject
-+(BOOL)isLogin;
-+ (void)refrushNewData;
-+ (NSString *)getUserId;
+//: +(BOOL)isLogin;
++(BOOL)abortCross;
+//: + (void)callSevicePhoneNumber;
++ (void)joinForChannel;
+//: + (NSString *)getHeaderImageUrl;
++ (NSString *)roundMirror;
 
-+ (NSString *)getHeaderImageUrl;
-+ (NSString *)getNickName;
-
-
-+ (void)callSevicePhoneNumber;
-+ (NSString *)getMobileNumber;
-
-+ (void)saveUserInfo:(id)responseObject;
-+ (void)logout;
+//: + (NSString *)getUserId;
++ (NSString *)cart;
+//: + (NSString *)getNickName;
++ (NSString *)kitAcceptable;
 
 
-+ (NSString *)getLocaleString;
+//: + (void)saveUserInfo:(id)responseObject;
++ (void)resume:(id)responseObject;
+//: + (NSString *)getLocaleString;
++ (NSString *)amidEntry;
 
+//: + (NSString *)getMobileNumber;
++ (NSString *)tiny;
+//: + (void)logout;
++ (void)part;
+
+
+//: + (void)refrushNewData;
++ (void)resignEnvironment;
+
+//: @end
 @end

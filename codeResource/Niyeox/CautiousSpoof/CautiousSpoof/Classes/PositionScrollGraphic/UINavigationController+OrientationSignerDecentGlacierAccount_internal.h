@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UINavigationController+OrientationSignerDecentGlacierAccount_internal.h
 //
@@ -20,13 +22,18 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+// __M_A_C_R_O__
+
+//: @interface UINavigationController (OrientationSignerDecentGlacierAccount_internal)
 @interface UINavigationController (OrientationSignerDecentGlacierAccount_internal)
 
-@property (nonatomic, assign) BOOL km_backgroundViewHidden;
-@property (nonatomic, weak) UIViewController *km_transitionContextToViewController;
+//: @property (nonatomic, weak) UIViewController *km_transitionContextToViewController;
+@property (nonatomic, weak) UIViewController *distinctReduction;
+//: @property (nonatomic, assign) BOOL km_backgroundViewHidden;
+@property (nonatomic, assign) BOOL extraIndependents;
 
+//: @end
 @end
-

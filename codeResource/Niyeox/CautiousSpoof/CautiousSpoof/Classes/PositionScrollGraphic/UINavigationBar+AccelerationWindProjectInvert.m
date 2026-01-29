@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UINavigationBar+AccelerationWindProjectInvert.m
 //  NIM
@@ -6,51 +8,83 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "UINavigationBar+AccelerationWindProjectInvert.h"
 #import "UINavigationBar+AccelerationWindProjectInvert.h"
+//: #import "UIView+Layout.h"
 #import "UIView+Layout.h"
+//: #import "SpaceMoveVideoEthereal.h"
 #import "SpaceMoveVideoEthereal.h"
+
+//: @implementation UINavigationBar (AccelerationWindProjectInvert)
 @implementation UINavigationBar (AccelerationWindProjectInvert)
 
+//: + (void)load{
 + (void)load{
+    //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        swizzling_exchangeMethod([UINavigationBar class] ,@selector(layoutSubviews), @selector(swizzling_layoutSubviews));
+    //: _dispatch_once(&onceToken, ^{
+    _dispatch_once(&onceToken, ^{
+        //: swizzling_exchangeMethod([UINavigationBar class] ,@selector(layoutSubviews), @selector(swizzling_layoutSubviews));
+        swizzling_exchangeMethod([UINavigationBar class] ,@selector(layoutSubviews), @selector(manageDistinct));
+    //: });
     });
 }
 
+//: #pragma mark - LayoutSubviews
 #pragma mark - LayoutSubviews
-#define TitleMargin 43
 
-- (void)swizzling_layoutSubviews{
-    [self swizzling_layoutSubviews];
+
+//: - (void)swizzling_layoutSubviews{
+- (void)manageDistinct{
+    //: [self swizzling_layoutSubviews];
+    [self manageDistinct];
+    //: UINavigationItem *navigationItem = [self topItem];
     UINavigationItem *navigationItem = [self topItem];
-    UIView *subview  = [[navigationItem leftBarButtonItem] customView];
-    CGFloat navigationBtnMargin = IOS11? -10 : 28;
-    subview.left = navigationBtnMargin;
-    
+    //: UIView *subview = [[navigationItem leftBarButtonItem] customView];
+    UIView *subview = [[navigationItem leftBarButtonItem] customView];
+    //: CGFloat navigationBtnMargin = ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 11.0)? -10 : 28;
+    CGFloat navigationBtnMargin = ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 11.0)? -10 : 28;
+    //: subview.left = navigationBtnMargin;
+    subview.everyday = navigationBtnMargin;
+
     //解决标题过长时，设置navigationItem.title导致标题偏移的问题
+    //: UILabel *label = (UILabel *)navigationItem.titleView;
     UILabel *label = (UILabel *)navigationItem.titleView;
+    //: if ([label isKindOfClass:[UILabel class]])
     if ([label isKindOfClass:[UILabel class]])
     {
+        //: label.lineBreakMode = NSLineBreakByTruncatingMiddle;
         label.lineBreakMode = NSLineBreakByTruncatingMiddle;
     }
+    //: [label sizeToFit];
     [label sizeToFit];
-    [self layoutLabel];
+    //: [self layoutLabel];
+    [self groupPaint];
 }
 
+//: #pragma mark - Private
 #pragma mark - Private
-- (void)layoutLabel{
+//: - (void)layoutLabel{
+- (void)groupPaint{
+    //: UINavigationItem *navigationItem = [self topItem];
     UINavigationItem *navigationItem = [self topItem];
-    
+
+    //: UIView *view = navigationItem.titleView;
     UIView *view = navigationItem.titleView;
-    
-    
-    CGPoint centerPonit = CGPointMake(self.width * .5f, self.height *.5f);
+
+
+    //: CGPoint centerPonit = CGPointMake(self.width * .5f, self.height *.5f);
+    CGPoint centerPonit = CGPointMake(self.version * .5f, self.disableMark *.5f);
+    //: UIView *superView = view.superview;
     UIView *superView = view.superview;
+    //: centerPonit = [superView convertPoint:centerPonit fromView:self];
     centerPonit = [superView convertPoint:centerPonit fromView:self];
-    
+
+    //: view.center = centerPonit;
     view.center = centerPonit;
 }
 
 
+//: @end
 @end

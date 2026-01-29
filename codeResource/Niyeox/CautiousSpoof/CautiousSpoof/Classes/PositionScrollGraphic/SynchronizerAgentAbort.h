@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SynchronizerAgentAbort.h
 // ViewAngleFind
@@ -6,11 +8,17 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "TrainFleetingConvert.h"
 #import "TrainFleetingConvert.h"
+//: #import "FramePanelRiverModal.h"
 #import "FramePanelRiverModal.h"
 
+//: @interface SynchronizerAgentAbort : TrainFleetingConvert
 @interface SynchronizerAgentAbort : TrainFleetingConvert
 
-@property (nonatomic, strong) RevokeHashSnapTower *textLabel;
+//: @property (nonatomic, strong) RevokeHashSnapTower *textLabel;
+@property (nonatomic, strong) RevokeHashSnapTower *pin;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIView+ScaleConcatenatePremierOrchestrate.h
 // ViewAngleFind
@@ -6,11 +8,16 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface UIView (ScaleConcatenatePremierOrchestrate)
 @interface UIView (ScaleConcatenatePremierOrchestrate)
 
 /**
@@ -19,8 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
  * @param message 要展示的内容
  * @param duration 显示的时长（秒）
  */
-- (void)nim_showToast:(NSString *)message duration:(CGFloat)duration;
+//: - (void)nim_showToast:(NSString *)message duration:(CGFloat)duration;
+- (void)skirtIdentify:(NSString *)message clearEnableMend:(CGFloat)duration;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

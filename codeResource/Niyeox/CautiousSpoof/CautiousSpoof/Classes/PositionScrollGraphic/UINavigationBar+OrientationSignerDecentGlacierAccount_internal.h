@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UINavigationBar+OrientationSignerDecentGlacierAccount_internal.h
 //
@@ -20,11 +22,16 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+// __M_A_C_R_O__
+
+//: @interface UINavigationBar (OrientationSignerDecentGlacierAccount_internal)
 @interface UINavigationBar (OrientationSignerDecentGlacierAccount_internal)
 
-@property (nonatomic, assign) BOOL km_isFakeBar;
+//: @property (nonatomic, assign) BOOL km_isFakeBar;
+@property (nonatomic, assign) BOOL warmSea;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TweakNotebookProjectSurf.m
 // ViewAngleFind
@@ -6,8 +8,12 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "TweakNotebookProjectSurf.h"
 #import "TweakNotebookProjectSurf.h"
 
+//: @implementation TweakNotebookProjectSurf
 @implementation TweakNotebookProjectSurf
 
+//: @end
 @end

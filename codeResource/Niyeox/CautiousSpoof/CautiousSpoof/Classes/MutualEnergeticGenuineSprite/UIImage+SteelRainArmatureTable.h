@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIImage+KIImage.h
 //  Kitalker
@@ -6,66 +8,92 @@
 //
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface UIImage (SteelRainArmatureTable)
 @interface UIImage (SteelRainArmatureTable)
 
 /*垂直翻转*/
-- (UIImage *)flipVertical;
+/*修正拍照图片方向*/
+//: - (UIImage *)fixOrientation;
+- (UIImage *)shouldBalanced;
 
-/*水平翻转*/
-- (UIImage *)flipHorizontal;
-
-/*改变size*/
-- (UIImage *)resizeTo:(CGSize)size;
-
-- (UIImage *)resizeToWidth:(CGFloat)width height:(CGFloat)height;
+//: + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)wisdom:(UIColor *)color conversation:(CGSize)size;
 
 /*等比例缩小图片至该宽度*/
-- (UIImage *)scaleWithWidth:(CGFloat)width;
+//: - (UIImage *)scaleWithWidth:(CGFloat)width;
+- (UIImage *)questionFlag:(CGFloat)width;
 
-/*等比例缩小图片至该高度*/
-- (UIImage *)scaleWithHeight:(CGFloat)heigh;
+//: - (UIImage *)flipVertical;
+- (UIImage *)north;
+
+//: - (UIImage *)addCreateTime;
+- (UIImage *)untilSpeakPop;
 
 /*裁切*/
-- (UIImage *)cropImageWithX:(CGFloat)x y:(CGFloat)y width:(CGFloat)width height:(CGFloat)height;
-
-/*修正拍照图片方向*/
-- (UIImage *)fixOrientation;
-
-- (UIImage *)decoded;
-
-- (UIImage *)addMark:(NSString *)mark textColor:(UIColor *)textColor font:(UIFont *)font point:(CGPoint)point;
-
-- (UIImage *)addCreateTime;
-
-- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
-
-#define UIImageExtensionType_PNG  @"png"
-#define UIImageExtensionType_JPG  @"jpeg"
-#define UIImageExtensionType_GIF  @"gif"
-#define UIImageExtensionType_TIFF @"tiff"
-+ (NSString *) contentTypeExtensionForImageData:(NSData *)data;
-
-- (UIImage *)convertImageToScale:(double)scale;
-
-//referWidth：压缩后的宽带，高等比压缩
-+ (UIImage *)scaleToSize:(UIImage *)img referWidth:(CGFloat)referWidth;
+//: - (UIImage *)cropImageWithX:(CGFloat)x y:(CGFloat)y width:(CGFloat)width height:(CGFloat)height;
+- (UIImage *)odd:(CGFloat)x message:(CGFloat)y arc:(CGFloat)width allFull:(CGFloat)height;
 
 //图片压缩到指定大小
-- (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize;
+//: - (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize;
+- (UIImage *)technique:(CGSize)targetSize;
 
+/*水平翻转*/
+//: - (UIImage *)flipHorizontal;
+- (UIImage *)outLedge;
 
 //referSize：压缩后图片大小
-+ (UIImage *)scaleToSize:(UIImage *)img referSize:(CGFloat)referSize;
+//: + (UIImage *)scaleToSize:(UIImage *)img referSize:(CGFloat)referSize;
++ (UIImage *)sortObserver:(UIImage *)img publisherBy:(CGFloat)referSize;
 
-+ (UIImage *)scaleToNormalSize:(UIImage *)originImage;
+//referWidth：压缩后的宽带，高等比压缩
+//: + (UIImage *)scaleToSize:(UIImage *)img referWidth:(CGFloat)referWidth;
++ (UIImage *)pending:(UIImage *)img save:(CGFloat)referWidth;
 
-+ (UIImage *)checkImage:(UIImage *)originImage;
-+ (UIImage *)compressionImage:(UIImage *)originImage;
+//: - (UIImage *)decoded;
+- (UIImage *)segmentInside;
 
-- (UIImage *)compressImageWithMaxLength:(NSUInteger)maxLength;
+//: - (UIImage *)convertImageToScale:(double)scale;
+- (UIImage *)opera:(double)scale;
 
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
+
+
+
+//: - (UIImage *)resizeToWidth:(CGFloat)width height:(CGFloat)height;
+- (UIImage *)frequency:(CGFloat)width gladWithTide:(CGFloat)height;
+
+//: - (UIImage *)addMark:(NSString *)mark textColor:(UIColor *)textColor font:(UIFont *)font point:(CGPoint)point;
+- (UIImage *)sumegrityTechnique:(NSString *)mark kit:(UIColor *)textColor dominantForSearch:(UIFont *)font yieldTextureApp:(CGPoint)point;
+
+/*等比例缩小图片至该高度*/
+//: - (UIImage *)scaleWithHeight:(CGFloat)heigh;
+- (UIImage *)excludeDepth:(CGFloat)heigh;
+
+//: - (UIImage *)compressImageWithMaxLength:(NSUInteger)maxLength;
+- (UIImage *)delicate:(NSUInteger)maxLength;
+
+
+//: + (UIImage *)scaleToNormalSize:(UIImage *)originImage;
++ (UIImage *)subSongNorthSelect:(UIImage *)originImage;
+
+//: + (UIImage *)compressionImage:(UIImage *)originImage;
++ (UIImage *)natural:(UIImage *)originImage;
+
+//: + (NSString *) contentTypeExtensionForImageData:(NSData *)data;
++ (NSString *) selected:(NSData *)data;
+//: - (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
+- (UIImage *)handle:(CGFloat)degrees;
+
+//: + (UIImage *)checkImage:(UIImage *)originImage;
++ (UIImage *)recent:(UIImage *)originImage;
+
+/*改变size*/
+//: - (UIImage *)resizeTo:(CGSize)size;
+- (UIImage *)galaxyFor:(CGSize)size;
+
+//: @end
 @end

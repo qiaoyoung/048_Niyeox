@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIView+KIView.h
 //  Kitalker
@@ -6,74 +8,108 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <QuartzCore/QuartzCore.h>
 #import <QuartzCore/QuartzCore.h>
 
+//: @interface UIView (SteelRainArmatureTable)
 @interface UIView (SteelRainArmatureTable)
 
-@property (nonatomic, assign) id userInfo;
+//: @property (nonatomic, assign) id userInfo;
+@property (nonatomic, assign) id loyal;
 
-- (void)setUserInfo:(id)userInfo ;
+//: - (id)userInfo;
+- (id)loyal;
 
-- (id)userInfo;
+/*返回view的viewController*/
+//: - (UIViewController *)findViewControllerByView:(UIView *)view;
+- (UIViewController *)systemBegin:(UIView *)view;
 
-
-/*size*/
-- (CGSize)size;
-- (void)setSize:(CGSize)size;
-
-/*x*/
-- (CGFloat)x;
-- (void)setOriginX:(CGFloat)x;
-
-/*y*/
-- (CGFloat)y;
-- (void)setOriginY:(CGFloat)y;
-
-- (void)setCenterX:(CGFloat)x;
-- (void)setCenterY:(CGFloat)y;
-
-/*width*/
-- (CGFloat)width;
-- (void)setWidth:(CGFloat)width;
 
 /*height*/
-- (CGFloat)height;
-- (void)setHeight:(CGFloat)height;
+//: - (CGFloat)height;
+- (CGFloat)disableMark;
+//: - (void)popCompletion:(void (^)(BOOL finished))completion;
+- (void)outerThin:(void (^)(BOOL finished))completion;
 
-
-
-//水平居中对齐 view：相对view padding：间距
-- (void)horizontAllignment:(UIView *)view;
-//垂直居中对齐 view：相对view padding：间距
-- (void)verticalAllignment:(UIView *)view;
-//位于view右边，间距为padding (y值一样)
-- (void)rightView:(UIView *)view padding:(CGFloat)padding;
 //位于view下面，间距为padding
-- (void)underView:(UIView *)view padding:(CGFloat)padding;
+//: - (void)underView:(UIView *)view padding:(CGFloat)padding;
+- (void)rearBy:(UIView *)view format:(CGFloat)padding;
+/*x*/
+//: - (CGFloat)x;
+- (CGFloat)behindPicNeed;
+
+//: - (void)setOriginX:(CGFloat)x;
+- (void)setEvaluation:(CGFloat)x;
+//: - (UIViewController *)viewController;
+- (UIViewController *)feedback;
+
+//: - (void)setWidth:(CGFloat)width;
+- (void)setVersion:(CGFloat)width;
+//水平居中对齐 view：相对view padding：间距
+//: - (void)horizontAllignment:(UIView *)view;
+- (void)diskDistinctive:(UIView *)view;
+
+//: - (void)setSize:(CGSize)size;
+- (void)setStoneAdd:(CGSize)size;
+//: - (void)removeActivityView;
+- (void)ray;
+
+//: - (void)setOriginY:(CGFloat)y;
+- (void)setWindGravity:(CGFloat)y;
+/*size*/
+//: - (CGSize)size;
+- (CGSize)stoneAdd;
+
+
+
+//位于view右边，间距为padding (y值一样)
+//: - (void)rightView:(UIView *)view padding:(CGFloat)padding;
+- (void)lab:(UIView *)view contact:(CGFloat)padding;
+//: - (void)setUserInfo:(id)userInfo ;
+- (void)setLoyal:(id)userInfo ;
+//: - (void)setHeight:(CGFloat)height;
+- (void)setDisableMark:(CGFloat)height;
+//垂直居中对齐 view：相对view padding：间距
+//: - (void)verticalAllignment:(UIView *)view;
+- (void)mist:(UIView *)view;
 
 
 
 /*快照*/
-- (UIImage *)snapshot;
+//: - (UIImage *)snapshot;
+- (UIImage *)systemIn;
 
-- (UIImage *)convertViewToImage;
+//: - (UIActivityIndicatorView *)activityIndicatorView;
+- (UIActivityIndicatorView *)elementNecessary;
 
-- (void)registEndEditing;
+/*width*/
+//: - (CGFloat)width;
+- (CGFloat)version;
 
-- (UIActivityIndicatorView *)activityIndicatorView;
-- (void)removeActivityView;
+/*y*/
+//: - (CGFloat)y;
+- (CGFloat)flame;
+//: - (UIImage *)convertViewToImage;
+- (UIImage *)assist;
 
-- (UIViewController *)viewController;
+//: - (void)setCenterX:(CGFloat)x;
+- (void)setBetween:(CGFloat)x;
 
-/*返回view的viewController*/
-- (UIViewController *)findViewControllerByView:(UIView *)view;
-- (UIView *)findForSuperViewClass:(Class)superViewClass;
-
-
-- (void)pushView:(UIView *)view completion:(void (^)(BOOL finished))completion;
-
-- (void)popCompletion:(void (^)(BOOL finished))completion;
+//: - (UIView *)findForSuperViewClass:(Class)superViewClass;
+- (UIView *)rejectDoingTranslate:(Class)superViewClass;
+//: - (void)registEndEditing;
+- (void)analyze;
 
 
+//: - (void)pushView:(UIView *)view completion:(void (^)(BOOL finished))completion;
+- (void)cluster:(UIView *)view bottom:(void (^)(BOOL finished))completion;
+
+//: - (void)setCenterY:(CGFloat)y;
+- (void)setWisdom:(CGFloat)y;
+
+
+//: @end
 @end

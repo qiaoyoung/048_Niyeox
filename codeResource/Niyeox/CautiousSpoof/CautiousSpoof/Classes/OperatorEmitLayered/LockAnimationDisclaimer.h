@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LockAnimationDisclaimer.h
 //  NIM
@@ -6,22 +8,33 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
+//: typedef void(^SpeiceSexBackBlock) (NSInteger selectedGender);
 typedef void(^SpeiceSexBackBlock) (NSInteger selectedGender);
 
+//: @interface LockAnimationDisclaimer : UIView
 @interface LockAnimationDisclaimer : UIView
 
-@property (nonatomic, copy) SpeiceSexBackBlock speiceBackBlock;
+//: @property (nonatomic, copy) SpeiceSexBackBlock speiceBackBlock;
+@property (nonatomic, copy) SpeiceSexBackBlock dragAdvanced;
 
-- (void)reloadWithGender:(NSInteger)gender;
+//: - (void)animationShow;
+- (void)slice;
 
-- (void)animationShow;
-- (void)animationClose;
+//: - (void)animationClose;
+- (void)viewConstant;
+//: - (void)reloadWithGender:(NSInteger)gender;
+- (void)byAcross:(NSInteger)gender;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

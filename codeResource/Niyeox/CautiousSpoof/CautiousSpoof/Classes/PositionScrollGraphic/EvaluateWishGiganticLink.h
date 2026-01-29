@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  EvaluateWishGiganticLink.h
 //  天天网
@@ -6,13 +8,19 @@
 //  Copyright (c) 2014年 Ios. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface EvaluateWishGiganticLink : UIView
 @interface EvaluateWishGiganticLink : UIView
 
-+ (EvaluateWishGiganticLink *)showNoticeTo:(UIView *)view animated:(BOOL)animated;
+//: - (void)hideNoticeAnimated:(BOOL)animated;
+- (void)programByEmotion:(BOOL)animated;
 
-- (void)hideNoticeAnimated:(BOOL)animated;
+//: + (EvaluateWishGiganticLink *)showNoticeTo:(UIView *)view animated:(BOOL)animated;
++ (EvaluateWishGiganticLink *)origin:(UIView *)view thread:(BOOL)animated;
 
 
+//: @end
 @end

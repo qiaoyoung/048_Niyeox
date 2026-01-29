@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ConsolidateHostHeroic.m
 //
@@ -21,25 +23,43 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "ConsolidateHostHeroic.h"
 #import "ConsolidateHostHeroic.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
-void ConsolidateHostHeroicMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector) {
+//: void ConsolidateHostHeroicMethod(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector) {
+void retainSnow(Class originalCls, SEL originalSelector, Class swizzledCls, SEL swizzledSelector) {
+    //: Method originalMethod = class_getInstanceMethod(originalCls, originalSelector);
     Method originalMethod = class_getInstanceMethod(originalCls, originalSelector);
+    //: Method swizzledMethod = class_getInstanceMethod(swizzledCls, swizzledSelector);
     Method swizzledMethod = class_getInstanceMethod(swizzledCls, swizzledSelector);
-    
+
+    //: BOOL didAddMethod =
     BOOL didAddMethod =
+    //: class_addMethod(originalCls,
     class_addMethod(originalCls,
+                    //: originalSelector,
                     originalSelector,
+                    //: method_getImplementation(swizzledMethod),
                     method_getImplementation(swizzledMethod),
+                    //: method_getTypeEncoding(swizzledMethod));
                     method_getTypeEncoding(swizzledMethod));
-    
+
+    //: if (didAddMethod) {
     if (didAddMethod) {
+        //: class_replaceMethod(originalCls,
         class_replaceMethod(originalCls,
+                            //: swizzledSelector,
                             swizzledSelector,
+                            //: method_getImplementation(originalMethod),
                             method_getImplementation(originalMethod),
+                            //: method_getTypeEncoding(originalMethod));
                             method_getTypeEncoding(originalMethod));
+    //: } else {
     } else {
+        //: method_exchangeImplementations(originalMethod, swizzledMethod);
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }

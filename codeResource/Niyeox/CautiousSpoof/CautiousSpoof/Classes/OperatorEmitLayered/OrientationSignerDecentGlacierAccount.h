@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  OrientationSignerDecentGlacierAccount.h
 //
@@ -20,15 +22,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
 //! Project version number for OrientationSignerDecentGlacierAccount.
+
+// __M_A_C_R_O__
+
+//: FOUNDATION_EXPORT double OrientationSignerDecentGlacierAccountVersionNumber;
 FOUNDATION_EXPORT double OrientationSignerDecentGlacierAccountVersionNumber;
 
 //! Project version string for OrientationSignerDecentGlacierAccount.
+//: FOUNDATION_EXPORT const unsigned char OrientationSignerDecentGlacierAccountVersionString[];
 FOUNDATION_EXPORT const unsigned char OrientationSignerDecentGlacierAccountVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <OrientationSignerDecentGlacierAccount/PublicHeader.h>
 
+//: #import <OrientationSignerDecentGlacierAccount/UINavigationController+OrientationSignerDecentGlacierAccount.h>
 #import <OrientationSignerDecentGlacierAccount/UINavigationController+OrientationSignerDecentGlacierAccount.h>

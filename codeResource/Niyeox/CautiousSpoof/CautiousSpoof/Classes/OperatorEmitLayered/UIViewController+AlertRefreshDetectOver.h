@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+AlertRefreshDetectOver.h
 //  https://github.com/hackiftekhar/ByEasyRefresh
@@ -21,16 +23,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class NSLayoutConstraint;
 @class NSLayoutConstraint;
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface UIViewController (AlertRefreshDetectOver)
 @interface UIViewController (AlertRefreshDetectOver)
 
 /**
  This method is provided to override by viewController's if the library lifts a viewController which you doesn't want to lift . This may happen if you have implemented side menu feature in your app and the library try to lift the side menu controller. Overriding this method in side menu class to return correct controller should fix the problem.
 */
--(nullable UIViewController*)parentIQContainerViewController;
+//: -(nullable UIViewController*)parentIQContainerViewController;
+-(nullable UIViewController*)drawer;
 
+//: @end
 @end

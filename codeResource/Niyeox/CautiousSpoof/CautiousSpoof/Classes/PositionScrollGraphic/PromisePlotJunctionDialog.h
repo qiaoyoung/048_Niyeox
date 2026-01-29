@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PromisePlotJunctionDialog.h
 //  NIM
@@ -15,29 +17,42 @@
 //     "message_count": 1234   //必填,最终写入文件中的消息数
 //   }
 
-
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface PromisePlotJunctionDialog : NSObject
 @interface PromisePlotJunctionDialog : NSObject
 
-@property (nonatomic, assign) NSInteger version;
+//: @property (nonatomic, assign) NSInteger version;
+@property (nonatomic, assign) NSInteger sign;
 
-@property (nonatomic, assign) NIMLoginClientType clientType;
+//: @property (nonatomic, assign) NSInteger totalInfoCount;
+@property (nonatomic, assign) NSInteger trust;
 
-@property (nonatomic, copy) NSString *sdkVersion;
+//: @property (nonatomic, copy) NSString *sdkVersion;
+@property (nonatomic, copy) NSString *profile;
 
-@property (nonatomic, copy) NSString *appVersion;
+//: @property (nonatomic, assign) NIMLoginClientType clientType;
+@property (nonatomic, assign) NIMLoginClientType vital;
 
-@property (nonatomic, assign) NSInteger totalInfoCount;
+//: @property (nonatomic, copy) NSString *appVersion;
+@property (nonatomic, copy) NSString *cycleDistinction;
 
-+ (instancetype)initWithDefaultConfig;
+//: - (nullable NSData *)toRawContent;
+- (nullable NSData *)portrait;
 
-+ (nullable instancetype)initWithRawContent:(NSData *)data;
+//: + (instancetype)initWithDefaultConfig;
++ (instancetype)initWithMist;
 
-- (nullable NSData *)toRawContent;
+//: + (nullable instancetype)initWithRawContent:(NSData *)data;
++ (nullable instancetype)initWithColorSpectrum:(NSData *)data;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

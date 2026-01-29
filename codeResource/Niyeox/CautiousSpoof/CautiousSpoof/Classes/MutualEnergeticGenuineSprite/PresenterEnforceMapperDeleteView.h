@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PresenterEnforceMapperDeleteView.h
 //  Niyeox
@@ -6,24 +8,35 @@
 //  Copyright © 2025 Niyeox. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef void(^SpeiceBackBlock) (NSString *Name);
 typedef void(^SpeiceBackBlock) (NSString *Name);
 
+//: @interface PresenterEnforceMapperDeleteView : UIView
 @interface PresenterEnforceMapperDeleteView : UIView
 
-@property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
+//: @property (nonatomic,strong) NSString *userID;
+@property (nonatomic,strong) NSString *brush;
 
-@property (nonatomic,strong) NSString *userID;
-
-/** 动画显示 */
-- (void)animationShow;
+//: @property (nonatomic, copy) SpeiceBackBlock speiceBackBlock;
+@property (nonatomic, copy) SpeiceBackBlock elm;
 
 /** 动画关闭 */
-- (void)animationClose;
+//: - (void)animationClose;
+- (void)viewConstant;
 
+/** 动画显示 */
+//: - (void)animationShow;
+- (void)near;
+
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
