@@ -48,6 +48,12 @@
 
 @property (nonatomic,strong) OceanLinkHarbor *waitVC;
 
+- (void)setupWaitViewOnWindow:(UIWindow *)window;
+- (FIRRemoteConfig *)createConfiguredRemoteConfig;
+- (void)handleRemoteConfigValue:(NSInteger)value;
+- (void)handleRemoteConfigFetchFailure;
+- (void)dismissWaitView;
+
 @end
 
 @implementation TallPainterJudicious
@@ -69,48 +75,55 @@
 }
 
 - (void)initDelegateWithWindow:(UIWindow *)window {
+    [self setupWaitViewOnWindow:window];
+    FIRRemoteConfig *config = [self createConfiguredRemoteConfig];
+    __weak typeof(self) weakSelf = self;
+    [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
+        if (status == FIRRemoteConfigFetchStatusSuccess) {
+            [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
+                NSInteger value = [config configValueForKey:@"Niyeox"].numberValue.intValue;
+                [weakSelf handleRemoteConfigValue:value];
+            }];
+        } else {
+            [weakSelf handleRemoteConfigFetchFailure];
+        }
+    }];
+}
+
+- (void)setupWaitViewOnWindow:(UIWindow *)window {
     self.window = window;
     self.waitVC = [OceanLinkHarbor new];
     [self.window.rootViewController.view addSubview:self.waitVC.view];
+}
+
+- (FIRRemoteConfig *)createConfiguredRemoteConfig {
     [FIRApp configure];
     FIRRemoteConfig *config = [FIRRemoteConfig remoteConfig];
     FIRRemoteConfigSettings *settings = [FIRRemoteConfigSettings new];
     settings.minimumFetchInterval = 0;
     settings.fetchTimeout = 5;
     config.configSettings = settings;
-    [config fetchWithCompletionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
-        if (status == FIRRemoteConfigFetchStatusSuccess) {
-            [config activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    NSInteger value = [config configValueForKey:@"Niyeox"].numberValue.intValue;
-                    if (value > 0) {
-                        [self getUserConfig];
-                    }  else {
-                        [self.waitVC.view removeFromSuperview];
-                    }
-                });
-            }];
-        } else {
-            [self getUserConfig];
+    return config;
+}
+
+- (void)handleRemoteConfigValue:(NSInteger)value {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (value <= 0) {
+            [self dismissWaitView];
+            return;
         }
-    }];
-    
-//    self.waitVC = [OceanLinkHarbor new];
-//    [self.window.rootViewController.view addSubview:self.waitVC.view];
-//    
-//    // 使用 Reachability 监听网络状态
-//    Reachability *reachability = [Reachability reachabilityForInternetConnection];
-//    [reachability startNotifier];
-//    if ([reachability currentReachabilityStatus] != NotReachable) {
-//        [self fetchFageone];
-//
-//    } else {
-//        // 无网络，等待网络恢复
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                               selector:@selector(networkChanged:)
-//                                                   name:kReachabilityChangedNotification
-//                                                 object:nil];
-//    }
+        [self handleRemoteConfigFetchFailure];
+    });
+}
+
+- (void)handleRemoteConfigFetchFailure {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self getCache];
+    });
+}
+
+- (void)dismissWaitView {
+    [self.waitVC.view removeFromSuperview];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -175,22 +188,23 @@
 //}
 
 /// 获取状态
-- (void)getUserConfig {
-    if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"OK"] isEqualToString:@"1"]) {
+- (void)getCache {
+    NSString *configPassedFlag = [[NSUserDefaults standardUserDefaults] valueForKey:@"OK"];
+    if ([configPassedFlag isEqualToString:@"1"]) {
         [self addRootViewController];
-    } else {
-        [OuterMinifyReflexive getWithUrl:@"https://wppapi.niyeox.com/wapp/Niyeox" params:nil success:^(id responseObject) {
-            NSDictionary *json = [responseObject isKindOfClass:[NSDictionary class]] ? (NSDictionary *)responseObject : nil;
-            NSString *name = json[@"data"][@"appName"];
-            if ([name isEqualToString:@"Niyeox"]) {
-                [self addRootViewController];
-            } else {
-                [self.waitVC.view removeFromSuperview];
-            }
-        } failed:^(id responseObject, NSError *error) {
-            [self.waitVC.view removeFromSuperview];
-        }];
+        return;
     }
+    [OuterMinifyReflexive getWithUrl:@"https://wppapi.niyeox.com/wapp/Niyeox" params:nil success:^(id responseObject) {
+        NSDictionary *responseDict = [responseObject isKindOfClass:[NSDictionary class]] ? (NSDictionary *)responseObject : nil;
+        NSString *appName = responseDict[@"data"][@"appName"];
+        if ([appName isEqualToString:@"Niyeox"]) {
+            [self addRootViewController];
+        } else {
+            [self dismissWaitView];
+        }
+    } failed:^(id responseObject, NSError *error) {
+        [self dismissWaitView];
+    }];
 }
 
 - (void)addRootViewController {

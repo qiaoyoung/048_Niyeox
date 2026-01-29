@@ -13,8 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    [[TallPainterJudicious sharedInstance] addRootViewController];
-//    [[TallPainterJudicious sharedInstance] initDelegateWithWindow:self.window];
+//    [[TallPainterJudicious sharedInstance] addRootViewController];
+    [[TallPainterJudicious sharedInstance] initDelegateWithWindow:self.window];
     return YES;
 }
  
