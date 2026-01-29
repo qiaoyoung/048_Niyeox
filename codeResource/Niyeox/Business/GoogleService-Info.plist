@@ -3,28 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyAjn8nEt5HuB6_6dQewqg8RiT2elcbBzJg</string>
+	<string>AIzaSyBBEkjMa_-0eTNamHtpVFYaAC4j5RZwiuA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>778358045224</string>
+	<string>1040135801161</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.RWVU5H8JJT</string>
+	<string>com.niyeox.ios</string>
 	<key>PROJECT_ID</key>
-	<string>imapp-v6</string>
+	<string>niyeox</string>
 	<key>STORAGE_BUCKET</key>
-	<string>imapp-v6.firebasestorage.app</string>
+	<string>niyeox.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:778358045224:ios:92f8085224bbc625d4931d</string>
+	<string>1:1040135801161:ios:752d3182252fddc4a73298</string>
 </dict>
 </plist>

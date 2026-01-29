@@ -1,6 +1,0 @@
-framework module HolisticSaver {
-  umbrella header "HolisticSaver-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -422,11 +422,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Riverla/Pods-Riverla-resources.sh",
-				"${PODS_ROOT}/../HolisticSaver/HolisticSaver/Resources/HolisticSaver.bundle",
+				"${PODS_ROOT}/../CautiousSpoof/CautiousSpoof/Resources/CautiousSpoof.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HolisticSaver.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CautiousSpoof.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,0 +1,49 @@
+{
+  "name": "CautiousSpoof",
+  "version": "1.0.0",
+  "summary": "iOS CautiousSpoof Module.",
+  "authors": {
+    "CautiousSpoof": "CautiousSpoof.me"
+  },
+  "homepage": "CautiousSpoof",
+  "source": {
+    "git": "http://CautiousSpoof.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "static_framework": true,
+  "requires_arc": true,
+  "source_files": "CautiousSpoof/Classes/**/*",
+  "resources": "CautiousSpoof/**/*.bundle",
+  "prefix_header_file": "CautiousSpoof/Classes/CautiousSpoof.pch",
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(inherited) \"${PODS_TARGET_SRCROOT}\" \"${PODS_TARGET_SRCROOT}/CautiousSpoof/Classes\""
+  },
+  "dependencies": {
+    "NIMSDK_LITE": [
+      "9.20.14"
+    ],
+    "SSZipArchive": [],
+    "TZImagePickerController": [],
+    "SDWebImage": [],
+    "SDWebImageFLPlugin": [],
+    "YYImage": [],
+    "YYImage/WebP": [],
+    "YYText": [],
+    "YYModel": [],
+    "Masonry": [],
+    "FMDB": [],
+    "Reachability": [],
+    "LEEAlert": [],
+    "Firebase/Core": [],
+    "Firebase/RemoteConfig": [],
+    "MJRefresh": [],
+    "SwiftyJSON": [],
+    "Then": [],
+    "Kingfisher": [],
+    "SnapKit": [],
+    "pop": []
+  }
+}

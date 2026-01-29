@@ -1,4 +1,26 @@
 PODS:
+  - CautiousSpoof (1.0.0):
+    - Firebase/Core
+    - Firebase/RemoteConfig
+    - FMDB
+    - Kingfisher
+    - LEEAlert
+    - Masonry
+    - MJRefresh
+    - NIMSDK_LITE (= 9.20.14)
+    - pop
+    - Reachability
+    - SDWebImage
+    - SDWebImageFLPlugin
+    - SnapKit
+    - SSZipArchive
+    - SwiftyJSON
+    - Then
+    - TZImagePickerController
+    - YYImage
+    - YYImage/WebP
+    - YYModel
+    - YYText
   - Firebase/Core (10.29.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 10.29.0)
@@ -102,28 +124,6 @@ PODS:
   - GoogleUtilities/UserDefaults (7.13.3):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - HolisticSaver (1.0.0):
-    - Firebase/Core
-    - Firebase/RemoteConfig
-    - FMDB
-    - Kingfisher
-    - LEEAlert
-    - Masonry
-    - MJRefresh
-    - NIMSDK_LITE (= 9.20.14)
-    - pop
-    - Reachability
-    - SDWebImage
-    - SDWebImageFLPlugin
-    - SnapKit
-    - SSZipArchive
-    - SwiftyJSON
-    - Then
-    - TZImagePickerController
-    - YYImage
-    - YYImage/WebP
-    - YYModel
-    - YYText
   - Kingfisher (7.12.0)
   - LEEAlert (1.8.2):
     - LEEAlert/Privacy (= 1.8.2)
@@ -143,9 +143,9 @@ PODS:
   - pop (1.0.12)
   - PromisesObjC (2.4.0)
   - Reachability (3.7.6)
-  - SDWebImage (5.21.2):
-    - SDWebImage/Core (= 5.21.2)
-  - SDWebImage/Core (5.21.2)
+  - SDWebImage (5.21.3):
+    - SDWebImage/Core (= 5.21.3)
+  - SDWebImage/Core (5.21.3)
   - SDWebImageFLPlugin (0.6.0):
     - FLAnimatedImage (>= 1.0.11)
     - SDWebImage/Core (~> 5.10)
@@ -168,7 +168,7 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
-  - HolisticSaver (from `HolisticSaver`)
+  - CautiousSpoof (from `CautiousSpoof`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -207,10 +207,11 @@ SPEC REPOS:
     - YYText
 
 EXTERNAL SOURCES:
-  HolisticSaver:
-    :path: HolisticSaver
+  CautiousSpoof:
+    :path: CautiousSpoof
 
 SPEC CHECKSUMS:
+  CautiousSpoof: 182dfe5e417dc3fd1767119d195bb46610ee8be2
   Firebase: cec914dab6fd7b1bd8ab56ea07ce4e03dd251c2d
   FirebaseABTesting: d87f56707159bae64e269757a6e963d490f2eebe
   FirebaseAnalytics: 23717de130b779aa506e757edb9713d24b6ffeda
@@ -224,7 +225,6 @@ SPEC CHECKSUMS:
   FMDB: 728731dd336af3936ce00f91d9d8495f5718a0e6
   GoogleAppMeasurement: f9de05ee17401e3355f68e8fc8b5064d429f5918
   GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
-  HolisticSaver: 0394366e4f46aee9cfaa14e7ddf503e4ae9bacd3
   Kingfisher: 53a10ea35051a436b5fb626ca2dd8f3144d755e9
   LEEAlert: b0bbaaa8fba0819247a02d3fbca2cb94bef741f2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -234,7 +234,7 @@ SPEC CHECKSUMS:
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   Reachability: fd0ecd23705e2599e4cceeb943222ae02296cbc6
-  SDWebImage: 9f177d83116802728e122410fb25ad88f5c7608a
+  SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
   SDWebImageFLPlugin: 72efd2cfbf565bc438421abb426f4bcf7b670754
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
@@ -246,6 +246,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 35ecfa133baa1b152f8bc68e5ca4795678126677
+PODFILE CHECKSUM: 3915d0dcc7945949ac7640be3a7481b49d57305f
 
 COCOAPODS: 1.16.2
