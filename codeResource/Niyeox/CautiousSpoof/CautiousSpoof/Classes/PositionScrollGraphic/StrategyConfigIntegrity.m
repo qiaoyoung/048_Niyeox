@@ -234,7 +234,7 @@ Byte globalConstructTimer[] = {26, 7, 74, 4, 217, 233, 233, 248, 230, 252, 230, 
         //: [items enumerateObjectsUsingBlock:^(id<MockEffectPanelTense> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<MockEffectPanelTense> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
-            if (obj.reverse) {
+            if (obj.more) {
                 //: weakSelf.selectedIndex = idx;
                 weakSelf.fine = idx;
             }
@@ -347,11 +347,11 @@ Byte globalConstructTimer[] = {26, 7, 74, 4, 217, 233, 233, 248, 230, 252, 230, 
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.event.image = [UIImage imageNamed:bodyData.conversation];
+    cell.event.image = [UIImage imageNamed:bodyData.assist];
     //: cell.titleLabel.text = bodyData.title;
     cell.apply.text = bodyData.transition;
     //: cell.arrowsImageView.hidden = ![bodyData selected];
-    cell.general.hidden = ![bodyData reverse];
+    cell.general.hidden = ![bodyData more];
 
     //: return cell;
     return cell;
@@ -421,7 +421,7 @@ Byte globalConstructTimer[] = {26, 7, 74, 4, 217, 233, 233, 248, 230, 252, 230, 
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
-        [obj setReverse:selected];
+        [obj setMore:selected];
     //: }];
     }];
     //: [self.tableView reloadData];

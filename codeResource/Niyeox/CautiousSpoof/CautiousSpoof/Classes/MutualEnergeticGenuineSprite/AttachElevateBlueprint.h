@@ -30,7 +30,7 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <MockEffectPanelTense> item);
 @property(nonatomic,assign) BOOL more;
 
 //: @property(nonatomic,copy) NSString *title;
-@property(nonatomic,copy) NSString *project;
+@property(nonatomic,copy) NSString *transition;
 
 //: @property(nonatomic,assign) KnackWinterRetreatApplyRefined type;
 @property(nonatomic,assign) KnackWinterRetreatApplyRefined beginCrystalTrack;

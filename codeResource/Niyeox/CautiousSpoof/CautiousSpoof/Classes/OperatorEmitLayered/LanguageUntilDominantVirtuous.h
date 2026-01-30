@@ -47,7 +47,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @property(nullable, nonatomic,copy) IBInspectable NSAttributedString *reliable;
 
 //: @property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
-@property(nullable, nonatomic,copy) IBInspectable NSString *quitConversation;
+@property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
 
 /**
  To set textView's placeholder text color. Default is nil.

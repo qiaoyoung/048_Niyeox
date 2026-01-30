@@ -250,7 +250,7 @@ static const void *screenRenderPreference = &screenRenderPreference;
 }
 
 //: - (void)setPlaceholder:(NSString *)placeholder
-- (void)setQuitConversation:(NSString *)placeholder
+- (void)setPlaceholder:(NSString *)placeholder
 {
     // 为placeholder赋值
     //: [self placeholderView].text = placeholder;
@@ -445,7 +445,7 @@ static const void *screenRenderPreference = &screenRenderPreference;
 }
 
 //: - (NSString *)placeholder
-- (NSString *)quitConversation
+- (NSString *)placeholder
 {
     // 如果有placeholder值才去调用，这步很重要
     //: if (self.placeholderExist) {

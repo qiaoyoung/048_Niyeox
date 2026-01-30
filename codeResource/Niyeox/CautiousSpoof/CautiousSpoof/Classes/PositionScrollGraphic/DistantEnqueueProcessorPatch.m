@@ -241,7 +241,7 @@
 @property (nonatomic, strong) NSMutableArray <ViaChapterNegateSoft *> *renderRelated;
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *legacy;
+@property (nonatomic, strong) NIMSession *modify;
 
 //: @end
 @end
@@ -667,7 +667,7 @@
         //: _team = team;
         _ting = team;
         //: _session = session;
-        _legacy = session;
+        _modify = session;
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {
             //: [[NIMSDK sharedSDK].superTeamManager addDelegate:self];

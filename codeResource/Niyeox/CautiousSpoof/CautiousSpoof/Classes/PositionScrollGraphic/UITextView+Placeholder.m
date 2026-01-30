@@ -20,7 +20,7 @@
 
 
 //: @dynamic placeholder;
-@dynamic quitConversation;
+@dynamic placeholder;
 //: @dynamic placeholderLabel;
 @dynamic journeyLabel;
 //: @dynamic textValue;
@@ -68,7 +68,7 @@
 //: NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
 NSString const *userResultName = @"kKeyPlaceHolder";
 //: -(void)setPlaceholder:(NSString *)_placeholder
--(void)setQuitConversation:(NSString *)_placeholder
+-(void)setPlaceholder:(NSString *)_placeholder
 {
     //  Sets our "placeholder" text string, creates a new UILabel to contain it, and modifies our UITextView to cope with
     //  showing/hiding the UILabel when needed.
@@ -147,7 +147,7 @@ NSString const *networkMOpenlyTideEvent = @"kKeyLabel";
     [self humor];
 }
 //: -(NSString*)placeholder
--(NSString*)quitConversation
+-(NSString*)placeholder
 {
     //  Returns our "placeholder" text string
     //: return objc_getAssociatedObject(self, &kKeyPlaceHolder);

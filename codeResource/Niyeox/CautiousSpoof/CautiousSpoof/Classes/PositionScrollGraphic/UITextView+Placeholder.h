@@ -16,7 +16,7 @@
 @interface UITextView (Placeholder)
 
 //: @property (nonatomic, strong) NSString* placeholder;
-@property (nonatomic, strong) NSString* quitConversation;
+@property (nonatomic, strong) NSString* placeholder;
 //: @property (nonatomic, strong) NSString* textValue;
 @property (nonatomic, strong) NSString* hold;
 //: @property (nonatomic, strong) UILabel * placeholderLabel;

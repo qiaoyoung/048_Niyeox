@@ -584,7 +584,7 @@
     //: AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager betweenAssemble];
     //: sessionManager.requestSerializer.timeoutInterval = 5.f;
-    sessionManager.tallGraysed.bookOceaning = 5.f;
+    sessionManager.tallGraysed.timeoutInterval = 5.f;
     //: sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     sessionManager.announcementNearred.abstractForestses = [NSSet setWithObjects:[Utility_Data themeHardLocationPreference], [Utility_Data kCircuitID], [Utility_Data themeAgileConnectToken], [Utility_Data globalEnhanceMessage], [Utility_Data themeManageDoingConfig], [Utility_Data layoutCycleFormat], [Utility_Data commonCarefulLeafValue], nil];
     //: [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];

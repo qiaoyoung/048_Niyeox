@@ -1277,7 +1277,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamShareCart = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamShareCart = [[AttachElevateBlueprint alloc] init];
     //: teamShareCart.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"send_group_card"];
-    teamShareCart.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&userComparisonResource)];
+    teamShareCart.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&userComparisonResource)];
     //: teamShareCart.subTitle = self.teamListManager.team.teamName;
     teamShareCart.strokeStretch = self.fraction.ting.teamName;
     //: teamShareCart.action = @selector(sendGroupCart);
@@ -1293,7 +1293,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamMembers = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamMembers = [[AttachElevateBlueprint alloc] init];
     //: teamMembers.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"group_info_activity_team_member"];
-    teamMembers.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&kFindPath)];
+    teamMembers.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&kFindPath)];
     //: teamMembers.subTitle = self.teamListManager.team.teamName;
     teamMembers.strokeStretch = self.fraction.ting.teamName;
     //: teamMembers.action = @selector(enterMemberCard);
@@ -1310,7 +1310,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamAnnoucement = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamAnnoucement = [[AttachElevateBlueprint alloc] init];
     //: teamAnnoucement.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"activity_group_info_group_toast"];
-    teamAnnoucement.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&themeSolutionConfig)];
+    teamAnnoucement.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&themeSolutionConfig)];
     //: teamAnnoucement.subTitle = self.teamListManager.team.teamName;
     teamAnnoucement.strokeStretch = self.fraction.ting.teamName;
     //: teamAnnoucement.action = @selector(updateTeamAnnouncement);
@@ -1326,7 +1326,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamName = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamName = [[AttachElevateBlueprint alloc] init];
     //: teamName.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"Group_name"];
-    teamName.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&viewOddID)];
+    teamName.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&viewOddID)];
     //: teamName.subTitle = self.teamListManager.team.teamName;
     teamName.strokeStretch = self.fraction.ting.teamName;
     //: teamName.action = @selector(updateTeamName);
@@ -1344,7 +1344,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamNick = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamNick = [[AttachElevateBlueprint alloc] init];
     //: teamNick.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"activity_group_info_group_nick"];
-    teamNick.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&styleLeapHelper)];
+    teamNick.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&styleLeapHelper)];
     //: teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
     teamNick.strokeStretch = self.fraction.directWhen.nickname;
     //: teamNick.action = @selector(updateTeamNick);
@@ -1359,7 +1359,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamIntro = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamIntro = [[AttachElevateBlueprint alloc] init];
     //: teamIntro.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"team_info_set_activity_group_tip"];
-    teamIntro.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&dataQualityDict)];
+    teamIntro.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&dataQualityDict)];
     //: teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
     teamIntro.strokeStretch = self.fraction.ting.intro.length ? self.fraction.ting.intro : (canEdit ? [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&widgetSkirtDict)] : @"");
     //: teamIntro.action = @selector(updateTeamIntro);
@@ -1386,7 +1386,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamMute = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamMute = [[AttachElevateBlueprint alloc] init];
     //: teamMute.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"activity_group_info_group_mute"];
-    teamMute.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&themeBehindHelper)];
+    teamMute.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&themeBehindHelper)];
     //: teamMute.switchOn = inAllMuteMode;
     teamMute.target = inAllMuteMode;
 //    teamMute.subTitle = [UnregisterPathScan teamMuteText:inAllMuteMode];
@@ -1401,7 +1401,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: teamMute.selectedBlock = ^(id<MockEffectPanelTense> item) {
     teamMute.legacy = ^(id<MockEffectPanelTense> item) {
         //: [weakSelf didUpdateTeamMute:[item.value integerValue]];
-        [weakSelf driver:[item.nameSumry integerValue]];
+        [weakSelf driver:[item.extend integerValue]];
     //: };
     };
     //: teamMute.identify = AppendSilentLightOffsetSoundMute;
@@ -1412,7 +1412,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamMuteList = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamMuteList = [[AttachElevateBlueprint alloc] init];
     //: teamMuteList.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"group_mute_member_list_activity_title"];
-    teamMuteList.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&colorDeliveryMessage)];
+    teamMuteList.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&colorDeliveryMessage)];
     //: teamMuteList.rowHeight = 50.f;
     teamMuteList.toolStorageWorth = 50.f;
     //: teamMuteList.type = KnackWinterRetreatApplyRefinedCommon;
@@ -1425,7 +1425,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamNotify = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamNotify = [[AttachElevateBlueprint alloc] init];
     //: teamNotify.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"message_info_activity_msg_notice"];
-    teamNotify.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&commonGiftedConfig)];//@"消息提醒".nim_localized;
+    teamNotify.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&commonGiftedConfig)];//@"消息提醒".nim_localized;
     //: teamNotify.subTitle = [UnregisterPathScan notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
     teamNotify.strokeStretch = [UnregisterPathScan merge:self.fraction.ting.notifyStateForNewMsg];
     //: teamNotify.rowHeight = 50.f;
@@ -1437,7 +1437,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: teamNotify.selectedBlock = ^(id<MockEffectPanelTense> item) {
     teamNotify.legacy = ^(id<MockEffectPanelTense> item) {
         //: [weakSelf didUpdateNotifiyState:[item.value integerValue]];
-        [weakSelf closelyTranslate:[item.nameSumry integerValue]];
+        [weakSelf closelyTranslate:[item.extend integerValue]];
     //: };
     };
     //: teamNotify.img = [UIImage imageNamed:@"ic_card_notice"];
@@ -1447,7 +1447,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *itemAuth = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *itemAuth = [[AttachElevateBlueprint alloc] init];
     //: itemAuth.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"authentication"];
-    itemAuth.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&commonPeacefulEvent)];
+    itemAuth.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&commonPeacefulEvent)];
     //: itemAuth.subTitle = [UnregisterPathScan jonModeText:self.teamListManager.team.joinMode];
     itemAuth.strokeStretch = [UnregisterPathScan betweenEarth:self.fraction.ting.joinMode];
     //: itemAuth.actionDisabled = !canEdit;
@@ -1461,7 +1461,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: itemAuth.selectedBlock = ^(id<MockEffectPanelTense> item) {
     itemAuth.legacy = ^(id<MockEffectPanelTense> item) {
         //: [weakSelf didupdateTeamJoinMode:[item.value integerValue]];
-        [weakSelf strong:[item.nameSumry integerValue]];
+        [weakSelf strong:[item.extend integerValue]];
     //: };
     };
     //: itemAuth.img = [UIImage imageNamed:@"ic_identity_authentication"];
@@ -1470,7 +1470,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *itemInvite = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *itemInvite = [[AttachElevateBlueprint alloc] init];
     //: itemInvite.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"activity_group_info_invite_permission"];
-    itemInvite.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&layoutCrystalTowardPreference)];
+    itemInvite.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&layoutCrystalTowardPreference)];
     //: itemInvite.subTitle = [UnregisterPathScan InviteModeText:self.teamListManager.team.inviteMode];
     itemInvite.strokeStretch = [UnregisterPathScan mount:self.fraction.ting.inviteMode];
     //: itemInvite.actionDisabled = !canEdit;
@@ -1484,7 +1484,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: itemInvite.selectedBlock = ^(id<MockEffectPanelTense> item) {
     itemInvite.legacy = ^(id<MockEffectPanelTense> item) {
         //: [weakSelf didUpdateTeamInviteMode:[item.value integerValue]];
-        [weakSelf extra:[item.nameSumry integerValue]];
+        [weakSelf extra:[item.extend integerValue]];
     //: };
     };
     //: itemInvite.img = [UIImage imageNamed:@"ic_invite"];
@@ -1493,7 +1493,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *itemUpdateInfo = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *itemUpdateInfo = [[AttachElevateBlueprint alloc] init];
     //: itemUpdateInfo.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"activity_group_info_group_modify_permission"];
-    itemUpdateInfo.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&kLogicVersion)];
+    itemUpdateInfo.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&kLogicVersion)];
     //: itemUpdateInfo.subTitle = [UnregisterPathScan updateInfoModeText:self.teamListManager.team.updateInfoMode];
     itemUpdateInfo.strokeStretch = [UnregisterPathScan flipUniversal:self.fraction.ting.updateInfoMode];
     //: itemUpdateInfo.actionDisabled = !canEdit;
@@ -1507,7 +1507,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: itemUpdateInfo.selectedBlock = ^(id<MockEffectPanelTense> item) {
     itemUpdateInfo.legacy = ^(id<MockEffectPanelTense> item) {
         //: [weakSelf didUpdateTeamInfoMode:[item.value integerValue]];
-        [weakSelf fractionTrigger:[item.nameSumry integerValue]];
+        [weakSelf fractionTrigger:[item.extend integerValue]];
     //: };
     };
     //: itemUpdateInfo.img = [UIImage imageNamed:@"ic_modify"];
@@ -1516,7 +1516,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *itemBeInvite = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *itemBeInvite = [[AttachElevateBlueprint alloc] init];
     //: itemBeInvite.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"activity_group_info_invite_verify"];
-    itemBeInvite.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&userGreenResource)];
+    itemBeInvite.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&userGreenResource)];
     //: itemBeInvite.subTitle = [UnregisterPathScan beInviteModeText:self.teamListManager.team.beInviteMode];
     itemBeInvite.strokeStretch = [UnregisterPathScan quantity:self.fraction.ting.beInviteMode];
     //: itemBeInvite.actionDisabled = !canEdit;
@@ -1530,7 +1530,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: itemBeInvite.selectedBlock = ^(id<MockEffectPanelTense> item) {
     itemBeInvite.legacy = ^(id<MockEffectPanelTense> item) {
         //: [weakSelf didUpdateTeamBeInviteMode:[item.value integerValue]];
-        [weakSelf sinceDeliver:[item.nameSumry integerValue]];
+        [weakSelf sinceDeliver:[item.extend integerValue]];
     //: };
     };
     //: itemBeInvite.img = [UIImage imageNamed:@"ic_invitee_verification"];
@@ -1539,7 +1539,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *itemTop = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *itemTop = [[AttachElevateBlueprint alloc] init];
     //: itemTop.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"Chat_settop"];
-    itemTop.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&componentMineName)];
+    itemTop.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&componentMineName)];
     //: itemTop.switchOn = self.option.isTop;
     itemTop.target = self.consumer.colorMirror;
     //: itemTop.rowHeight = 50.f;
@@ -1561,7 +1561,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
         //: AttachElevateBlueprint *itemDismiss = [[AttachElevateBlueprint alloc] init];
         AttachElevateBlueprint *itemDismiss = [[AttachElevateBlueprint alloc] init];
         //: itemDismiss.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"group_info_activity_jiesan"];
-        itemDismiss.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&globalPresentError)];
+        itemDismiss.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&globalPresentError)];
         //: itemDismiss.action = @selector(dismissTeam);
         itemDismiss.firstThinned = @selector(givenGender);
         //: itemDismiss.rowHeight = 50.f;
@@ -1574,7 +1574,7 @@ DelicateDiffuseClear,ThoroughRealmRadiusSpectrumDelegate,UINavigationControllerD
     //: AttachElevateBlueprint *teamChange = [[AttachElevateBlueprint alloc] init];
     AttachElevateBlueprint *teamChange = [[AttachElevateBlueprint alloc] init];
     //: teamChange.title = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"Transfer_group_ownership"];
-    teamChange.project = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&layoutComposeResource)];
+    teamChange.transition = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromRest_Data(&layoutComposeResource)];
     //: teamChange.rowHeight = 50.f;
     teamChange.toolStorageWorth = 50.f;
     //: teamChange.type = KnackWinterRetreatApplyRefinedCommon;

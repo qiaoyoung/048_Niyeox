@@ -20,7 +20,7 @@ typedef void(^textViewHeightDidChangedBlock)(CGFloat currentTextViewHeight);
 
 /* 占位文字 */
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *quitConversation;
+@property (nonatomic, copy) NSString *placeholder;
 //: @property (nonatomic, copy) textViewHeightDidChangedBlock textViewHeightDidChanged;
 @property (nonatomic, copy) textViewHeightDidChangedBlock frameNext;
 /* 占位文字颜色 */

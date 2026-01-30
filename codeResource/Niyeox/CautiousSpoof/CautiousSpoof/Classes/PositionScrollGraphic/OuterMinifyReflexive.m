@@ -882,9 +882,9 @@
     AFHTTPSessionManager *manager = [OuterMinifyReflexive inputFrom].clear;
     // 记录原始超时时间，避免影响后续请求
     //: NSTimeInterval originalTimeout = manager.requestSerializer.timeoutInterval;
-    NSTimeInterval originalTimeout = manager.tallGraysed.bookOceaning;
+    NSTimeInterval originalTimeout = manager.tallGraysed.timeoutInterval;
     //: manager.requestSerializer.timeoutInterval = 5;
-    manager.tallGraysed.bookOceaning = 5;
+    manager.tallGraysed.timeoutInterval = 5;
     //: [manager GET:urlStr
     [manager countyDriver:urlStr
       //: parameters:params
@@ -898,7 +898,7 @@
         } snap:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
             // 恢复超时时间
             //: manager.requestSerializer.timeoutInterval = originalTimeout;
-            manager.tallGraysed.bookOceaning = originalTimeout;
+            manager.tallGraysed.timeoutInterval = originalTimeout;
             //: if (success) {
             if (success) {
                 //: success(responseObject);
@@ -908,7 +908,7 @@
         } buttonFuture:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             // 恢复超时时间
             //: manager.requestSerializer.timeoutInterval = originalTimeout;
-            manager.tallGraysed.bookOceaning = originalTimeout;
+            manager.tallGraysed.timeoutInterval = originalTimeout;
             //: if (failed) {
             if (failed) {
                 //: failed(nil, error);

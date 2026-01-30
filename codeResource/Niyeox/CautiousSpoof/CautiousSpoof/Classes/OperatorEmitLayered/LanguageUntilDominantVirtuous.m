@@ -46,7 +46,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @implementation LanguageUntilDominantVirtuous
 
 //: @synthesize placeholder = _placeholder;
-@synthesize quitConversation = _evaluationFound;
+@synthesize placeholder = _evaluationFound;
 //: @synthesize placeholderLabel = _placeholderLabel;
 @synthesize journeyLabel = _instruction;
 //: @synthesize placeholderTextColor = _placeholderTextColor;
@@ -171,7 +171,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 }
 
 //: -(void)setPlaceholder:(NSString *)placeholder
--(void)setQuitConversation:(NSString *)placeholder
+-(void)setPlaceholder:(NSString *)placeholder
 {
     //: _placeholder = placeholder;
     _evaluationFound = placeholder;

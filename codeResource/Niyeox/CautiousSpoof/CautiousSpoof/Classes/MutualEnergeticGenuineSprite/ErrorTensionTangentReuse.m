@@ -189,7 +189,7 @@ Byte k_recoverName[] = {88, 17, 59, 12, 220, 194, 1, 248, 204, 13, 70, 214, 12, 
     //: self.contentTextView.delegate = self;
     self.dialogInsight.delegate = self;
     //: self.contentTextView.placeholder = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"Please_enter_content"];
-    self.dialogInsight.quitConversation = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromPlanet_Data(appCreateerKey)];
+    self.dialogInsight.placeholder = [InflateEnsureEfficiencySliderIdeal manTotalact:StringFromPlanet_Data(appCreateerKey)];
     //: self.contentTextView.text = self.defaultContent;
     self.dialogInsight.text = self.impactElm;
     //: [contentView addSubview:self.contentTextView];

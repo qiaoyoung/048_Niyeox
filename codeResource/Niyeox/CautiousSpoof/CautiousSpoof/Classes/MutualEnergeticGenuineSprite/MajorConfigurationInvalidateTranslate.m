@@ -231,7 +231,7 @@
     //: cell.button.style = AlongsideJustWishStyleRed;
     cell.rootStable.request = AlongsideJustWishStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.rootStable setTitle:bodyData.throughout forState:UIControlStateNormal];
+    [cell.rootStable setTitle:bodyData.transition forState:UIControlStateNormal];
     //: return cell;
     return cell;
 }
@@ -288,7 +288,7 @@
     //: UITableViewCell * cell;
     UITableViewCell * cell;
     //: KnackWinterRetreatApplyRefined type = bodyData.type;
-    KnackWinterRetreatApplyRefined type = bodyData.searchJob;
+    KnackWinterRetreatApplyRefined type = bodyData.beginCrystalTrack;
     //: switch (type) {
     switch (type) {
         //: case KnackWinterRetreatApplyRefinedCommon:
@@ -346,7 +346,7 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.throughout,bodyData.blueEffect];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.transition,bodyData.strokeStretch];
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor blackColor];
@@ -355,7 +355,7 @@
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(correctChaining)] && bodyData.sequenceIn) {
+    if ([bodyData respondsToSelector:@selector(correctChaining)] && bodyData.correctChaining) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -399,7 +399,7 @@
     //: id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<AnimatorUploadTopmost> bodyData = [self device:indexPath];
     //: return bodyData.rowHeight;
-    return bodyData.wealth;
+    return bodyData.toolStorageWorth;
 }
 
 //: #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -620,18 +620,18 @@
     sep.hidden = (indexPath.row + 1 == [self.shouldView numberOfRowsInSection:indexPath.section]);
 
     //: cell.textLabel.text = bodyData.title;
-    cell.textLabel.text = bodyData.throughout;
+    cell.textLabel.text = bodyData.transition;
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor colorWithHexString:@"#2C3042"];
     cell.textLabel.textColor = [UIColor take:[[BasicGlobalData sharedInstance] modulePageTitle]];
     //: cell.imageView.image = bodyData.img;
-    cell.imageView.image = bodyData.man;
+    cell.imageView.image = bodyData.assist;
 
     //: cell.switcher.on = bodyData.switchOn;
-    cell.primary.on = bodyData.theReliable;
+    cell.primary.on = bodyData.target;
     //: cell.identify = bodyData.identify;
-    cell.cart = bodyData.abstractFor;
+    cell.cart = bodyData.moreQuick;
 
     //: [self didBuildTeamSwitchCell:cell];
     [self proud:cell];
@@ -738,22 +738,22 @@
     //: id<AnimatorUploadTopmost> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<AnimatorUploadTopmost> bodyData = [self device:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(correctChaining)] && bodyData.sequenceIn) {
+    if ([bodyData respondsToSelector:@selector(correctChaining)] && bodyData.correctChaining) {
         //: return;
         return;
     }
     //: if (bodyData.type == KnackWinterRetreatApplyRefinedSelected) {
-    if (bodyData.searchJob == KnackWinterRetreatApplyRefinedSelected) {
+    if (bodyData.beginCrystalTrack == KnackWinterRetreatApplyRefinedSelected) {
         //: StrategyConfigIntegrity *vc = [StrategyConfigIntegrity instanceWithTitle:bodyData.title
-        StrategyConfigIntegrity *vc = [StrategyConfigIntegrity informationSurf:bodyData.throughout
+        StrategyConfigIntegrity *vc = [StrategyConfigIntegrity informationSurf:bodyData.transition
                                                                                //: items:bodyData.optionItems
-                                                                               package:bodyData.accurate
+                                                                               package:bodyData.exact
                                                                               //: result:^(id<MockEffectPanelTense> _Nonnull item) {
                                                                               quantityo:^(id<MockEffectPanelTense> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
-              if (bodyData.gladWithoutRoundTo) {
+              if (bodyData.legacy) {
                   //: bodyData.selectedBlock(item);
-                  bodyData.gladWithoutRoundTo(item);
+                  bodyData.legacy(item);
               }
           //: }];
           }];
@@ -764,11 +764,11 @@
         //: if ([bodyData respondsToSelector:@selector(action)]) {
         if ([bodyData respondsToSelector:@selector(firstThinned)]) {
             //: if (bodyData.action) {
-            if (bodyData.impressionStay) {
+            if (bodyData.firstThinned) {
                 //: do {
                 do {
                 //: [self performSelector:bodyData.action];
-                [self performSelector:bodyData.impressionStay];
+                [self performSelector:bodyData.firstThinned];
                 //: } while (0);
                 } while (0);
             }
@@ -925,9 +925,9 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.titleLabel.text = bodyData.title;
-    cell.remoteSpeed.text = bodyData.throughout;
+    cell.remoteSpeed.text = bodyData.transition;
     //: cell.iconImageView.image = bodyData.img;
-    cell.be.image = bodyData.man;
+    cell.be.image = bodyData.assist;
 //    cell.contentLabel.text = bodyData.subTitle;
 //    if ([bodyData respondsToSelector:@selector(subTitle)]) {
 //        cell.contentLabel.text = bodyData.subTitle ?: LangKey(@"未设置");
@@ -1009,7 +1009,7 @@
     //: cell.button.style = AlongsideJustWishStyleBlue;
     cell.rootStable.request = AlongsideJustWishStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
-    [cell.rootStable setTitle:bodyData.throughout forState:UIControlStateNormal];
+    [cell.rootStable setTitle:bodyData.transition forState:UIControlStateNormal];
     //: return cell;
     return cell;
 };

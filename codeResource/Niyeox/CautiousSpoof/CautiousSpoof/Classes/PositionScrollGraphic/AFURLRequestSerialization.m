@@ -656,7 +656,7 @@ static NSArray * spokeListener() {
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(allowsCellularAccess)), NSStringFromSelector(@selector(cachePolicy)), NSStringFromSelector(@selector(HTTPShouldHandleCookies)), NSStringFromSelector(@selector(HTTPShouldUsePipelining)), NSStringFromSelector(@selector(networkServiceType)), NSStringFromSelector(@selector(timeoutInterval))];
-        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(treatDriverParenting)), NSStringFromSelector(@selector(sizeWithoutsing)), NSStringFromSelector(@selector(comparisonPerformsed)), NSStringFromSelector(@selector(remarkLightsing)), NSStringFromSelector(@selector(surgePercentaged)), NSStringFromSelector(@selector(bookOceaning))];
+        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(treatDriverParenting)), NSStringFromSelector(@selector(sizeWithoutsing)), NSStringFromSelector(@selector(comparisonPerformsed)), NSStringFromSelector(@selector(remarkLightsing)), NSStringFromSelector(@selector(surgePercentaged)), NSStringFromSelector(@selector(timeoutInterval))];
     //: });
     });
 
@@ -927,14 +927,14 @@ bringGlobe:(NSString *)field
     [coder encodeObject:@(self.loadVasted) forKey:NSStringFromSelector(@selector(loadVasted))];
 }
 
-//: - (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
-- (void)setBookOceaning:(NSTimeInterval)timeoutInterval {
+- (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
+//- (void)settimeoutInterval:(NSTimeInterval)timeoutInterval {
     //: [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self willChangeValueForKey:NSStringFromSelector(@selector(bookOceaning))];
+    [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
     //: _timeoutInterval = timeoutInterval;
-    _bookOceaning = timeoutInterval;
+    _timeoutInterval = timeoutInterval;
     //: [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self didChangeValueForKey:NSStringFromSelector(@selector(bookOceaning))];
+    [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
 }
 
 //: - (void)dealloc {

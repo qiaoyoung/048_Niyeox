@@ -298,7 +298,7 @@
     //: self.contentTextView.delegate = self;
     self.retreatSink.delegate = self;
     //: self.contentTextView.placeholder = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"Please_enter_content"];
-    self.retreatSink.quitConversation = [InflateEnsureEfficiencySliderIdeal manTotalact:[[PlotRadioData sharedInstance] styleColorAroundFormat]];
+    self.retreatSink.placeholder = [InflateEnsureEfficiencySliderIdeal manTotalact:[[PlotRadioData sharedInstance] styleColorAroundFormat]];
     //: self.contentTextView.text = self.defaultContent;
     self.retreatSink.text = self.goodFluent;
     //: [contentView addSubview:self.contentTextView];

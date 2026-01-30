@@ -138,7 +138,7 @@ typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
  @see NSMutableURLRequest -setTimeoutInterval:
  */
 //: @property (nonatomic, assign) NSTimeInterval timeoutInterval;
-@property (nonatomic, assign) NSTimeInterval bookOceaning;
+@property (nonatomic, assign) NSTimeInterval timeoutInterval;
 
 ///-------------------------------------------------------
 /// @name Configuring Query String Parameter Serialization

@@ -422,7 +422,7 @@
         //: item.value = dic[[UnregisterPathScan getTeamHelperValue]];
         item.extend = dic[[UnregisterPathScan blendData]];
         //: item.title = dic[[UnregisterPathScan getTeamHelperText]];
-        item.project = dic[[UnregisterPathScan signer]];
+        item.transition = dic[[UnregisterPathScan signer]];
         //: item.img = dic[[UnregisterPathScan getTeamHelperImg]];
         item.assist = dic[[UnregisterPathScan balanced]];
         //: item.selected = (selectValue == [dic[[UnregisterPathScan getTeamHelperValue]] integerValue]);

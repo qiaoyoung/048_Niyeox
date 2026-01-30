@@ -121,7 +121,7 @@ typedef NS_ENUM(NSInteger,VolumeBreezyWidgetType) {
  *  输入框的占位符
  */
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *quitConversation;
+@property (nonatomic, copy) NSString *placeholder;
 
 
 //: - (CGFloat)maxNotificationTipPadding;

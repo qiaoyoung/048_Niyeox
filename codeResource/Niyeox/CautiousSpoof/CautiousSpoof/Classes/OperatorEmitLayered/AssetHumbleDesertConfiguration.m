@@ -486,7 +486,7 @@ static AFHTTPSessionManager *themeAppIdealTitle;
 //: + (void)setRequestTimeoutInterval:(NSTimeInterval)time {
 + (void)setAcrossPromise:(NSTimeInterval)time {
     //: _sessionManager.requestSerializer.timeoutInterval = time;
-    themeAppIdealTitle.tallGraysed.bookOceaning = time;
+    themeAppIdealTitle.tallGraysed.timeoutInterval = time;
 }
 
 //: #pragma mark - 下载文件
@@ -815,7 +815,7 @@ static AFHTTPSessionManager *themeAppIdealTitle;
     //: _sessionManager = [AFHTTPSessionManager manager];
     themeAppIdealTitle = [AFHTTPSessionManager betweenAssemble];
     //: _sessionManager.requestSerializer.timeoutInterval = 15.f;
-    themeAppIdealTitle.tallGraysed.bookOceaning = 15.f;
+    themeAppIdealTitle.tallGraysed.timeoutInterval = 15.f;
     //: _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     themeAppIdealTitle.announcementNearred.abstractForestses = [NSSet setWithObjects:[TrimObjectData sharedInstance].widgetSeaVersion, [TrimObjectData sharedInstance].layoutRecoverTime, [TrimObjectData sharedInstance].kImplementString, [TrimObjectData sharedInstance].kSurfSnapResult, [TrimObjectData sharedInstance].layoutSymbolError, [TrimObjectData sharedInstance].kWindowTriggerVastError, [TrimObjectData sharedInstance].globalOceanURL, nil];
     // 打开状态栏的等待菊花

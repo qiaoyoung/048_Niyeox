@@ -785,7 +785,7 @@
     self.quiet.pauseMovement.waterCrystal = nil;
 
     //: NSString *placeholder = [ViewAngleFind sharedKit].config.placeholder;
-    NSString *placeholder = [ViewAngleFind translation].vine.quitConversation;
+    NSString *placeholder = [ViewAngleFind translation].vine.placeholder;
     //: [_toolBar setPlaceHolder:placeholder];
     [_quiet setExtend:placeholder];
 

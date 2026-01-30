@@ -993,7 +993,7 @@ typedef struct {
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _of = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     //: _textView.placeholder = [InflateEnsureEfficiencySliderIdeal getTextWithKey:@"report_info"];
-    _of.quitConversation = [InflateEnsureEfficiencySliderIdeal manTotalact:[InspectShoreData k_trackHelper]];//@"请输入您的举报信息";
+    _of.placeholder = [InflateEnsureEfficiencySliderIdeal manTotalact:[InspectShoreData k_trackHelper]];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _of.backgroundColor = [UIColor whiteColor];
     //: _textView.delegate = self;
